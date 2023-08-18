@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3377880343346348927}
   - component: {fileID: 7504721902237387934}
   - component: {fileID: 6565478951376343221}
+  - component: {fileID: 2771149898611028113}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 4153431265265886846}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 2.54}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -129,7 +130,6 @@ MonoBehaviour:
   _attackDistanceThreshold: 0.5
   _timeBetweenAttack: 1
   damage: 1
-  _enemyAnimator: {fileID: 229554454439051499}
 --- !u!195 &6565478951376343221
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -152,6 +152,27 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &2771149898611028113
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4153431265265886846}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: f88c8301226fd194cbbc64e25b20d567, type: 3}
+  m_Controller: {fileID: 9100000, guid: 9d4bc70039238a94baee3c64d1e44033, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &634101693033513539
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -209,6 +230,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9000000, guid: f88c8301226fd194cbbc64e25b20d567, type: 3}
     - target: {fileID: 856601670124978856, guid: b14953694d54eea4eb66f453e525024c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 856601670124978856, guid: b14953694d54eea4eb66f453e525024c, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 9d4bc70039238a94baee3c64d1e44033, type: 2}
@@ -221,11 +246,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b14953694d54eea4eb66f453e525024c, type: 3}
---- !u!95 &229554454439051499 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 856601670124978856, guid: b14953694d54eea4eb66f453e525024c, type: 3}
-  m_PrefabInstance: {fileID: 634101693033513539}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &229554454446485165 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 856601670117272814, guid: b14953694d54eea4eb66f453e525024c, type: 3}

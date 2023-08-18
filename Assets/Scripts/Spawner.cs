@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private Enemy _enemyPrefab;
+    [SerializeField] private Enemy[] _enemyPrefabs;
     public Wave[] waves;
 
     private LivingEntity _playerEntity;
@@ -96,7 +96,8 @@ public class Spawner : MonoBehaviour
             yield return null;
         }
 
-        Enemy spawnedEnemy = Instantiate(_enemyPrefab, spawnTile.position + Vector3.up, Quaternion.identity);
+        int rEnemyPrefab = Random.Range(0, _enemyPrefabs.Length - 1);
+        Enemy spawnedEnemy = Instantiate(_enemyPrefabs[rEnemyPrefab], spawnTile.position + Vector3.up, Quaternion.identity);
 
         spawnedEnemy.OnDeath += OnEnemyDeath;
         spawnedEnemy.SetCharacteristics(_currentWave.moveSpeed, 

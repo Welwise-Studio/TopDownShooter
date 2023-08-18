@@ -18,8 +18,8 @@ public class Enemy : LivingEntity
     [SerializeField] private float _pathRefrashRate = 0.25f;
     private NavMeshAgent _pathfinder;
     private Transform _target;
-    private Material _skinMaterial;
-    private Color _originalColor;
+    //private Material _skinMaterial;
+    //private Color _originalColor;
 
     [SerializeField] private float _attackDistanceThreshold = 0.5f;
     [SerializeField] private float _timeBetweenAttack = 1f;
@@ -31,10 +31,11 @@ public class Enemy : LivingEntity
 
     private bool _hasTarget;
 
-    [SerializeField] private Animator _enemyAnimator;
+    private Animator _enemyAnimator;
     private void Awake()
     {
         _pathfinder = GetComponent<NavMeshAgent>();
+        _enemyAnimator = GetComponent<Animator>();
         _enemyAnimator.SetFloat("fSpeed", _pathfinder.speed);
 
         if (GameObject.FindObjectOfType<Player>() != null)
@@ -93,7 +94,7 @@ public class Enemy : LivingEntity
         float attackSpeed = 3;
         float percent = 0;
 
-        _skinMaterial.color = Color.red;
+        //_skinMaterial.color = Color.red;
 
         bool hasAppliedDamage = false;
 
@@ -111,7 +112,7 @@ public class Enemy : LivingEntity
             yield return null;
         }
 
-        _skinMaterial.color = _originalColor;
+        //_skinMaterial.color = _originalColor;
 
         _enemyAnimator.SetBool("bAttack", false);
         CurrentState = State.Chasing;
@@ -136,13 +137,14 @@ public class Enemy : LivingEntity
         ParticleSystem.MainModule particleSystemMainDeathEffect = _deathEffect.main;
         particleSystemMainDeathEffect.startColor = new Color(skinColor.r, skinColor.g, skinColor.b, 1);
 
-        _skinMaterial = GetComponent<Renderer>().material;
-        _skinMaterial.color = skinColor;
-        _originalColor = _skinMaterial.color;
+        // _skinMaterial = GetComponent<Renderer>().material;
+        // _skinMaterial.color = skinColor;
+        // _originalColor = _skinMaterial.color;
 
     }
     public override void TakeHit(float damage, Vector3 hitPoint, Vector3 hitDirection)
     {
+        Debug.Log("DAMAGE");
         AudioManager.Instance.PlaySound("Impact", transform.position);
 
         if (damage >= health && !dead)
