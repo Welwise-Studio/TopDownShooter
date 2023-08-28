@@ -6,12 +6,13 @@ public class GunController : MonoBehaviour
 {
     [SerializeField] private Transform _weaponHold;
     [SerializeField] private Gun[] _allGuns;
-    private Gun _equippedGun;
+    public Gun _equippedGun { get; private set; }
     public float GunHeight
     {
         get => _weaponHold.position.y;
     }
-    public void EquipGun(Gun gunToEquip)
+
+    private void EquipGun(Gun gunToEquip)
     {
         if (_equippedGun != null)
         {
@@ -22,7 +23,14 @@ public class GunController : MonoBehaviour
     }
     public void EquipGun(int weaponIndex)
     {
-        EquipGun(_allGuns[weaponIndex]);
+        if (weaponIndex < _allGuns.Length)
+        {
+            EquipGun(_allGuns[weaponIndex]);
+        }
+        else
+        {
+            EquipGun(_allGuns[^1]);
+        }
     }
     public void OnTriggerHold()
     {
@@ -38,12 +46,12 @@ public class GunController : MonoBehaviour
             _equippedGun.OnTriggerRelease();
         }
     }
-    public void Aim (Vector3 aimPoint)
+    public void Aim(Vector3 aimPoint)
     {
-       if (_equippedGun != null)
-       {
-        _equippedGun.Aim(aimPoint);
-       }
+        if (_equippedGun != null)
+        {
+            _equippedGun.Aim(aimPoint);
+        }
     }
     public void Reload()
     {

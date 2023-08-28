@@ -13,8 +13,11 @@ public class CameraFollow : MonoBehaviour
     }
     private void Move()
     {
-        Vector3 nextPosition = Vector3.Lerp(transform.position, _targetFollowing.position + _cameraOffset, Time.deltaTime * _speed);
+        if (_targetFollowing != null)
+        {
+            Vector3 nextPosition = Vector3.Lerp(transform.position, _targetFollowing.position + _cameraOffset, Time.deltaTime * _speed);
 
-        transform.position = nextPosition;
+            transform.position = nextPosition;
+        }
     }
 }

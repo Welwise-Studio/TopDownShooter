@@ -7,24 +7,28 @@ using TMPro;
 
 public class GameUI : MonoBehaviour
 {
+    [SerializeField] private TextMeshProUGUI _scoreUi;
+    [SerializeField] private TextMeshProUGUI _coinText;
     [SerializeField] private Image _fadePlane;
     [SerializeField] private GameObject _gameOverUI;
+    [SerializeField] private TextMeshProUGUI _gameOverScoreUi;
 
+    [Header("New Wave Banner")] [Space(10)]
     [SerializeField] private RectTransform _newWaveBanner;
     [SerializeField] private TextMeshProUGUI _newWaveTitle;
     [SerializeField] private TextMeshProUGUI _newWaveEnemyCount;
-    [SerializeField] private TextMeshProUGUI _scoreUi;
-    [SerializeField] private TextMeshProUGUI _gameOverScoreUi;
+    [SerializeField] private float _bannerDelayTime = 1.5f;
+    [SerializeField] private float _bannerAnimationSpeed = 3f;
 
     [SerializeField] private RectTransform _healthBar;
 
     private Player _playerScript;
-    private Spawner _spawner;
+    private Spawner _spawnerScript;
 
     private void Awake()
     {
-        _spawner = FindObjectOfType<Spawner>();
-        _spawner.OnNewWave += OnNewWave;
+        _spawnerScript = FindObjectOfType<Spawner>();
+        _spawnerScript.OnNewWave += OnNewWave;
     }
     void Start()
     {
@@ -33,7 +37,7 @@ public class GameUI : MonoBehaviour
     }
     private void Update()
     {
-        _scoreUi.text = ScoreKeeper.score.ToString("D6");
+        _scoreUi.SetText(ScoreKeeper.score.ToString("D6"));
 
         float healthPercent = 0;
         if (_playerScript != null)
@@ -46,7 +50,7 @@ public class GameUI : MonoBehaviour
     {
         string[] numbers = { "One", "Two", "Three", "Four", "Five" };
         _newWaveTitle.SetText($"- Wave {numbers[waveNumber - 1]} -");
-        string enemyCountString = (_spawner.waves[waveNumber - 1].infinite) ? "Infinite" : $"{_spawner.waves[waveNumber - 1].enemyCount}";
+        string enemyCountString = (_spawnerScript.waves[waveNumber - 1].infinite) ? "Infinite" : $"{_spawnerScript.waves[waveNumber - 1].enemyCount}";
         _newWaveEnemyCount.SetText($"Enemies: {enemyCountString}");
 
         StopCoroutine("AnimateNewWaveBanner");
@@ -65,16 +69,14 @@ public class GameUI : MonoBehaviour
     }
     private IEnumerator AnimateNewWaveBanner()
     {
-        float delayTime = 1.5f;
-        float speed = 3f;
         float animatePercent = 0;
         int dir = 1;
 
-        float endDelayTime = Time.time + 1 / speed + delayTime;
+        float endDelayTime = Time.time + 1 / _bannerAnimationSpeed + _bannerDelayTime;
 
         while (animatePercent >= 0)
         {
-            animatePercent += Time.deltaTime * speed * dir;
+            animatePercent += Time.deltaTime * _bannerAnimationSpeed * dir;
 
             if (animatePercent >= 1)
             {

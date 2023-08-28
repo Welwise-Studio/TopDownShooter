@@ -5,6 +5,7 @@ using UnityEngine;
 public class ScoreKeeper : MonoBehaviour
 {
     [SerializeField] private float _streakExpiryTime = 1f;
+    [SerializeField] private int _scoreUnit;
     public static int score { get; private set; }
     private float _lastEnemyKillTime;
     private int _streakCount;
@@ -26,7 +27,7 @@ public class ScoreKeeper : MonoBehaviour
 
         _lastEnemyKillTime = Time.time;
 
-        score += 5 + (int)Mathf.Pow(2, _streakCount);
+        score += _scoreUnit + (int)Mathf.Pow(2, _streakCount);
     }
     private void OnPlayerDeath()
     {

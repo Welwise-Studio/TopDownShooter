@@ -5,18 +5,22 @@ using UnityEngine;
 public class MapGenerator : MonoBehaviour
 {
     [SerializeField] private Map[] _maps;
-    [SerializeField] private int _mapIndex;
+    [SerializeField][Min(0)] private int _mapIndex;
 
-    [SerializeField] private Transform _tilePrefab;
+    [SerializeField] private Transform _defaultTilePrefab;
     [SerializeField] private Transform _obstaclePrefab;
+    [SerializeField] private bool _perimeterCollider;
+    [SerializeField] private bool _perimeterMeshRender;
+    [SerializeField] private float _perimeterHeight = 1f;
+    [SerializeField] private Color _perimeterMeshColor;
     [SerializeField] private Transform _navMeshMaskPrefab;
     [SerializeField] private Transform _mapFloor;
     [SerializeField] private Transform _navMashFloor;
     [SerializeField] private Vector2 _maxMapSize;
 
-    [SerializeField][Range(0, 1)] private float _outlinePercent;
+    //[SerializeField][Range(0, 1)] private float _outlinePercent;
 
-    [SerializeField] private float _tileSize;
+    [SerializeField][Min(0)] private float _tileSize;
 
     private List<Coord> _allTileCoords;
     private Queue<Coord> _shuffledTileCoords;
@@ -68,8 +72,18 @@ public class MapGenerator : MonoBehaviour
             for (int y = 0; y < _currentMap.mapSize.y; y++)
             {
                 Vector3 tilePosition = CoordToPosition(x, y);
-                Transform newTile = Instantiate(_tilePrefab, tilePosition, Quaternion.Euler(Vector3.right * 90));
-                newTile.localScale = Vector3.one * (1 - _outlinePercent) * _tileSize;
+
+                Transform newTile;
+                if (_currentMap.tilePrefab != null)
+                {
+                    newTile = Instantiate(_currentMap.tilePrefab, tilePosition, Quaternion.Euler(Vector3.right * 90));
+                }
+                else
+                {
+                    newTile = Instantiate(_defaultTilePrefab, tilePosition, Quaternion.Euler(Vector3.right * 90));
+                }
+
+                newTile.localScale = Vector3.one * (1 - _currentMap.tileOutlinePercent) * _tileSize;
                 newTile.parent = mapHolder;
                 _tileMap[x, y] = newTile;
             }
@@ -94,12 +108,18 @@ public class MapGenerator : MonoBehaviour
 
                 Vector3 obstaclePosition = CoordToPosition(randomCoord.x, randomCoord.y);
                 Transform newObstacle = Instantiate(_obstaclePrefab, obstaclePosition + Vector3.up * obstacleHeight / 2, Quaternion.identity);
-                newObstacle.localScale = new Vector3((1 - _outlinePercent) * _tileSize, obstacleHeight, (1 - _outlinePercent) * _tileSize);
+                newObstacle.localScale = new Vector3((1 - _currentMap.tileOutlinePercent) * _tileSize, obstacleHeight, (1 - _currentMap.tileOutlinePercent) * _tileSize);
                 newObstacle.parent = mapHolder;
 
                 Renderer obstacleRenderer = newObstacle.GetComponent<Renderer>();
                 Material obstacleMaterial = new Material(obstacleRenderer.sharedMaterial);
                 float colourPercent = randomCoord.y / (float)_currentMap.mapSize.y;
+                //obstacleMaterial.color = Color.Lerp(_currentMap.foregroundColor, _currentMap.backgroundColor, colourPercent);
+                if (!_currentMap.gradientObstacleColor)
+                {
+                    _currentMap.foregroundColor = Random.ColorHSV(0.0f, 1.0f, 0.0f, 1.0f, 0.0f, 1.0f);
+                    _currentMap.backgroundColor = Random.ColorHSV(0.0f, 1.0f, 0.0f, 1.0f, 0.0f, 1.0f);
+                }
                 obstacleMaterial.color = Color.Lerp(_currentMap.foregroundColor, _currentMap.backgroundColor, colourPercent);
                 obstacleRenderer.sharedMaterial = obstacleMaterial;
 
@@ -115,21 +135,42 @@ public class MapGenerator : MonoBehaviour
         _shuffledOpenTileCoords = new Queue<Coord>(Utility.ShuffleArray(allOpenCoords.ToArray(), _currentMap.seed));
 
         //Creating NavMash mask.
+        if (_perimeterCollider)
+        {
+            _navMeshMaskPrefab.GetComponent<BoxCollider>().enabled = true;
+        }
+        else
+        {
+            _navMeshMaskPrefab.GetComponent<BoxCollider>().enabled = false;
+        }
+
+        if (_perimeterMeshRender)
+        {
+            _navMeshMaskPrefab.GetComponent<Renderer>().sharedMaterial.color = _perimeterMeshColor;
+            _navMeshMaskPrefab.GetComponent<MeshRenderer>().enabled = true;
+        }
+        else
+        {
+            _navMeshMaskPrefab.GetComponent<MeshRenderer>().enabled = false;
+        }
+
         Transform maskLeft = Instantiate(_navMeshMaskPrefab, Vector3.left * (_currentMap.mapSize.x + _maxMapSize.x) / 4f * _tileSize, Quaternion.identity);
+        //Transform maskLeft = Instantiate(_navMeshMaskPrefab, Vector3.left * (_currentMap.mapSize.x + 1f) / 2f * _tileSize, Quaternion.identity);
         maskLeft.parent = mapHolder;
-        maskLeft.localScale = new Vector3((_maxMapSize.x - _currentMap.mapSize.x) / 2f, 1, _currentMap.mapSize.y) * _tileSize;
+        maskLeft.localScale = new Vector3((_maxMapSize.x - _currentMap.mapSize.x) / 2f, _perimeterHeight, _currentMap.mapSize.y) * _tileSize;
+        //maskLeft.localScale = new Vector3(1f, 2f, _currentMap.mapSize.y) * _tileSize;
 
         Transform maskRight = Instantiate(_navMeshMaskPrefab, Vector3.right * (_currentMap.mapSize.x + _maxMapSize.x) / 4f * _tileSize, Quaternion.identity);
         maskRight.parent = mapHolder;
-        maskRight.localScale = new Vector3((_maxMapSize.x - _currentMap.mapSize.x) / 2f, 1, _currentMap.mapSize.y) * _tileSize;
+        maskRight.localScale = new Vector3((_maxMapSize.x - _currentMap.mapSize.x) / 2f, _perimeterHeight, _currentMap.mapSize.y) * _tileSize;
 
         Transform maskTop = Instantiate(_navMeshMaskPrefab, Vector3.forward * (_currentMap.mapSize.y + _maxMapSize.y) / 4f * _tileSize, Quaternion.identity);
         maskTop.parent = mapHolder;
-        maskTop.localScale = new Vector3((_maxMapSize.x), 1, (_maxMapSize.y - _currentMap.mapSize.y) / 2f) * _tileSize;
+        maskTop.localScale = new Vector3(_maxMapSize.x, _perimeterHeight, (_maxMapSize.y - _currentMap.mapSize.y) / 2f) * _tileSize;
 
         Transform maskBottom = Instantiate(_navMeshMaskPrefab, Vector3.back * (_currentMap.mapSize.y + _maxMapSize.y) / 4f * _tileSize, Quaternion.identity);
         maskBottom.parent = mapHolder;
-        maskBottom.localScale = new Vector3((_maxMapSize.x), 1, (_maxMapSize.y - _currentMap.mapSize.y) / 2f) * _tileSize;
+        maskBottom.localScale = new Vector3(_maxMapSize.x, _perimeterHeight, (_maxMapSize.y - _currentMap.mapSize.y) / 2f) * _tileSize;
 
         _navMashFloor.localScale = new Vector3(_maxMapSize.x, _maxMapSize.y) * _tileSize;
         _mapFloor.localScale = new Vector3(_currentMap.mapSize.x * _tileSize, _currentMap.mapSize.y * _tileSize);
@@ -238,11 +279,14 @@ public class MapGenerator : MonoBehaviour
     [System.Serializable]
     public class Map
     {
+        public Transform tilePrefab;
+        [Range(0, 1)] public float tileOutlinePercent;
+        public bool gradientObstacleColor;
         public Coord mapSize;
         [Range(0, 1)] public float obstaclePercent;
         public int seed;
-        public float minObstacleHeight;
-        public float maxObstacleHeight;
+        [Min(0)] public float minObstacleHeight;
+        [Min(0)] public float maxObstacleHeight;
         public Color foregroundColor;
         public Color backgroundColor;
 

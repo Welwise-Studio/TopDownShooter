@@ -7,16 +7,17 @@ using UnityEngine.AI;
 public class Enemy : LivingEntity
 {
     public static event System.Action OnDeathStatic;
-    public enum State { Idle, Chasing, Attacking };
+    public enum State { Spawning, Idle, Chasing, Attacking, TakeDamage };
     public State CurrentState { get; private set; }
-
+    [SerializeField] private GameObject _dropItemPrefab;
+    [SerializeField] [Tooltip("Chance to drop item after the enemy die.")] private float _dropItemChance = 10f;
     [SerializeField] private ParticleSystem _deathEffect;
     [SerializeField] private ParticleSystem _takeDamageEffect;
 
     private LivingEntity _targetEntity;
 
     [SerializeField] private float _pathRefrashRate = 0.25f;
-    private NavMeshAgent _pathfinder;
+    public NavMeshAgent _pathfinder { get; private set; }
     private Transform _target;
     //private Material _skinMaterial;
     //private Color _originalColor;
@@ -28,15 +29,13 @@ public class Enemy : LivingEntity
 
     private float _enemyCollisionRadius;
     private float _targetCollisionRadius;
-
     private bool _hasTarget;
 
-    private Animator _enemyAnimator;
+
+    #region MONO
     private void Awake()
     {
         _pathfinder = GetComponent<NavMeshAgent>();
-        _enemyAnimator = GetComponent<Animator>();
-        _enemyAnimator.SetFloat("fSpeed", _pathfinder.speed);
 
         if (GameObject.FindObjectOfType<Player>() != null)
         {
@@ -80,12 +79,12 @@ public class Enemy : LivingEntity
             }
         }
     }
+    #endregion
+
     private IEnumerator Attack()
     {
         CurrentState = State.Attacking;
         _pathfinder.enabled = false;
-
-        _enemyAnimator.SetBool("bAttack", true);
 
         Vector3 originalPosition = transform.position;
         Vector3 dirToTarget = (_target.position - transform.position).normalized;
@@ -114,11 +113,10 @@ public class Enemy : LivingEntity
 
         //_skinMaterial.color = _originalColor;
 
-        _enemyAnimator.SetBool("bAttack", false);
         CurrentState = State.Chasing;
         _pathfinder.enabled = true;
     }
-    public void SetCharacteristics(float moveSpeed, int hitsToKillPlayer, float enemyHealth, Color skinColor)
+    public void SetCharacteristics(float moveSpeed, int hitsToKillPlayer, float enemyHealth, Color skinColor, GameObject skin)
     {
         _pathfinder.speed = moveSpeed;
 
@@ -137,6 +135,11 @@ public class Enemy : LivingEntity
         ParticleSystem.MainModule particleSystemMainDeathEffect = _deathEffect.main;
         particleSystemMainDeathEffect.startColor = new Color(skinColor.r, skinColor.g, skinColor.b, 1);
 
+        Instantiate(skin,
+        this.transform.position - Vector3.up,
+        Quaternion.identity,
+        this.transform).AddComponent<EnemyAnimator>();
+
         // _skinMaterial = GetComponent<Renderer>().material;
         // _skinMaterial.color = skinColor;
         // _originalColor = _skinMaterial.color;
@@ -144,20 +147,23 @@ public class Enemy : LivingEntity
     }
     public override void TakeHit(float damage, Vector3 hitPoint, Vector3 hitDirection)
     {
-        Debug.Log("DAMAGE");
         AudioManager.Instance.PlaySound("Impact", transform.position);
 
         if (damage >= health && !dead)
         {
             OnDeathStatic?.Invoke();
 
-            _enemyAnimator.SetTrigger("tIsDead");
             AudioManager.Instance.PlaySound("Enemy Death", transform.position);
+
             Destroy(Instantiate(_deathEffect.gameObject, hitPoint, Quaternion.FromToRotation(Vector3.forward, hitDirection)), _deathEffect.main.startLifetime.constant);
+            
+            if (Utility.DropLootChance(_dropItemChance))
+            {
+                Instantiate(_dropItemPrefab, hitPoint, _dropItemPrefab.transform.rotation);
+            }
         }
 
-        Destroy(Instantiate(_takeDamageEffect.gameObject, hitPoint, Quaternion.FromToRotation(Vector3.forward, hitDirection)), _deathEffect.main.startLifetime.constant);
-
+        Destroy(Instantiate(_takeDamageEffect.gameObject, hitPoint, Quaternion.FromToRotation(Vector3.forward, hitDirection)), 10f);
 
         base.TakeHit(damage, hitPoint, hitDirection);
     }

@@ -28,7 +28,17 @@ public class Projectile : MonoBehaviour
     }
     public void SetSpeed(float newSpeed)
     {
-        _speed = newSpeed;
+        if (newSpeed > 0)
+        {
+            _speed = newSpeed;
+        }
+    }
+    public void SetDamage(float newDamage)
+    {
+        if (newDamage > 0)
+        {
+            _damage = newDamage;
+        }
     }
     private void BulletMove()
     {

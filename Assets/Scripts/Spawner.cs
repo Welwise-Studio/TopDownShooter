@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private Enemy[] _enemyPrefabs;
-    public Wave[] waves;
+    [Header("Enemy Spawn:")]
+    [Space(10)]
+    [SerializeField] private Enemy _enemyPrefab;
+    [field: SerializeField] public Wave[] waves { get; private set; }
 
     private LivingEntity _playerEntity;
     private Transform _playerT;
@@ -60,17 +62,17 @@ public class Spawner : MonoBehaviour
                 StartCoroutine("SpawnEnemy");
             }
         }
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         if (Input.GetKeyUp(KeyCode.Return))
         {
             StopCoroutine("SpawnEnemy");
-            foreach(Enemy enemy in FindObjectsOfType<Enemy>())
+            foreach (Enemy enemy in FindObjectsOfType<Enemy>())
             {
                 Destroy(enemy);
             }
             NextWave();
         }
-        #endif
+#endif
     }
     private IEnumerator SpawnEnemy()
     {
@@ -96,14 +98,17 @@ public class Spawner : MonoBehaviour
             yield return null;
         }
 
-        int rEnemyPrefab = Random.Range(0, _enemyPrefabs.Length - 1);
-        Enemy spawnedEnemy = Instantiate(_enemyPrefabs[rEnemyPrefab], spawnTile.position + Vector3.up, Quaternion.identity);
+        int rEnemyPrefab = Random.Range(0, _currentWave.enemyModels.Length - 1);
+
+        Enemy spawnedEnemy = Instantiate(_enemyPrefab, spawnTile.position + Vector3.up, Quaternion.identity);
 
         spawnedEnemy.OnDeath += OnEnemyDeath;
-        spawnedEnemy.SetCharacteristics(_currentWave.moveSpeed, 
-        _currentWave.hitsToKillPlayer, 
-        _currentWave.enemyHealth, 
-        _currentWave.skinColor);
+
+        spawnedEnemy.SetCharacteristics(_currentWave.moveSpeed,
+        _currentWave.hitsToKillPlayer,
+        _currentWave.enemyHealth,
+        _currentWave.bloodColor,
+        _currentWave.enemyModels[rEnemyPrefab]);
     }
     private void OnPlayerDeath()
     {
@@ -147,13 +152,14 @@ public class Spawner : MonoBehaviour
     [System.Serializable]
     public class Wave
     {
+        public GameObject[] enemyModels;
         public bool infinite;
         public int enemyCount;
         public float timeBetweenSpawns;
 
         public float moveSpeed;
-        public int hitsToKillPlayer;
+        [Tooltip("Hits / Player Health")] public int hitsToKillPlayer;
         public float enemyHealth;
-        public Color skinColor;
+        public Color bloodColor = Color.green;
     }
 }

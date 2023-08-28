@@ -59,8 +59,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e65563ac035adf04d8e93f817fca1d15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mainTheme: {fileID: 8300000, guid: 6e6413342fb7b4d4599a2c9d985383b4, type: 3}
-  _menuTheme: {fileID: 8300000, guid: 40f7d04180524bd45aaf5ba903af0dae, type: 3}
+  _menuTheme: {fileID: 8300000, guid: 858b8b900e88918458f75bd6ef33c1ab, type: 3}
+  _mainThemes:
+  - {fileID: 8300000, guid: 3920b93029a844842ad719926cbd6d62, type: 3}
+  - {fileID: 8300000, guid: 903d1c9aad6a00044b603ae02526ddd0, type: 3}
+  - {fileID: 8300000, guid: ff3a3164063975b4399664bd9dc63ae7, type: 3}
 --- !u!114 &3068352174011314079
 MonoBehaviour:
   m_ObjectHideFlags: 0

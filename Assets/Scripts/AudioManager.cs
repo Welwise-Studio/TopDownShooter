@@ -63,9 +63,9 @@ public class AudioManager : MonoBehaviour
             _playerT = FindObjectOfType<Player>().transform;
         }
 
-        masterVolumePercent = PlayerPrefs.GetFloat("Master Volume", 1);
-        sfxVolumePercent = PlayerPrefs.GetFloat("SFX Volume", 1);
-        musicVolumePercent = PlayerPrefs.GetFloat("Music Volume", 1);
+        masterVolumePercent = PlayerPrefs.GetFloat("Master Volume", 0.5f);
+        musicVolumePercent = PlayerPrefs.GetFloat("Music Volume", 0.25f);
+        sfxVolumePercent = PlayerPrefs.GetFloat("SFX Volume", 0.5f);
         PlayerPrefs.Save();
     }
     private void Update()

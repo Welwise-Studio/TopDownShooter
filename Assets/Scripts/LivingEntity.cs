@@ -21,9 +21,28 @@ public class LivingEntity : MonoBehaviour, IDamageble
     {
         health -= damage;
 
+        if (GetComponent<Player>() != null)
+        {
+            if (Camera.main.GetComponent<CameraShaker>().isEnable)
+            {
+                Camera.main.GetComponent<CameraShaker>().Shake();
+            }
+        }
+
         if (health <= 0 && !dead)
         {
             Die();
+        }
+    }
+    public void AddHealth(float addHealth)
+    {
+        if ((addHealth + health) >=  startingHealth)
+        {
+            health = startingHealth;
+        }
+        else
+        {
+            health += addHealth;
         }
     }
     [ContextMenu("Self Destruct")]

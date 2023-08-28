@@ -105,6 +105,10 @@ public class Menu : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
         PlayerPrefs.Save();
+
+#if UNITY_EDITOR
         UnityEditor.EditorApplication.ExitPlaymode();
+        Debug.Log("RESET DATA SUCCESS");
+#endif
     }
 }

@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MusicManager : MonoBehaviour
 {
-    [SerializeField] private AudioClip _mainTheme;
     [SerializeField] private AudioClip _menuTheme;
+    [SerializeField] private AudioClip[] _mainThemes;
     private string _sceneName;
 
     private void OnEnable()
@@ -37,7 +37,7 @@ public class MusicManager : MonoBehaviour
         }
         else if (_sceneName == "Game")
         {
-            clipToPlay = _mainTheme;
+            clipToPlay = _mainThemes[Random.Range(0, _mainThemes.Length)];
         }
 
         if (clipToPlay != null)

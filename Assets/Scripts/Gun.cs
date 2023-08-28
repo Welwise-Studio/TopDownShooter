@@ -11,6 +11,7 @@ public class Gun : MonoBehaviour
     [SerializeField] private Projectile _projectile;
     [SerializeField] private float _firerate = 100f;
     [SerializeField] [Tooltip("Bullet speed")] private float _muzzleVelocity = 35f;
+    [SerializeField] private float _bulletDamage = 1f;
     [SerializeField] private int _burstCount;
     [SerializeField] private int _projectilesPerMag;
     [SerializeField] private float _reloadTime = 0.3f;
@@ -31,7 +32,7 @@ public class Gun : MonoBehaviour
 
     private bool _triggerReleasedSinceLastShot;
     private int _shotRemainingInBurst;
-    private int _projectilesRemainingInMag;
+    public int _projectilesRemainingInMag { get; private set; }
     private bool _isReloading;
 
     private Vector3 _recoilSmoothDampVelocity;
@@ -96,9 +97,10 @@ public class Gun : MonoBehaviour
 
                 Projectile newProjectile = Instantiate(_projectile, _projectileSpawn[i].position, _projectileSpawn[i].rotation);
                 newProjectile.SetSpeed(_muzzleVelocity);
+                newProjectile.SetDamage(_bulletDamage);
             }
 
-            Instantiate(_shell, _shellEjection.position, _shellEjection.rotation);
+            Instantiate(_shell, _shellEjection.position, _shell.rotation);
             _muzzleFlash.Activate();
             transform.localPosition -= Vector3.forward * Random.Range(_kickMinMax.x, _kickMinMax.y);
             _recoilAngle += Random.Range(_recoilAngleMinMax.x, _recoilAngleMinMax.y);
@@ -132,7 +134,7 @@ public class Gun : MonoBehaviour
             percent += Time.deltaTime * reloadSpeed;
             float interpolation = (-Mathf.Pow(percent, 2) + percent) * 4;
             float reloadAngle = Mathf.Lerp(0, maxReloadAngle, interpolation);
-            transform.localEulerAngles = initialRot + Vector3.left * reloadAngle;
+            //transform.localEulerAngles = initialRot + Vector3.left * reloadAngle;
 
             yield return null;
         }

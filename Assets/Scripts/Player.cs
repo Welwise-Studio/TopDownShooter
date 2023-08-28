@@ -1,14 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerController))]
 [RequireComponent(typeof(GunController))]
 public class Player : LivingEntity
 {
+    [SerializeField] private Animator _playerAnimator;
     [SerializeField] private float _moveSpeed = 5f;
     [SerializeField] private Crosshairs _crosshairs;
-    [SerializeField] private Animator _playerAnimator;
+    [SerializeField] private float _playerFallBound = -10.0f;
     private PlayerController _playerControllerScript;
     private GunController _gunControllerScript;
     private Camera _cameraMain;
@@ -17,6 +16,7 @@ public class Player : LivingEntity
         _playerControllerScript = GetComponent<PlayerController>();
         _gunControllerScript = GetComponent<GunController>();
         _cameraMain = Camera.main;
+
         FindObjectOfType<Spawner>().OnNewWave += OnNewWave;
     }
     protected override void Start()
@@ -31,19 +31,41 @@ public class Player : LivingEntity
 
         WeaponInput();
 
-        CheckPlayerIsFall(-10);
+        CheckPlayerIsFall();
+
+        CheckAmmoForReload();
     }
     public void OnNewWave(int waveNumber)
     {
-        health = startingHealth;
-        _gunControllerScript.EquipGun(waveNumber - 1);
+        //health = startingHealth;
+        //_gunControllerScript.EquipGun(waveNumber - 1);
+        _gunControllerScript.EquipGun(0);
+    }
+    private void CheckAmmoForReload()
+    {
+        if (_gunControllerScript._equippedGun._projectilesRemainingInMag == 0)
+        {
+            _playerAnimator.SetBool("isReloadWeapon_b", true);
+        }
+        else
+        {
+            _playerAnimator.SetBool("isReloadWeapon_b", false);
+        }
     }
     private void MovementInput()
     {
         Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
         Vector3 moveVelocity = moveInput.normalized * _moveSpeed;
-        //_playerAnimator.SetFloat("isRun_f", _moveSpeed);
         _playerControllerScript.Move(moveVelocity);
+
+        if (moveVelocity != Vector3.zero)
+        {
+            _playerAnimator.SetBool("isRun_b", true);
+        }
+        else
+        {
+            _playerAnimator.SetBool("isRun_b", false);
+        }
     }
     private void LookInput()
     {
@@ -78,9 +100,9 @@ public class Player : LivingEntity
             _gunControllerScript.Reload();
         }
     }
-    private void CheckPlayerIsFall(float yBound)
+    private void CheckPlayerIsFall()
     {
-        if (transform.position.y < yBound)
+        if (transform.position.y < _playerFallBound)
         {
             TakeDamage(health);
         }
