@@ -30,7 +30,7 @@ public static class Utility
 
         return array;
     }
-    public static bool DropLootChance(float chancePercent)
+    public static bool DropChance(float chancePercent)
     {
         System.Random prng = new System.Random();
 

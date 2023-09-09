@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+    public event System.Action<int> OnNewWave;
+
     [Header("Enemy Spawn:")]
     [Space(10)]
     [SerializeField] private Enemy _enemyPrefab;
+    [SerializeField] private GameObject[] _defaultEnemyModels;
     [field: SerializeField] public Wave[] waves { get; private set; }
 
     private LivingEntity _playerEntity;
-    private Transform _playerT;
+    private Transform _playerTransform;
 
     private Wave _currentWave;
     private int _currentWaveNumber;
@@ -19,23 +22,22 @@ public class Spawner : MonoBehaviour
     private int _enemiesRemeiningAlives;
     private float _nextSpawnTime;
     private bool _isCamping;
-
     private MapGenerator _map;
-
-    private float _timeBetweenCampingChecks = 2f;
-    private float _campThresholdDistance = 1.5f;
+    [SerializeField][Tooltip("Disable enemy spawn")] private bool _isDisabled;
+    [SerializeField][Tooltip("Seconds to spawn enemy under player")] private float _timeBetweenCampingChecks = 2f;
+    [SerializeField] private float _campThresholdDistance = 1.5f;
     private float _nextCampCheckTime;
     private Vector3 _campPositionOld;
-
-    private bool _isDisabled;
-
-    public event System.Action<int> OnNewWave;
+    private void OnDisable()
+    {
+        _playerEntity.OnDeath -= OnPlayerDeath;
+    }
     private void Start()
     {
         _playerEntity = FindObjectOfType<Player>();
-        _playerT = _playerEntity.transform;
+        _playerTransform = _playerEntity.transform;
         _nextCampCheckTime = _timeBetweenCampingChecks + Time.time;
-        _campPositionOld = _playerT.position;
+        _campPositionOld = _playerTransform.position;
 
         _playerEntity.OnDeath += OnPlayerDeath;
 
@@ -50,8 +52,8 @@ public class Spawner : MonoBehaviour
             {
                 _nextCampCheckTime = Time.time + _timeBetweenCampingChecks;
 
-                _isCamping = (Vector3.Distance(_playerT.position, _campPositionOld) < _campThresholdDistance);
-                _campPositionOld = _playerT.position;
+                _isCamping = Vector3.Distance(_playerTransform.position, _campPositionOld) < _campThresholdDistance;
+                _campPositionOld = _playerTransform.position;
             }
 
             if ((_enemiesRemainingToSpawn > 0 || _currentWave.infinite) && Time.time > _nextSpawnTime)
@@ -63,7 +65,7 @@ public class Spawner : MonoBehaviour
             }
         }
 #if UNITY_EDITOR
-        if (Input.GetKeyUp(KeyCode.Return))
+        if (Input.GetKeyUp(KeyCode.Return)) //Next wave to press ENTER.
         {
             StopCoroutine("SpawnEnemy");
             foreach (Enemy enemy in FindObjectsOfType<Enemy>())
@@ -83,7 +85,7 @@ public class Spawner : MonoBehaviour
 
         if (_isCamping)
         {
-            spawnTile = _map.GetTileFromPosition(_playerT.position);
+            spawnTile = _map.GetTileFromPosition(_playerTransform.position);
         }
 
         Material tileMat = spawnTile.GetComponent<Renderer>().material;
@@ -98,17 +100,18 @@ public class Spawner : MonoBehaviour
             yield return null;
         }
 
-        int rEnemyPrefab = Random.Range(0, _currentWave.enemyModels.Length - 1);
 
         Enemy spawnedEnemy = Instantiate(_enemyPrefab, spawnTile.position + Vector3.up, Quaternion.identity);
 
         spawnedEnemy.OnDeath += OnEnemyDeath;
 
+        int rEnemyPrefab = Random.Range(0, _currentWave.enemyModels.Length == 0 || _currentWave.enemyModels == null ? _defaultEnemyModels.Length - 1 : _currentWave.enemyModels.Length - 1);
+
         spawnedEnemy.SetCharacteristics(_currentWave.moveSpeed,
         _currentWave.hitsToKillPlayer,
         _currentWave.enemyHealth,
         _currentWave.bloodColor,
-        _currentWave.enemyModels[rEnemyPrefab]);
+        _currentWave.enemyModels.Length == 0 || _currentWave.enemyModels == null ? _defaultEnemyModels[rEnemyPrefab] : _currentWave.enemyModels[rEnemyPrefab]);
     }
     private void OnPlayerDeath()
     {
@@ -125,7 +128,7 @@ public class Spawner : MonoBehaviour
     }
     private void ResetPlayerPosition()
     {
-        _playerT.position = _map.GetTileFromPosition(Vector3.zero).position + Vector3.up * 3f;
+        _playerTransform.position = _map.GetTileFromPosition(Vector3.zero).position + Vector3.up * 1f;
     }
     private void NextWave()
     {
@@ -154,12 +157,11 @@ public class Spawner : MonoBehaviour
     {
         public GameObject[] enemyModels;
         public bool infinite;
-        public int enemyCount;
-        public float timeBetweenSpawns;
-
-        public float moveSpeed;
-        [Tooltip("Hits / Player Health")] public int hitsToKillPlayer;
-        public float enemyHealth;
+        [Min(0)] public int enemyCount;
+        [Min(0.1f)] public float timeBetweenSpawns;
+        [Min(0)] public float moveSpeed;
+        [Min(1)] [Tooltip("Hits / Player Health")] public int hitsToKillPlayer;
+        [Min(1)] public float enemyHealth;
         public Color bloodColor = Color.green;
     }
 }

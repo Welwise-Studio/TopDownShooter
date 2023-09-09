@@ -7,8 +7,8 @@ public class MapGenerator : MonoBehaviour
     [SerializeField] private Map[] _maps;
     [SerializeField][Min(0)] private int _mapIndex;
 
-    [SerializeField] private Transform _defaultTilePrefab;
-    [SerializeField] private Transform _obstaclePrefab;
+    [SerializeField] private Transform[] _defaultTilePrefabs;
+    [SerializeField] private Transform[] _obstaclePrefabs;
     [SerializeField] private bool _perimeterCollider;
     [SerializeField] private bool _perimeterMeshRender;
     [SerializeField] private float _perimeterHeight = 1f;
@@ -74,13 +74,16 @@ public class MapGenerator : MonoBehaviour
                 Vector3 tilePosition = CoordToPosition(x, y);
 
                 Transform newTile;
-                if (_currentMap.tilePrefab != null)
+                
+                if (_currentMap.tilePrefabs != null)
                 {
-                    newTile = Instantiate(_currentMap.tilePrefab, tilePosition, Quaternion.Euler(Vector3.right * 90));
+                    int rTilePrefab = Random.Range(0, _currentMap.tilePrefabs.Length);
+                    newTile = Instantiate(_currentMap.tilePrefabs[rTilePrefab], tilePosition, Quaternion.Euler(Vector3.right * 90));
                 }
                 else
                 {
-                    newTile = Instantiate(_defaultTilePrefab, tilePosition, Quaternion.Euler(Vector3.right * 90));
+                    int rTilePrefab = Random.Range(0, _defaultTilePrefabs.Length);
+                    newTile = Instantiate(_defaultTilePrefabs[rTilePrefab], tilePosition, Quaternion.Euler(Vector3.right * 90));
                 }
 
                 newTile.localScale = Vector3.one * (1 - _currentMap.tileOutlinePercent) * _tileSize;
@@ -106,12 +109,15 @@ public class MapGenerator : MonoBehaviour
             {
                 float obstacleHeight = Mathf.Lerp(_currentMap.minObstacleHeight, _currentMap.maxObstacleHeight, (float)prng.NextDouble());
 
+                int rObstacle = Random.Range(0, _obstaclePrefabs.Length - 1);
                 Vector3 obstaclePosition = CoordToPosition(randomCoord.x, randomCoord.y);
-                Transform newObstacle = Instantiate(_obstaclePrefab, obstaclePosition + Vector3.up * obstacleHeight / 2, Quaternion.identity);
+                Transform newObstacle = Instantiate(_obstaclePrefabs[rObstacle], obstaclePosition + Vector3.up * obstacleHeight / 2, Quaternion.identity);
                 newObstacle.localScale = new Vector3((1 - _currentMap.tileOutlinePercent) * _tileSize, obstacleHeight, (1 - _currentMap.tileOutlinePercent) * _tileSize);
+                newObstacle.localRotation = Quaternion.Euler(0, 90 * Random.Range(0, 6), 0);
                 newObstacle.parent = mapHolder;
 
-                Renderer obstacleRenderer = newObstacle.GetComponent<Renderer>();
+                //Renderer obstacleRenderer = newObstacle.GetComponent<Renderer>();
+                Renderer obstacleRenderer = newObstacle.GetComponentInChildren<Renderer>();
                 Material obstacleMaterial = new Material(obstacleRenderer.sharedMaterial);
                 float colourPercent = randomCoord.y / (float)_currentMap.mapSize.y;
                 //obstacleMaterial.color = Color.Lerp(_currentMap.foregroundColor, _currentMap.backgroundColor, colourPercent);
@@ -279,7 +285,7 @@ public class MapGenerator : MonoBehaviour
     [System.Serializable]
     public class Map
     {
-        public Transform tilePrefab;
+        public Transform[] tilePrefabs;
         [Range(0, 1)] public float tileOutlinePercent;
         public bool gradientObstacleColor;
         public Coord mapSize;

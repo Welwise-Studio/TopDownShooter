@@ -5,8 +5,7 @@ using UnityEngine;
 public class Gun : MonoBehaviour
 {
     public enum FireMode { Auto, Burst, Single };
-    public FireMode fireMode;
-
+    [field: SerializeField] public FireMode fireMode { get; private set; } = FireMode.Auto;
     [SerializeField] private Transform[] _projectileSpawn;
     [SerializeField] private Projectile _projectile;
     [SerializeField] private float _firerate = 100f;
@@ -33,7 +32,7 @@ public class Gun : MonoBehaviour
     private bool _triggerReleasedSinceLastShot;
     private int _shotRemainingInBurst;
     public int _projectilesRemainingInMag { get; private set; }
-    private bool _isReloading;
+    public bool _isReloading { get; private set; }
 
     private Vector3 _recoilSmoothDampVelocity;
     private float _recoilRotSmoothDampVelocity;

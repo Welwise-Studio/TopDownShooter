@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8885034706304640927}
-  - component: {fileID: 2476267403907255185}
+  - component: {fileID: -3335970163953993819}
   m_Layer: 0
   m_Name: Shotgun
   m_TagString: Untagged
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 9125665378928508557}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2476267403907255185
+--- !u!114 &-3335970163953993819
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,13 +42,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5848116865476420107}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecc4359910dd9384b92abc6af9b2339b, type: 3}
+  m_Script: {fileID: 11500000, guid: beb68d626230a3444acd3bab3290435b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <dropChance>k__BackingField: 25
-  <health>k__BackingField: 0
-  <gun>k__BackingField: 2
-  <defaultCoinAmount>k__BackingField: 0
+  currentItemType: 0
 --- !u!1001 &9125665378928370701
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using Codice.Client.Common.GameUI;
 
 [CustomEditor(typeof(MapGenerator))]
 public class MapEditor : Editor

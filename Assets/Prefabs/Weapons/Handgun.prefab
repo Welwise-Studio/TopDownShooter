@@ -167,11 +167,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13f8475819068ad408075a04224828b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireMode: 2
+  <fireMode>k__BackingField: 0
   _projectileSpawn:
   - {fileID: 1126930934068060778}
   _projectile: {fileID: -5138646287536290796, guid: 77f205d6d2fe9334b8c75b48da9ab758, type: 3}
-  _firerate: 100
+  _firerate: 500
   _muzzleVelocity: 20
   _bulletDamage: 2.5
   _burstCount: 3

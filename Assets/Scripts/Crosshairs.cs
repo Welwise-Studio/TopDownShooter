@@ -11,6 +11,8 @@ public class Crosshairs : MonoBehaviour
     [SerializeField] private LayerMask _targetMask;
     [SerializeField] private Color _highlightColor;
     private Color _originalColor;
+    [SerializeField] private Color _ammoCountReloadColor;
+    private Color _ammoCountTextOriginalColor;
 
     [Header("Crosshair Ammo Text")]
     [SerializeField] private GunController _gunControllerScript;
@@ -19,6 +21,7 @@ public class Crosshairs : MonoBehaviour
     {
         Cursor.visible = false;
         _originalColor = _crosshairHighlight.color;
+        _ammoCountTextOriginalColor = _crosshairAmmoCountText.color;
     }
     void Update()
     {
@@ -44,14 +47,17 @@ public class Crosshairs : MonoBehaviour
             _crosshairHighlight.color = _originalColor;
         }
     }
+
     private void CheckAmmo()
     {
-        if (_gunControllerScript._equippedGun._projectilesRemainingInMag == 0)
+        if (_gunControllerScript._equippedGun._isReloading)
         {
+            _crosshairAmmoCountText.color = _ammoCountReloadColor;
             _crosshairAmmoCountText.SetText("R");
         }
         else
         {
+            _crosshairAmmoCountText.color = _ammoCountTextOriginalColor;
             _crosshairAmmoCountText.SetText(_gunControllerScript._equippedGun._projectilesRemainingInMag.ToString());
         }
     }

@@ -7,10 +7,9 @@ using UnityEngine.AI;
 public class Enemy : LivingEntity
 {
     public static event System.Action OnDeathStatic;
+    public static event System.Action<Vector3> OnDeathStaticPosition;
     public enum State { Spawning, Idle, Chasing, Attacking, TakeDamage };
-    public State CurrentState { get; private set; }
-    [SerializeField] private GameObject _dropItemPrefab;
-    [SerializeField] [Tooltip("Chance to drop item after the enemy die.")] private float _dropItemChance = 10f;
+    public State currentState { get; private set; }
     [SerializeField] private ParticleSystem _deathEffect;
     [SerializeField] private ParticleSystem _takeDamageEffect;
 
@@ -37,7 +36,7 @@ public class Enemy : LivingEntity
     {
         _pathfinder = GetComponent<NavMeshAgent>();
 
-        if (GameObject.FindObjectOfType<Player>() != null)
+        if (FindObjectOfType<Player>() != null)
         {
             _hasTarget = true;
 
@@ -52,9 +51,11 @@ public class Enemy : LivingEntity
     {
         base.Start();
 
+        SetState(State.Spawning);
+
         if (_hasTarget)
         {
-            CurrentState = State.Chasing;
+            //currentState = State.Chasing;
 
             _targetEntity.OnDeath += OnTargetDeath;
 
@@ -80,10 +81,9 @@ public class Enemy : LivingEntity
         }
     }
     #endregion
-
     private IEnumerator Attack()
     {
-        CurrentState = State.Attacking;
+        SetState(State.Attacking);
         _pathfinder.enabled = false;
 
         Vector3 originalPosition = transform.position;
@@ -105,16 +105,20 @@ public class Enemy : LivingEntity
                 _targetEntity.TakeDamage(damage);
             }
             percent += Time.deltaTime * attackSpeed;
-            float interpolation = (-Mathf.Pow(percent, 2) + percent) * 4;
-            transform.position = Vector3.Lerp(originalPosition, attackPosition, interpolation);
+            //float interpolation = (-Mathf.Pow(percent, 2) + percent) * 4;
+            //transform.position = Vector3.Lerp(originalPosition, attackPosition, interpolation);
 
             yield return null;
         }
 
         //_skinMaterial.color = _originalColor;
 
-        CurrentState = State.Chasing;
+        SetState(State.Chasing);
         _pathfinder.enabled = true;
+    }
+    public void SetState(State state)
+    {
+        currentState = state;
     }
     public void SetCharacteristics(float moveSpeed, int hitsToKillPlayer, float enemyHealth, Color skinColor, GameObject skin)
     {
@@ -147,36 +151,37 @@ public class Enemy : LivingEntity
     }
     public override void TakeHit(float damage, Vector3 hitPoint, Vector3 hitDirection)
     {
-        AudioManager.Instance.PlaySound("Impact", transform.position);
-
-        if (damage >= health && !dead)
+        if (currentState != State.Spawning)
         {
-            OnDeathStatic?.Invoke();
+            AudioManager.Instance.PlaySound("Impact", transform.position);
 
-            AudioManager.Instance.PlaySound("Enemy Death", transform.position);
-
-            Destroy(Instantiate(_deathEffect.gameObject, hitPoint, Quaternion.FromToRotation(Vector3.forward, hitDirection)), _deathEffect.main.startLifetime.constant);
-            
-            if (Utility.DropLootChance(_dropItemChance))
+            if (damage >= health && !dead)
             {
-                Instantiate(_dropItemPrefab, hitPoint, _dropItemPrefab.transform.rotation);
+                OnDeathStatic?.Invoke();
+                OnDeathStaticPosition?.Invoke(transform.position);
+
+                AudioManager.Instance.PlaySound("Enemy Death", transform.position);
+
+                Destroy(Instantiate(_deathEffect.gameObject, hitPoint, Quaternion.FromToRotation(Vector3.forward, hitDirection)), _deathEffect.main.startLifetime.constant);
             }
+
+            SetState(State.TakeDamage);
+
+            Destroy(Instantiate(_takeDamageEffect.gameObject, hitPoint, Quaternion.FromToRotation(Vector3.forward, hitDirection)), _takeDamageEffect.main.startLifetime.constant);
+
+            base.TakeHit(damage, hitPoint, hitDirection);
         }
-
-        Destroy(Instantiate(_takeDamageEffect.gameObject, hitPoint, Quaternion.FromToRotation(Vector3.forward, hitDirection)), 10f);
-
-        base.TakeHit(damage, hitPoint, hitDirection);
     }
     private void OnTargetDeath()
     {
         _hasTarget = false;
-        CurrentState = State.Idle;
+        SetState(State.Idle);
     }
     private IEnumerator UpdatePath()
     {
         while (_hasTarget)
         {
-            if (CurrentState == State.Chasing)
+            if (currentState == State.Chasing)
             {
                 Vector3 dirToTarget = (_target.position - transform.position).normalized;
                 Vector3 targetPosition = _target.position - dirToTarget * (_enemyCollisionRadius + _targetCollisionRadius + _attackDistanceThreshold / 2);

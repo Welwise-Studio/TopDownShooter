@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class ScoreKeeper : MonoBehaviour
 {
-    [SerializeField] private float _streakExpiryTime = 1f;
-    [SerializeField] private int _scoreUnit;
+    [SerializeField] private float _streakExpiryTime = 2f;
+    [SerializeField] private int _scoreUnit = 1;
     public static int score { get; private set; }
     private float _lastEnemyKillTime;
     private int _streakCount;
     private void Start()
     {
         Enemy.OnDeathStatic += OnEnemyKilled;
+
         FindObjectOfType<Player>().OnDeath += OnPlayerDeath;
     }
     private void OnEnemyKilled()

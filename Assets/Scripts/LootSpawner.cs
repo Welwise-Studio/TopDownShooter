@@ -1,54 +1,57 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 public class LootSpawner : MonoBehaviour
 {
-    [SerializeField] [Tooltip("Seconds")] private float _objectDestroyTimeout = 10f;
-    [SerializeField] private DropItem _defaultCoin;
-    [SerializeField] private DropItem[] _dropItemPrefabs;
-    private int _health;
-    private int _gun;
-    private void OnEnable()
-    {
-        FindObjectOfType<Spawner>().OnNewWave += OnNewWave;
-    }
-    private void OnDisable()
-    {
-        FindObjectOfType<Spawner>().OnNewWave -= OnNewWave;
-    }
+    [SerializeField] private float _dropChance = 100f;
+    [SerializeField] private DropItem[] _dropItems;
+    [SerializeField] private GameObject _dropEffect;
+    [SerializeField][Tooltip("Seconds to destroy item")] private float _objectDestroyTimeout = 10f;
+    private readonly List<GameObject> _spawnObjects = new List<GameObject>();
     private void Start()
     {
-        int rDropItemPrefab = Random.Range(0, _dropItemPrefabs.Length);
+        FindObjectOfType<Spawner>().OnNewWave += OnNewWave;
+        Enemy.OnDeathStaticPosition += OnEnemyKilled;
+    }
+    private void OnEnemyKilled(Vector3 position)
+    {
+        if (Utility.DropChance(this._dropChance))
+        {
+            int rDropItemPrefab = UnityEngine.Random.Range(0, _dropItems.Length);
 
-        if (Utility.DropLootChance(_dropItemPrefabs[rDropItemPrefab].dropChance))
-        {
-            SetItem(_dropItemPrefabs[rDropItemPrefab]);
-        }
-        else
-        {
-            SetItem(_defaultCoin);
+            if (Utility.DropChance(_dropItems[rDropItemPrefab]._dropChance))
+            {
+                SetItem(_dropItems[rDropItemPrefab], position);
+            }
         }
     }
-    public void SetItem(DropItem model)
+    public void SetItem(DropItem dropItem, Vector3 spawnPosition)
     {
-        Instantiate(model.gameObject, this.transform.position, model.transform.rotation, this.transform);
-        this._health = model.health;
-        this._gun = model.gun;
-        Destroy(gameObject, _objectDestroyTimeout);
+        spawnPosition = new Vector3(spawnPosition.x, 0f, spawnPosition.z);
+
+        GameObject item = new GameObject();
+        _spawnObjects.Add(item);
+
+        Instantiate(_dropEffect, spawnPosition, dropItem.transform.rotation, item.transform);
+        Instantiate(dropItem, spawnPosition, dropItem.transform.rotation, item.transform);
+
+        Destroy(item, _objectDestroyTimeout);
     }
     private void OnNewWave(int waveNumber)
     {
-        Destroy(gameObject);
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.GetComponent<Player>() != null)
+        if (_spawnObjects.Count != 0)
         {
-            other.gameObject.GetComponent<GunController>().EquipGun(_gun);
-            other.gameObject.GetComponent<Player>().AddHealth(_health);
-
-            Destroy(gameObject);
+            foreach (GameObject item in _spawnObjects)
+            {
+                if (item != null)
+                {
+                    Destroy(item);
+                }
+            }
         }
     }
 }

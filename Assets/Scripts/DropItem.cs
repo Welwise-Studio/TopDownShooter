@@ -4,9 +4,26 @@ using UnityEngine;
 
 public class DropItem : MonoBehaviour
 {
-	[field: SerializeField] public AudioClip catchUpSoundEffect { get; private set; }
-	[field: SerializeField] [Tooltip("Chance of drop")] public float dropChance { get; private set; }
-	[field: SerializeField] [Tooltip("Amount of healthpoint to add")] public int health { get; private set; }
-	[field: SerializeField] [Tooltip("Number of a gun from GunController list")] public int gun { get; private set; }
-	[field: SerializeField] public int defaultCoinAmount { get; private set; }
+    public enum ItemType { SmallFirstAidPack, MediumFirstAidPack, BigFirstAidPack };
+    [SerializeField] private ItemType _itemType = ItemType.MediumFirstAidPack;
+	[field: SerializeField] public float _dropChance { get; private set; }= 0f;
+    public void Take()
+    {
+        float health = 0f;
+
+        if (_itemType == ItemType.SmallFirstAidPack)
+        {
+            health = 1f;
+        }
+        else if (_itemType == ItemType.MediumFirstAidPack)
+        {
+            health = 2f;
+        }
+        else
+        {
+            health = 3f;
+        }
+
+        FindObjectOfType<Player>().AddHealth(health);
+    }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,12 +6,9 @@ using UnityEngine;
 public class GunController : MonoBehaviour
 {
     [SerializeField] private Transform _weaponHold;
-    [SerializeField] private Gun[] _allGuns;
+    [field: SerializeField] public Gun[] _allGuns { get; private set; }
     public Gun _equippedGun { get; private set; }
-    public float GunHeight
-    {
-        get => _weaponHold.position.y;
-    }
+    public float GunHeight { get => _weaponHold.position.y; }
 
     private void EquipGun(Gun gunToEquip)
     {

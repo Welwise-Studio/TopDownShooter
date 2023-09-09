@@ -14,50 +14,59 @@ public class EnemyAnimator : MonoBehaviour
     }
     private void Update()
     {
-        Animation();
+        Animation(_enemyScript.currentState);
     }
-    private void Animation()
+    private void Animation(Enemy.State state)
     {
         if (_animator != null)
         {
-            if (_enemyScript.CurrentState == Enemy.State.Spawning)
+            _animator.SetBool("isAttack_b", false);
+            _animator.SetInteger("attack_int", -1);
+
+            switch (state)
             {
-                _enemyScript._pathfinder.enabled = false;
+                case Enemy.State.Spawning:
+                    _enemyScript._pathfinder.enabled = false;
+                    break;
+
+                case Enemy.State.Idle:
+                    _animator.SetFloat("speed_f", 0);
+                    _enemyScript._pathfinder.enabled = false;
+                    break;
+
+                case Enemy.State.Chasing:
+                    _animator.SetFloat("speed_f", _enemyScript._pathfinder.speed);
+                    _enemyScript._pathfinder.enabled = true;
+                    break;
+
+                case Enemy.State.Attacking:
+                    _animator.SetBool("isAttack_b", true);
+                    _animator.SetInteger("attack_int", Random.Range(0, 2));
+                    break;
+
+                case Enemy.State.TakeDamage:
+                    _animator.SetBool("isTakeDamage", false);
+                    _animator.SetBool("isTakeDamage", true);
+                    _enemyScript.SetState(Enemy.State.Idle);
+                    break;
             }
-            else
-            {
+        }
+    }
+    private void Handle_AnimationOver(string animationName)
+    {
+        switch (animationName)
+        {
+            case "spawning":
+                _animator.SetBool("isSpawning_b", false);
                 _enemyScript._pathfinder.enabled = true;
-            }
+                _enemyScript.SetState(Enemy.State.Chasing);
+                break;
 
-            if (_enemyScript.CurrentState == Enemy.State.Chasing)
-            {
-                _animator.SetFloat("speed_f", _enemyScript._pathfinder.speed);
-            }
-
-            if (_enemyScript.CurrentState == Enemy.State.Attacking)
-            {
-                _animator.SetBool("isAttack_b", true);
-                _animator.SetInteger("attack_int", Random.Range(0, 2));
-            }
-            else
-            {
-                _animator.SetBool("isAttack_b", false);
-                _animator.SetInteger("attack_int", -1);
-            }
-
-            if (_enemyScript.CurrentState == Enemy.State.Idle)
-            {
-                _animator.SetFloat("speed_f", 0);
-            }
-
-            if (_enemyScript.CurrentState == Enemy.State.TakeDamage)
-            {
-                _animator.SetBool("isTakeDamage", true);
-            }
-            else
-            {
+            case "takeDamage":
                 _animator.SetBool("isTakeDamage", false);
-            }
+                _animator.SetFloat("speed_f", _enemyScript._pathfinder.speed);
+                _enemyScript.SetState(Enemy.State.Chasing);
+                break;
         }
     }
 }

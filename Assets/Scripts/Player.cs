@@ -4,6 +4,8 @@ using UnityEngine;
 [RequireComponent(typeof(GunController))]
 public class Player : LivingEntity
 {
+    [SerializeField] private VariableJoystick _variableJoystickMove;
+    [SerializeField] private VariableJoystick _variableJoystickLook;
     [SerializeField] private Animator _playerAnimator;
     [SerializeField] private float _moveSpeed = 5f;
     [SerializeField] private Crosshairs _crosshairs;
@@ -55,6 +57,13 @@ public class Player : LivingEntity
     private void MovementInput()
     {
         Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
+
+        if (_variableJoystickMove.isActive)
+        {
+            moveInput.x += _variableJoystickMove.Horizontal;
+            moveInput.z += _variableJoystickMove.Vertical;
+        }
+
         Vector3 moveVelocity = moveInput.normalized * _moveSpeed;
         _playerControllerScript.Move(moveVelocity);
 
@@ -75,6 +84,13 @@ public class Player : LivingEntity
         if (groundPlane.Raycast(ray, out float rayDistance))
         {
             Vector3 point = ray.GetPoint(rayDistance);
+
+            if (_variableJoystickLook.isActive)
+            {
+                point.x += _variableJoystickLook.Horizontal * 1000f; // Очень плохое решение.
+                point.z += _variableJoystickLook.Vertical * 1000f; // Очень плохое решение.
+            }
+
             _playerControllerScript.LookAt(point);
             _crosshairs.transform.position = point;
             _crosshairs.DetectTarget(ray);
