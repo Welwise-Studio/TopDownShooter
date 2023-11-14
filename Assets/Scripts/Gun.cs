@@ -5,6 +5,7 @@ using UnityEngine;
 public class Gun : MonoBehaviour
 {
     public enum FireMode { Auto, Burst, Single };
+    [field: SerializeField] public Sprite Icon {  get; private set; }
     [field: SerializeField] public FireMode fireMode { get; private set; } = FireMode.Auto;
     [SerializeField] private Transform[] _projectileSpawn;
     [SerializeField] private Projectile _projectile;

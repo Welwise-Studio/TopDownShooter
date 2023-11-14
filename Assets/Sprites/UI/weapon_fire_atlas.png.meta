@@ -1,0 +1,5807 @@
+fileFormatVersion: 2
+guid: 6d5af0fc4b0b9a04eb530fb59b0ac920
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: weapon_fire_atlas_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2004
+        width: 295
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346444beed9e3fd429f9d3561ec2c4f5
+      internalID: 426619626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_1
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 2016
+        width: 133
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426819231e3d8294686a7c778f4b0c3a
+      internalID: -93647565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_2
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 2019
+        width: 71
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae8e3a2870d9874d839a48e3223466d
+      internalID: 1771210118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_3
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 2006
+        width: 65
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0534b784a567878439d525c4ed582670
+      internalID: 719504963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_4
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 2004
+        width: 55
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e2df39594e82147add9d0095ca074f
+      internalID: 529560085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_5
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 2019
+        width: 45
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497571dc9bba4744f875c3a19f0973c5
+      internalID: 1536718055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_6
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 2005
+        width: 37
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274e72eefae132e4a8dbe28d8444325d
+      internalID: 2075360743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_7
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1863
+        width: 244
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c938d17b53600948b3aca37033b2ec7
+      internalID: 1317101864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_8
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 1907
+        width: 228
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bdffe5895bb32e418b6df173e7ed130
+      internalID: -1179574117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_9
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1987
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4481ca98bf9ea4e4aaf1de4816d36a0e
+      internalID: -1424012876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_10
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 1985
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694c4b1f99992ca438250fb46bf41c82
+      internalID: -445726002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_11
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 1980
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0378d3381926b8a479d6ae67cf50c5cd
+      internalID: 1330350798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_12
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1966
+        width: 53
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a29771e72d92d4ca739601ca727a39
+      internalID: 955887023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_13
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 1989
+        width: 73
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3918705962278e429306531da9b4d34
+      internalID: -1386269263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_14
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1981
+        width: 38
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ee96b925cf6724890431c1b1f4f1c2
+      internalID: -436917120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_15
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1955
+        width: 37
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d373bd53daef308488361007c68f2610
+      internalID: 303907920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_16
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 1963
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84054dcdf2a579949a15244b73d2f2ab
+      internalID: 1442501501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_17
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 1963
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479889e18ff217a4e967e2204766a139
+      internalID: -1110556354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_18
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1957
+        width: 68
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1868d114ba7092649b7e8a30f67c4e2b
+      internalID: 1783264516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_19
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 1957
+        width: 41
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59324f41b47743d43b0f52d2552db310
+      internalID: 1149682040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_20
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1935
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a014bf7e64b26f9429df357999fcdcca
+      internalID: -1585252681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_21
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 1932
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff8c3d7259391644bcc132de0bc979b
+      internalID: 210375186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_22
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1908
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e624a1b8575e16459e5af9d61e8afb2
+      internalID: -1064197481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_23
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 1920
+        width: 43
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae826029048b2f468f876bb46470436
+      internalID: 1627614570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_24
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1926
+        width: 66
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d5d73a0bb89874099024fdd4c89d70
+      internalID: -764783773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_25
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 1933
+        width: 44
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce04c7e666b8ed429e98df8349f18a3
+      internalID: 286985434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_26
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1928
+        width: 51
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471842fc2ed3c7142a969c1a0e72aeb2
+      internalID: 1037392668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_27
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1798
+        width: 220
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a4aa248ab0ac69499ab94cebf010025
+      internalID: 2005402933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_28
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1874
+        width: 45
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c0d5a46bd850b48904a8bbb4122be5
+      internalID: 1196950866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_29
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1899
+        width: 71
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860754d9543a718419f4ccd9658e924a
+      internalID: -1142189554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_30
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 1896
+        width: 45
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1492c1d96d60d409df8dfb3733646f
+      internalID: 137433457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_31
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1851
+        width: 72
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bcf6f2e8386f9140b8746fd895ed432
+      internalID: -627377127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_32
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1882
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f2e2a4806d1b6438a4fa1787adc857
+      internalID: 2097622295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_33
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1879
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba01a659c82e6c40843aa4800780925
+      internalID: -1722325622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_34
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1870
+        width: 49
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437e21a6fb7b26443a35db787ba5e2c7
+      internalID: -1491159813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_35
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 1871
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a36ed8472ce70438e351b311b01540
+      internalID: 1326746132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_36
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1871
+        width: 53
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00bfc5496bfa6a4a9716e48127d6c13
+      internalID: -1926255084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_37
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1871
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8933bbf8cd46b7428038097fa5272c5
+      internalID: -1878693398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_38
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1825
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3394d0a14d638d4fb0a1e7a67d6c21e
+      internalID: -1269673619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_39
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 1830
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95956ae58598f9a4ca1fdd55b22918d4
+      internalID: 1838110778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_40
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1802
+        width: 65
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc3a074892f9d140a550ef971a782d9
+      internalID: -1312804805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_41
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1829
+        width: 75
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b665e38fdae53124d92744ebd1e87e45
+      internalID: -231984250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_42
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 1829
+        width: 90
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8727d2894950aa34daa2109640157fdb
+      internalID: 28655481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_43
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1704
+        width: 279
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a77f867a51510f4fbb9e1efe1aea74b
+      internalID: -1016181577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_44
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1820
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3efc662f96d26a344bb4be05e97adcea
+      internalID: 1681196068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_45
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 1779
+        width: 61
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f602678ff7a101a45ab3cd5fcec16be5
+      internalID: -1882954727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_46
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 1802
+        width: 90
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86df9538c7ec47c46914bdc3fc523e37
+      internalID: 554556229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_47
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 1802
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2994a6c7d8793248a7c39b8b7f8a5d8
+      internalID: 1350878688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_48
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1678
+        width: 201
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38350f52e5f8524eb863f7d6ed5c81a
+      internalID: 376657021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_49
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1781
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad192cd8a8d9e6f4283708b429a727e2
+      internalID: 243555680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_50
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 1773
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc3fb53f652eae4b86a8c7e806fec4b
+      internalID: 89946151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_51
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1778
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7a3f5a8dc4be34181212487b04b8f1
+      internalID: -756048722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_52
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1781
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e4455d61305614cb44e3a9b7567a46
+      internalID: -797770949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_53
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1776
+        width: 88
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aed69ca06c746245891cd7255895db8
+      internalID: 1186012721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_54
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1774
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251aa18f82789c448948b99cc8f63249
+      internalID: 1578854422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_55
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1721
+        width: 61
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bfcea9bbad1676459b195d9182bb5bd
+      internalID: -842072353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_56
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1724
+        width: 109
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d3c5844d3e9cbc47b226a2d7131c9a9
+      internalID: -734998056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_57
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 1739
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e1b7c15e20e2740a518f14cc6a62a6
+      internalID: 1066365792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_58
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1753
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f212d36373267b45be66bce798a1724
+      internalID: -799619577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_59
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1745
+        width: 35
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e36f99edfe933e4ea3ac1e5d9c475c3
+      internalID: -699011314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_60
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 1737
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e4f00e6e377be4880a001c8336c9ed
+      internalID: -600188009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_61
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 1676
+        width: 100
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84dacb45e5bcd6042a9b7a086e4ce964
+      internalID: 2144312010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_62
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 1721
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c952dadb636a29d4fb5f621fe09aa56c
+      internalID: 840194631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_63
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1692
+        width: 54
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b21dbb9a7e62644b0533bf272cebd4
+      internalID: 999576800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_64
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 1709
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe54b714632e29844a1ce82b56b6d8fa
+      internalID: -1287802156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_65
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1670
+        width: 78
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a30bb0e12588df42a79b6ad6997dd5a
+      internalID: 1026269519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_66
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 1702
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c593e491ed4e8146bef8863792726ae
+      internalID: 877495829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_67
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1559
+        width: 291
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b83fe9a3236b964db2710abfafcde17
+      internalID: 1100932525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_68
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 1686
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646a27c07c5014a4d8a584c6519dff06
+      internalID: 97286733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_69
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 1678
+        width: 61
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c5bb7744ba55842a97ebe3a81c87d4
+      internalID: -890660267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_70
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1550
+        width: 217
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437376cbd4ec2a844a0290133319bc64
+      internalID: -767797618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_71
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1624
+        width: 46
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5a943a190563742adeaf8d122a98d1
+      internalID: 1762662277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_72
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 1653
+        width: 40
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ae764858758844e954521be4af8cd1
+      internalID: 1943896469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_73
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1642
+        width: 149
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347902c95f09e324b926feb508bed50a
+      internalID: 1324511677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_74
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 1635
+        width: 40
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e13d40b7ad20841a511edf75b8f263
+      internalID: -1465547277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_75
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1643
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b9dc3e3c443f44193c6051e6b8c310
+      internalID: -1822844616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_76
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 1635
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e482f202cce4f0b48abdc4b6e7f474d8
+      internalID: 686014700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_77
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1620
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d704f62000d97d44393c54c9aa02fa8e
+      internalID: 364295604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_78
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1628
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a22ce0c61297304693eb7a779ed5c26
+      internalID: -380239122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_79
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1602
+        width: 129
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4743d6484bfee1d42adc0e04c489c5ae
+      internalID: 188236102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_80
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1549
+        width: 78
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eff55fe87006164091547408a007266
+      internalID: -878922914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_81
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 1606
+        width: 4
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5edf047c8f73fcf4ab2ec6f0d87b74f7
+      internalID: 459754814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_82
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 1594
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b090003e60871fd43ab80c76d1df022a
+      internalID: -1310728125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_83
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 1616
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e4b2f7b4934ff45b55a5e457947bd8
+      internalID: -1740231478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_84
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 1559
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d5f9e3779d9dc42b0b618535c0ab9a
+      internalID: -1036478223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_85
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1518
+        width: 39
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd220c772d8738143be82c1418078c50
+      internalID: -186489555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_86
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1536
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b9dcbc4d92a9c4eb30fcccf92d97b8
+      internalID: -230870250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_87
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1523
+        width: 4
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0424b14af477d4aa5ef7729e3f5a59
+      internalID: -749673333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_88
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 1518
+        width: 138
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e530bfd7ee528ed4bbd089686e73a59a
+      internalID: 599928945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_89
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1512
+        width: 37
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a02a1ef3329c149b24de69f2c5b6eb
+      internalID: 1171760470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_90
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1418
+        width: 236
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aedd22aeaf769044784761317e3cbfb4
+      internalID: 1607299796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_91
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1446
+        width: 250
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7901eba02ef4cc5418b9c7e798f80342
+      internalID: 2074961965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_92
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1486
+        width: 47
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d9334a5e0ee044691d618668327063
+      internalID: 1759153565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_93
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1458
+        width: 139
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26b42023d7503b4991a7962692798fc
+      internalID: -424042130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_94
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 1458
+        width: 55
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4055d0495281e547996a1eafeb20b1b
+      internalID: 560746695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_95
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1455
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9db9b44cc10744bb711fcad7be7440
+      internalID: 1336823222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_96
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1423
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd7a0a8faef205c4db576e1194ab8b03
+      internalID: -2130068277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_97
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1434
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff346a0b6cb64ff419f6d3b38e727ddf
+      internalID: 1092361288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_98
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1420
+        width: 56
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8815442aa624414faa116b978c068b4
+      internalID: 1553684220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_99
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 1394
+        width: 63
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f65ad96d0f9b2fa49838527cb2a987f6
+      internalID: -1252264819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_100
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 1424
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cba8a38b97df8345bad18cc4cc833dc
+      internalID: -1490065055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_101
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 1410
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e8f2ab335bf8d4d9c4e9ea579cc943
+      internalID: -1759091848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_102
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 1421
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32621e16a4390440b9148aa06ff6373
+      internalID: 1712261063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_103
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 1328
+        width: 101
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 284ddc582a9949443a92f8db9917f4ca
+      internalID: 125985830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_104
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1391
+        width: 46
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2788179bc92f2d46a0e2f887546ad0d
+      internalID: -183885538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_105
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1393
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb36d5c9dc6df34b804a480dca0e93a
+      internalID: 1886304856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_106
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1263
+        width: 248
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3f86cacad19464c81a68bb8e6e378e
+      internalID: -526729833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_107
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1362
+        width: 45
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ad7b94bfbc02b4c9fb37a31f4911bc
+      internalID: -625332050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_108
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1322
+        width: 134
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1978bc5fbade72a46b4d6b5422b7c55d
+      internalID: -1471949686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_109
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 1351
+        width: 54
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d503fde0b2939c4eab956a3dcbb481d
+      internalID: -1444976127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_110
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1331
+        width: 44
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94bf9548c8c27a34d860ace93fad0ff6
+      internalID: 1021437883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_111
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 1321
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2e99163f2ba6c41b300371f8b5e0fc
+      internalID: -746601048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_112
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1298
+        width: 46
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7367d5d43199f8942a683138bb0504d3
+      internalID: -1368752471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_113
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1253
+        width: 141
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222887d76e7e5524fa834a8c352c1152
+      internalID: -789044748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_114
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 1277
+        width: 45
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db598fd862f8c6045bd5c6ef7a416a82
+      internalID: -1290601239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_115
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 1186
+        width: 159
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab09f2db55459049b205e09c271ba6a
+      internalID: 626495158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_116
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1274
+        width: 41
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74529141ad8ec1e438b0294a88bd468d
+      internalID: -1073064962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_117
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 1251
+        width: 45
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f4ceb4261ed5b479e68d0fdf679a0f
+      internalID: -1578916918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_118
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1244
+        width: 42
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a02d4a0ad72f442a74b520db1e9035
+      internalID: 1651169604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_119
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 1194
+        width: 174
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3d711aaa6eff74aab89135274c4e4b
+      internalID: -1813929324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_120
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1233
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b132aaafd48cce40a479259d00b22b1
+      internalID: 472858969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_121
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 1122
+        width: 185
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de434b7859fd97b43a7881b27c014636
+      internalID: -1629990460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_122
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1211
+        width: 44
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed0bb8507f239b408177e591de5a3b1
+      internalID: 1267134411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_123
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1206
+        width: 4
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cc723c4a8605e4bb07306d4b3389dd
+      internalID: 1756906655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_124
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1180
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6381532756d3347838b4204abe5452
+      internalID: -1139118311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_125
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1180
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c0b15ea774327438bdfd9ee9f81e01
+      internalID: -595825449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_126
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1179
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c66203460fb6b74fbff855124ea1948
+      internalID: -480731213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_127
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1183
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39515432661c9c64b8321d6f6b02ef00
+      internalID: 115847144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_128
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 1182
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f526b62f40041b542a7810d2ee86b814
+      internalID: -800435749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_129
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 1175
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f660ad7712a46540902691ee3403d7b
+      internalID: 1099792777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_130
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 1131
+        width: 151
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218d5229c7d769e47aeff68d730c0d3c
+      internalID: 1016338514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_131
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1051
+        width: 278
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900320429f0600d4188e5b63b7aa6612
+      internalID: -1146971774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_132
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 1132
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b643a2b857f213147b5bec695a03fefa
+      internalID: 146702596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_133
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1070
+        width: 167
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 513c6b28586ac894bab1c1ca61c27c0a
+      internalID: -846342539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_134
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1117
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e9cabc624e39ed4785fc0b994e7350e
+      internalID: 184749191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_135
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 1119
+        width: 31
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303059adfabaf064d9fb74be5c5c5b2e
+      internalID: -216148172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_136
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1120
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8037424645fddd84585d925c14068788
+      internalID: 154435636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_137
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 951
+        width: 280
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063a3563a319b3d4ebdd6e977d5c36b1
+      internalID: 1546844779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_138
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 927
+        width: 261
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308851677494f4b46bd1f16b10f36da6
+      internalID: -1925691425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_139
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 952
+        width: 168
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7436cf39a1f57449a087f938aef6420
+      internalID: -1883021971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_140
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 931
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3cbb960c020f546a859d261866a009
+      internalID: 735845268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_141
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 819
+        width: 194
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91b0f77df8b0b0418979413c0badefd
+      internalID: -357565965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_142
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 840
+        width: 172
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2e8b83dc437c54ab392ba16af534e8
+      internalID: 1302385177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_143
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 904
+        width: 4
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 624ed004869810744a014e3f9dc212dc
+      internalID: 2137553595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_144
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 878
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd1931a0cce9c14f9077ef82cb91d31
+      internalID: -1778633678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_145
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 878
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78ecb41ac27c514093ccb3cc9132724
+      internalID: 151439527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_146
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 877
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1349d199d4d3e24cae632dbfaac65bc
+      internalID: 661790294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_147
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 783
+        width: 251
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08bef32d03f8ed649a0c5578612e232f
+      internalID: 1252132371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_148
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 746
+        width: 161
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dfd421de4f952343a3680a9973d86b2
+      internalID: 587616055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_149
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 795
+        width: 52
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2267dd62e0b79a348b071464df5fb8a5
+      internalID: 1209010193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_150
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 794
+        width: 85
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c5e39050356be40adb08c9ec47eafe
+      internalID: -1633866070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_151
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 817
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6b4910d43ad1143b18855cd68c260e
+      internalID: -212443752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_152
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 797
+        width: 70
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f67f0f1ad49ad43bb7484742a5c8a3
+      internalID: 693641098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_153
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 798
+        width: 52
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7c6128ce3bb1b4bb5a62f8a49736eb
+      internalID: 752560620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_154
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 738
+        width: 87
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582e7f92536d46343825658e671f731c
+      internalID: -1259208755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_155
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 740
+        width: 120
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f078d855d7b8a3f469d30c0b1d1f4523
+      internalID: -1855153887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_156
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 804
+        width: 33
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80fba4ddcb5f06d43b87508eaeee1b0b
+      internalID: -1519588255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_157
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 758
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 147ce95d07df79341b94e03db263bc21
+      internalID: 1297364131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_158
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 767
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8611f3455e9124429d0249ef82064b4
+      internalID: -1379017174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_159
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 762
+        width: 40
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3b2b2f52d93cc4889c88253c2e2a27
+      internalID: 2001998878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_160
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 746
+        width: 114
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e273520ba9cd64298b74e272a2ab2c
+      internalID: 401910368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_161
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 737
+        width: 205
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9271095db97e89a488a14f178cd6cabd
+      internalID: -2140186130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_162
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 741
+        width: 222
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee52f10770906e741b8e036fb4563010
+      internalID: -360026185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_163
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 643
+        width: 280
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 186c0c83631f58143801564813e26388
+      internalID: 1857141501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_164
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 757
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9932b76254ffd744692295b3297c2807
+      internalID: 1329772044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_165
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 651
+        width: 230
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d9f4ee829c73548bd7a9fb848757cb
+      internalID: 414066281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_166
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 748
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864afc2ab44a1c34b9eb90dc1d932c15
+      internalID: 1897286109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_167
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 663
+        width: 241
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f480a98b1f34ef4a9460ab53ecc7891
+      internalID: -1548154886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_168
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 653
+        width: 262
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb82cdf75aa43a441803fc7912465613
+      internalID: 582952655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_169
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 661
+        width: 194
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f0133d37b7c2846b096cad832917f5
+      internalID: 1952122241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_170
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 661
+        width: 174
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be31423724efdd241a75d0bcf64f7936
+      internalID: -1609858521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_171
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 655
+        width: 194
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa096fd448f6c1e44b489622ab57eea6
+      internalID: 724726393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_172
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 653
+        width: 129
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d899abccb9937b4409f3855a3d5910b4
+      internalID: 2146290049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_173
+      rect:
+        serializedVersion: 2
+        x: 1884
+        y: 708
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ad0d8378eaf6042b8ac8279f8f8022
+      internalID: 2093902922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_174
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 683
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ef88fd7af94694f92b5e067d8aec0f
+      internalID: 1518057217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_175
+      rect:
+        serializedVersion: 2
+        x: 1985
+        y: 699
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c56570f5fe31634fa5670fcedb64849
+      internalID: 191861390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_176
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 672
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b57ea3d1d5ab54245acfea8cb8f8869b
+      internalID: -1759942408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_177
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 693
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34b18e8467c2ff40a15bd60f697a81e
+      internalID: -932243895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_178
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 673
+        width: 4
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b65e4d935e13e147b31b4352968c599
+      internalID: -396209025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_179
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 681
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e324d8e1e85daa048ac26b17b86a2dbd
+      internalID: -650385877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_180
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 681
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c870fd57258192449b67e00b0ca925b0
+      internalID: 2026655299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_181
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 651
+        width: 23
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc65c73a12136714483d1ff9151c955d
+      internalID: -1484819909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_182
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 661
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04efd8c7028ee7447a04022534894126
+      internalID: -1208196264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_183
+      rect:
+        serializedVersion: 2
+        x: 1966
+        y: 663
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b7be039395cfb4088af29de9825a2c
+      internalID: -899182958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_184
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 663
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d6ffa1a9f8c044ba7ead711421e80b
+      internalID: 352326979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_185
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 637
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe79bb4090ef88e46a278a73c39c3022
+      internalID: -1148118264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_186
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 614
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2817f354695940c4eaf814f0baa6c169
+      internalID: -485854943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_187
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 579
+        width: 359
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b1d860d07fd3f4784ed3d76e0ab189
+      internalID: -367068809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_188
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 582
+        width: 261
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58fbfe356d1f45449cdb79305a6a5b9
+      internalID: -1310703502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_189
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 581
+        width: 262
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f58a15e2db39cf459a2ec79205333e6
+      internalID: 1588107671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_190
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 581
+        width: 216
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2da26e95bae404489a90ae9be5a2b68
+      internalID: -1295604382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_191
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 625
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c33ea56e72ee94eacc40638b448c83
+      internalID: 2010038040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_192
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 630
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1634d3dfcccadab4bac6cfd12eab6cd5
+      internalID: 852525484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_193
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 487
+        width: 246
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b9873bde763dc40b3d2754d625a1f2
+      internalID: 300763794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_194
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 612
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193c247c62580d4489e2ea87bf19f706
+      internalID: 22457856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_195
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 619
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40da6a8d270e54c448f1f372d10e056c
+      internalID: 583761823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_196
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 613
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d98f43ab055764fbfc43dd5747b2fb
+      internalID: 810594886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_197
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 516
+        width: 287
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c4f84136550304c9185586cf4c644a
+      internalID: -1504033241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_198
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 593
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e8a53ea299a4c439ccd9753ced4d38
+      internalID: -994888722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_199
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 584
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9686781d2ee15114ab9d33b88daad1db
+      internalID: -1468006555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_200
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 589
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3293a967296a60f4baa968c1f679ef8a
+      internalID: -1891057699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_201
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 579
+        width: 268
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646a00d3f3cac484e9f990aedfdde9c9
+      internalID: -92668166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_202
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 580
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee4ca344b3ff4448b20044d2fef8569
+      internalID: 1345940455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_203
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 483
+        width: 364
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9814e472f00fe54597d0a35711ebe65
+      internalID: -564191601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_204
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 486
+        width: 319
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e651a401df21e4ea1b28019645e238
+      internalID: -1266839371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_205
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 489
+        width: 322
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87ac8bf638024c4c898255b0e212dee
+      internalID: 716674357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_206
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 487
+        width: 319
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a47fc4d78dbdd946b43901ed8321f19
+      internalID: 1122685247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_207
+      rect:
+        serializedVersion: 2
+        x: 1961
+        y: 520
+        width: 78
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c4bbb087c10f54e8d56b011b8cccea
+      internalID: 910604553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_208
+      rect:
+        serializedVersion: 2
+        x: 1961
+        y: 483
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30471f007adf5a84cac16afd892d2494
+      internalID: -133930716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_209
+      rect:
+        serializedVersion: 2
+        x: 1972
+        y: 506
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d50aeb0b67cc945b2534de726b1891
+      internalID: 141591093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_210
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 485
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf5337804e17374fa901e881cd5217f
+      internalID: -1202476279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_211
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 341
+        width: 295
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c9ad74e884ed3409e1b4cef0f1b16b
+      internalID: 519689218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_212
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 448
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c2c459d0daa4f449be1b0ad23281f1
+      internalID: 1297556428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_213
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 350
+        width: 298
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d1a753dda803449abfd8e84ba7e1a0
+      internalID: -2044661824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_214
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 338
+        width: 231
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf2fb050d744be498c4051a28c967ce
+      internalID: 575248571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_215
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 364
+        width: 299
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69072c54fe171e048865c674729f2991
+      internalID: 1134934934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_216
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 339
+        width: 178
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70ab7d37e2f8e54bae45504e4402d87
+      internalID: -1057491936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_217
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 341
+        width: 208
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be490112d6a76ba48bc2517d9d33bded
+      internalID: -1552112669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_218
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 356
+        width: 290
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e8ea0f3476aec4aa3813876723abd1
+      internalID: 707847884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_219
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 421
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b12917db557f542906f55dcdd03d65
+      internalID: -894119512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_220
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 354
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c44fced54b57a64c8d88b188320e83e
+      internalID: -333769338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_221
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 192
+        width: 299
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3286dc23461f1146b6fb1ab6cdb59c1
+      internalID: 821429357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_222
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 332
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89fcc2cf19475c94c9607547d66945e2
+      internalID: -1129894248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_223
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 190
+        width: 320
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509d7ea85aef4524485a467f52523bc2
+      internalID: 1849277045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_224
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 303
+        width: 37
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468afcdb4d559044cbcc1e2d12ff1cce
+      internalID: 1979764845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_225
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 301
+        width: 124
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad61ef724de66db4d950d6ec9faa4efa
+      internalID: 480494862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_226
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 317
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76db339ae0521b640a73341f872dc0d5
+      internalID: -850699739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_227
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 317
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f298a59429ed02742909f285f74dc17f
+      internalID: 1707190556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_228
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 316
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606e48bf8a61518468ad3e1d013da1a2
+      internalID: -87237096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_229
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 319
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9a0dc22dbd6ee429d0e882521fbd30
+      internalID: -1895921349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_230
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 303
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af64eadd59b239439c9849bdcaacc96
+      internalID: 1698637509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_231
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 321
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa2fd3e0f5194a45bcd3d3fa017e9a5
+      internalID: -1062514837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_232
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 314
+        width: 33
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd800493c1460254cb56a899efc2d0fe
+      internalID: 1138099105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_233
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 298
+        width: 94
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe706df69937a544ea118493a1fffef4
+      internalID: -401810506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_234
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 194
+        width: 265
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a9410eaf5c4fb4b81a50f262c7f2e3
+      internalID: -1399197257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_235
+      rect:
+        serializedVersion: 2
+        x: 1947
+        y: 295
+        width: 96
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f61c1660268b854ea2f8571561c439c
+      internalID: 1040008774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_236
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 208
+        width: 336
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: debda6b9db25d7448ae9518fa53fa40c
+      internalID: -11272250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_237
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 299
+        width: 4
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18cc3459069235d43a5eacde88805461
+      internalID: -1939711446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_238
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 299
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3deef7bac14f4949937ec40b138e3c8
+      internalID: 1244391866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_239
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 201
+        width: 226
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4001ffb55d5774c850136e1ceac858
+      internalID: 1459447749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_240
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 305
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6f337312832fb47809f3fd35d2b99f
+      internalID: 560368576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_241
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 212
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7873d7cd59a9c499faabdcbcf9d9b8
+      internalID: 874993936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_242
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 215
+        width: 4
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8103ccd4309d4894b84965f4d24db456
+      internalID: 1617401161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_243
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 189
+        width: 386
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ece84ac0d97cbc4db56db8ca1b3e8f5
+      internalID: 46736755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_244
+      rect:
+        serializedVersion: 2
+        x: 1937
+        y: 190
+        width: 102
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e29823ee47b6d54fa236b6cad019581
+      internalID: 997434012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_245
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 29
+        width: 349
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c86932876805f84dbe4beb20d5f81bb
+      internalID: -1248272622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_246
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 13
+        width: 190
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28925495db2246d48bdca741590cb676
+      internalID: 1340141554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_247
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 12
+        width: 310
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6ff12e04730a1418dd20634083e8f7
+      internalID: -1828613229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_248
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 152
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7444126a2196b479c18569789e2d1e
+      internalID: -305824354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_249
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 153
+        width: 55
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0683490d5b719c8489dd1d6785212e1c
+      internalID: -471001491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_250
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 147
+        width: 37
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310630dba4117cc4a8985e03d048cb63
+      internalID: -1012477830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_251
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 27
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f503562acbcb5643ba9fe7fd133a3ea
+      internalID: -1379976383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_252
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 28
+        width: 349
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4706cdbd40432f44794cc1e4a5ce975f
+      internalID: 885458257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_253
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 26
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6b931ba08b43f4c8bb91ef97c44dc4
+      internalID: -1104396914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_254
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 22
+        width: 325
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9bd638b527baa4c846c7ab11684fa5
+      internalID: 192476099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_255
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 6
+        width: 257
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4777f448c978f324bb2f7aaa18d2e4b1
+      internalID: -262592442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_fire_atlas_256
+      rect:
+        serializedVersion: 2
+        x: 1916
+        y: 0
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f259c5561828843a20748d9cf334a9
+      internalID: -729403010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 058d88fec20bec64491686a29cc26f12
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      weapon_fire_atlas_0: 426619626
+      weapon_fire_atlas_1: -93647565
+      weapon_fire_atlas_10: -445726002
+      weapon_fire_atlas_100: -1490065055
+      weapon_fire_atlas_101: -1759091848
+      weapon_fire_atlas_102: 1712261063
+      weapon_fire_atlas_103: 125985830
+      weapon_fire_atlas_104: -183885538
+      weapon_fire_atlas_105: 1886304856
+      weapon_fire_atlas_106: -526729833
+      weapon_fire_atlas_107: -625332050
+      weapon_fire_atlas_108: -1471949686
+      weapon_fire_atlas_109: -1444976127
+      weapon_fire_atlas_11: 1330350798
+      weapon_fire_atlas_110: 1021437883
+      weapon_fire_atlas_111: -746601048
+      weapon_fire_atlas_112: -1368752471
+      weapon_fire_atlas_113: -789044748
+      weapon_fire_atlas_114: -1290601239
+      weapon_fire_atlas_115: 626495158
+      weapon_fire_atlas_116: -1073064962
+      weapon_fire_atlas_117: -1578916918
+      weapon_fire_atlas_118: 1651169604
+      weapon_fire_atlas_119: -1813929324
+      weapon_fire_atlas_12: 955887023
+      weapon_fire_atlas_120: 472858969
+      weapon_fire_atlas_121: -1629990460
+      weapon_fire_atlas_122: 1267134411
+      weapon_fire_atlas_123: 1756906655
+      weapon_fire_atlas_124: -1139118311
+      weapon_fire_atlas_125: -595825449
+      weapon_fire_atlas_126: -480731213
+      weapon_fire_atlas_127: 115847144
+      weapon_fire_atlas_128: -800435749
+      weapon_fire_atlas_129: 1099792777
+      weapon_fire_atlas_13: -1386269263
+      weapon_fire_atlas_130: 1016338514
+      weapon_fire_atlas_131: -1146971774
+      weapon_fire_atlas_132: 146702596
+      weapon_fire_atlas_133: -846342539
+      weapon_fire_atlas_134: 184749191
+      weapon_fire_atlas_135: -216148172
+      weapon_fire_atlas_136: 154435636
+      weapon_fire_atlas_137: 1546844779
+      weapon_fire_atlas_138: -1925691425
+      weapon_fire_atlas_139: -1883021971
+      weapon_fire_atlas_14: -436917120
+      weapon_fire_atlas_140: 735845268
+      weapon_fire_atlas_141: -357565965
+      weapon_fire_atlas_142: 1302385177
+      weapon_fire_atlas_143: 2137553595
+      weapon_fire_atlas_144: -1778633678
+      weapon_fire_atlas_145: 151439527
+      weapon_fire_atlas_146: 661790294
+      weapon_fire_atlas_147: 1252132371
+      weapon_fire_atlas_148: 587616055
+      weapon_fire_atlas_149: 1209010193
+      weapon_fire_atlas_15: 303907920
+      weapon_fire_atlas_150: -1633866070
+      weapon_fire_atlas_151: -212443752
+      weapon_fire_atlas_152: 693641098
+      weapon_fire_atlas_153: 752560620
+      weapon_fire_atlas_154: -1259208755
+      weapon_fire_atlas_155: -1855153887
+      weapon_fire_atlas_156: -1519588255
+      weapon_fire_atlas_157: 1297364131
+      weapon_fire_atlas_158: -1379017174
+      weapon_fire_atlas_159: 2001998878
+      weapon_fire_atlas_16: 1442501501
+      weapon_fire_atlas_160: 401910368
+      weapon_fire_atlas_161: -2140186130
+      weapon_fire_atlas_162: -360026185
+      weapon_fire_atlas_163: 1857141501
+      weapon_fire_atlas_164: 1329772044
+      weapon_fire_atlas_165: 414066281
+      weapon_fire_atlas_166: 1897286109
+      weapon_fire_atlas_167: -1548154886
+      weapon_fire_atlas_168: 582952655
+      weapon_fire_atlas_169: 1952122241
+      weapon_fire_atlas_17: -1110556354
+      weapon_fire_atlas_170: -1609858521
+      weapon_fire_atlas_171: 724726393
+      weapon_fire_atlas_172: 2146290049
+      weapon_fire_atlas_173: 2093902922
+      weapon_fire_atlas_174: 1518057217
+      weapon_fire_atlas_175: 191861390
+      weapon_fire_atlas_176: -1759942408
+      weapon_fire_atlas_177: -932243895
+      weapon_fire_atlas_178: -396209025
+      weapon_fire_atlas_179: -650385877
+      weapon_fire_atlas_18: 1783264516
+      weapon_fire_atlas_180: 2026655299
+      weapon_fire_atlas_181: -1484819909
+      weapon_fire_atlas_182: -1208196264
+      weapon_fire_atlas_183: -899182958
+      weapon_fire_atlas_184: 352326979
+      weapon_fire_atlas_185: -1148118264
+      weapon_fire_atlas_186: -485854943
+      weapon_fire_atlas_187: -367068809
+      weapon_fire_atlas_188: -1310703502
+      weapon_fire_atlas_189: 1588107671
+      weapon_fire_atlas_19: 1149682040
+      weapon_fire_atlas_190: -1295604382
+      weapon_fire_atlas_191: 2010038040
+      weapon_fire_atlas_192: 852525484
+      weapon_fire_atlas_193: 300763794
+      weapon_fire_atlas_194: 22457856
+      weapon_fire_atlas_195: 583761823
+      weapon_fire_atlas_196: 810594886
+      weapon_fire_atlas_197: -1504033241
+      weapon_fire_atlas_198: -994888722
+      weapon_fire_atlas_199: -1468006555
+      weapon_fire_atlas_2: 1771210118
+      weapon_fire_atlas_20: -1585252681
+      weapon_fire_atlas_200: -1891057699
+      weapon_fire_atlas_201: -92668166
+      weapon_fire_atlas_202: 1345940455
+      weapon_fire_atlas_203: -564191601
+      weapon_fire_atlas_204: -1266839371
+      weapon_fire_atlas_205: 716674357
+      weapon_fire_atlas_206: 1122685247
+      weapon_fire_atlas_207: 910604553
+      weapon_fire_atlas_208: -133930716
+      weapon_fire_atlas_209: 141591093
+      weapon_fire_atlas_21: 210375186
+      weapon_fire_atlas_210: -1202476279
+      weapon_fire_atlas_211: 519689218
+      weapon_fire_atlas_212: 1297556428
+      weapon_fire_atlas_213: -2044661824
+      weapon_fire_atlas_214: 575248571
+      weapon_fire_atlas_215: 1134934934
+      weapon_fire_atlas_216: -1057491936
+      weapon_fire_atlas_217: -1552112669
+      weapon_fire_atlas_218: 707847884
+      weapon_fire_atlas_219: -894119512
+      weapon_fire_atlas_22: -1064197481
+      weapon_fire_atlas_220: -333769338
+      weapon_fire_atlas_221: 821429357
+      weapon_fire_atlas_222: -1129894248
+      weapon_fire_atlas_223: 1849277045
+      weapon_fire_atlas_224: 1979764845
+      weapon_fire_atlas_225: 480494862
+      weapon_fire_atlas_226: -850699739
+      weapon_fire_atlas_227: 1707190556
+      weapon_fire_atlas_228: -87237096
+      weapon_fire_atlas_229: -1895921349
+      weapon_fire_atlas_23: 1627614570
+      weapon_fire_atlas_230: 1698637509
+      weapon_fire_atlas_231: -1062514837
+      weapon_fire_atlas_232: 1138099105
+      weapon_fire_atlas_233: -401810506
+      weapon_fire_atlas_234: -1399197257
+      weapon_fire_atlas_235: 1040008774
+      weapon_fire_atlas_236: -11272250
+      weapon_fire_atlas_237: -1939711446
+      weapon_fire_atlas_238: 1244391866
+      weapon_fire_atlas_239: 1459447749
+      weapon_fire_atlas_24: -764783773
+      weapon_fire_atlas_240: 560368576
+      weapon_fire_atlas_241: 874993936
+      weapon_fire_atlas_242: 1617401161
+      weapon_fire_atlas_243: 46736755
+      weapon_fire_atlas_244: 997434012
+      weapon_fire_atlas_245: -1248272622
+      weapon_fire_atlas_246: 1340141554
+      weapon_fire_atlas_247: -1828613229
+      weapon_fire_atlas_248: -305824354
+      weapon_fire_atlas_249: -471001491
+      weapon_fire_atlas_25: 286985434
+      weapon_fire_atlas_250: -1012477830
+      weapon_fire_atlas_251: -1379976383
+      weapon_fire_atlas_252: 885458257
+      weapon_fire_atlas_253: -1104396914
+      weapon_fire_atlas_254: 192476099
+      weapon_fire_atlas_255: -262592442
+      weapon_fire_atlas_256: -729403010
+      weapon_fire_atlas_26: 1037392668
+      weapon_fire_atlas_27: 2005402933
+      weapon_fire_atlas_28: 1196950866
+      weapon_fire_atlas_29: -1142189554
+      weapon_fire_atlas_3: 719504963
+      weapon_fire_atlas_30: 137433457
+      weapon_fire_atlas_31: -627377127
+      weapon_fire_atlas_32: 2097622295
+      weapon_fire_atlas_33: -1722325622
+      weapon_fire_atlas_34: -1491159813
+      weapon_fire_atlas_35: 1326746132
+      weapon_fire_atlas_36: -1926255084
+      weapon_fire_atlas_37: -1878693398
+      weapon_fire_atlas_38: -1269673619
+      weapon_fire_atlas_39: 1838110778
+      weapon_fire_atlas_4: 529560085
+      weapon_fire_atlas_40: -1312804805
+      weapon_fire_atlas_41: -231984250
+      weapon_fire_atlas_42: 28655481
+      weapon_fire_atlas_43: -1016181577
+      weapon_fire_atlas_44: 1681196068
+      weapon_fire_atlas_45: -1882954727
+      weapon_fire_atlas_46: 554556229
+      weapon_fire_atlas_47: 1350878688
+      weapon_fire_atlas_48: 376657021
+      weapon_fire_atlas_49: 243555680
+      weapon_fire_atlas_5: 1536718055
+      weapon_fire_atlas_50: 89946151
+      weapon_fire_atlas_51: -756048722
+      weapon_fire_atlas_52: -797770949
+      weapon_fire_atlas_53: 1186012721
+      weapon_fire_atlas_54: 1578854422
+      weapon_fire_atlas_55: -842072353
+      weapon_fire_atlas_56: -734998056
+      weapon_fire_atlas_57: 1066365792
+      weapon_fire_atlas_58: -799619577
+      weapon_fire_atlas_59: -699011314
+      weapon_fire_atlas_6: 2075360743
+      weapon_fire_atlas_60: -600188009
+      weapon_fire_atlas_61: 2144312010
+      weapon_fire_atlas_62: 840194631
+      weapon_fire_atlas_63: 999576800
+      weapon_fire_atlas_64: -1287802156
+      weapon_fire_atlas_65: 1026269519
+      weapon_fire_atlas_66: 877495829
+      weapon_fire_atlas_67: 1100932525
+      weapon_fire_atlas_68: 97286733
+      weapon_fire_atlas_69: -890660267
+      weapon_fire_atlas_7: 1317101864
+      weapon_fire_atlas_70: -767797618
+      weapon_fire_atlas_71: 1762662277
+      weapon_fire_atlas_72: 1943896469
+      weapon_fire_atlas_73: 1324511677
+      weapon_fire_atlas_74: -1465547277
+      weapon_fire_atlas_75: -1822844616
+      weapon_fire_atlas_76: 686014700
+      weapon_fire_atlas_77: 364295604
+      weapon_fire_atlas_78: -380239122
+      weapon_fire_atlas_79: 188236102
+      weapon_fire_atlas_8: -1179574117
+      weapon_fire_atlas_80: -878922914
+      weapon_fire_atlas_81: 459754814
+      weapon_fire_atlas_82: -1310728125
+      weapon_fire_atlas_83: -1740231478
+      weapon_fire_atlas_84: -1036478223
+      weapon_fire_atlas_85: -186489555
+      weapon_fire_atlas_86: -230870250
+      weapon_fire_atlas_87: -749673333
+      weapon_fire_atlas_88: 599928945
+      weapon_fire_atlas_89: 1171760470
+      weapon_fire_atlas_9: -1424012876
+      weapon_fire_atlas_90: 1607299796
+      weapon_fire_atlas_91: 2074961965
+      weapon_fire_atlas_92: 1759153565
+      weapon_fire_atlas_93: -424042130
+      weapon_fire_atlas_94: 560746695
+      weapon_fire_atlas_95: 1336823222
+      weapon_fire_atlas_96: -2130068277
+      weapon_fire_atlas_97: 1092361288
+      weapon_fire_atlas_98: 1553684220
+      weapon_fire_atlas_99: -1252264819
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

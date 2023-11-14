@@ -377,6 +377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13f8475819068ad408075a04224828b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Icon>k__BackingField: {fileID: 626495158, guid: 6d5af0fc4b0b9a04eb530fb59b0ac920, type: 3}
   <fireMode>k__BackingField: 2
   _projectileSpawn:
   - {fileID: 7370389962993697289}

@@ -5,12 +5,13 @@ using UnityEngine;
 
 public class GunController : MonoBehaviour
 {
+    public Action<Gun> OnGunChanged; 
     [SerializeField] private Transform _weaponHold;
     [field: SerializeField] public Gun[] _allGuns { get; private set; }
     public Gun _equippedGun { get; private set; }
     public float GunHeight { get => _weaponHold.position.y; }
 
-    private void EquipGun(Gun gunToEquip)
+    public void EquipGun(Gun gunToEquip)
     {
         if (_equippedGun != null)
         {
@@ -18,6 +19,7 @@ public class GunController : MonoBehaviour
         }
 
         _equippedGun = Instantiate(gunToEquip, _weaponHold.position, _weaponHold.rotation, _weaponHold);
+        OnGunChanged?.Invoke(gunToEquip);
     }
     public void EquipGun(int weaponIndex)
     {
