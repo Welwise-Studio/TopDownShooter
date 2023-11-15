@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class Crosshairs : MonoBehaviour
 {
     [SerializeField] private bool _enableRotateAnimation;
     [SerializeField] private float _rotateSpeed = 40f;
+    [SerializeField] private float _detectRadius;
     [SerializeField] private SpriteRenderer _crosshairHighlight;
     [SerializeField] private LayerMask _targetMask;
     [SerializeField] private Color _highlightColor;
@@ -19,14 +21,13 @@ public class Crosshairs : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _crosshairAmmoCountText;
     private void Start()
     {
-        Cursor.visible = false;
+        //Cursor.visible = false;
         _originalColor = _crosshairHighlight.color;
         _ammoCountTextOriginalColor = _crosshairAmmoCountText.color;
     }
     void Update()
     {
         RotateAnimation(_rotateSpeed);
-
         CheckAmmo();
     }
     private void RotateAnimation(float rotateSpeed)
@@ -48,6 +49,8 @@ public class Crosshairs : MonoBehaviour
         }
     }
 
+    public void DetectTarget() => _crosshairHighlight.color = Physics.CheckSphere(transform.position, _detectRadius) ? _highlightColor : _originalColor;
+
     private void CheckAmmo()
     {
         if (_gunControllerScript._equippedGun._isReloading)
@@ -61,4 +64,16 @@ public class Crosshairs : MonoBehaviour
             _crosshairAmmoCountText.SetText(_gunControllerScript._equippedGun._projectilesRemainingInMag.ToString());
         }
     }
+
+#if UNITY_EDITOR
+    private void OnDrawGizmosSelected()
+    {
+        var tcolor = Gizmos.color;
+        Gizmos.color = Color.red;
+
+        Gizmos.DrawWireSphere(transform.position, _detectRadius);
+
+        Gizmos.color = tcolor;
+    }
+#endif  
 }
