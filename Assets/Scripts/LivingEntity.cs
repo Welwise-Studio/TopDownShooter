@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LivingEntity : MonoBehaviour, IDamageble
 {
+    [SerializeField]
+    private ItemDropController _itemDrop;
     public float startingHealth;
     public float health { get; protected set; }
     protected bool dead;
@@ -47,10 +49,12 @@ public class LivingEntity : MonoBehaviour, IDamageble
     [ContextMenu("Self Destruct")]
     public virtual void Die()
     {
+        _itemDrop.Drop();
         dead = true;
 
         OnDeath?.Invoke();
 
         Destroy(gameObject);
+
     }
 }

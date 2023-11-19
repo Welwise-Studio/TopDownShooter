@@ -6,7 +6,7 @@ public class DropItem : MonoBehaviour
 {
     public enum ItemType { SmallFirstAidPack, MediumFirstAidPack, BigFirstAidPack };
     [SerializeField] private ItemType _itemType = ItemType.MediumFirstAidPack;
-	[field: SerializeField] public float _dropChance { get; private set; }= 0f;
+    [field: SerializeField] public float _dropChance { get; private set; } = 0f;
     public void Take()
     {
         float health = 0f;

@@ -30,6 +30,9 @@ public class Enemy : LivingEntity
     private float _targetCollisionRadius;
     private bool _hasTarget;
 
+    //Система дропа предметов
+    [SerializeField]
+    private ItemDropController ItemDrop;
 
     #region MONO
     private void Awake()

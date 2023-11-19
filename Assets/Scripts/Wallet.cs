@@ -8,7 +8,16 @@ using UnityEngine;
 public class Wallet : MonoBehaviour
 {
     public Action<int> OnValuseChanged;
-    public int Value {  get; private set; }
+    public int Value = 0; /*{  get; private set; }*/
+
+    //Проверка счета
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Backspace))
+        {
+            Debug.Log("Money = " + Value);
+        }
+    }
 
     public void Add(int amount)
     {
