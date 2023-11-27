@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MapGenerator : MonoBehaviour
 {
-    [SerializeField] private Map[] _maps;
+    [SerializeField] private MapSO[] _maps;
     [SerializeField][Min(0)] private int _mapIndex;
 
     [SerializeField] private Transform[] _defaultTilePrefabs;
@@ -27,7 +27,7 @@ public class MapGenerator : MonoBehaviour
     private Queue<Coord> _shuffledOpenTileCoords;
     private Transform[,] _tileMap;
 
-    private Map _currentMap;
+    private MapSO _currentMap;
 
     private void Start()
     {
@@ -152,8 +152,8 @@ public class MapGenerator : MonoBehaviour
 
         if (_perimeterMeshRender)
         {
-            _navMeshMaskPrefab.GetComponent<Renderer>().sharedMaterial.color = _perimeterMeshColor;
-            _navMeshMaskPrefab.GetComponent<MeshRenderer>().enabled = true;
+            //_navMeshMaskPrefab.GetComponent<Renderer>().sharedMaterial.color = _perimeterMeshColor;
+            //_navMeshMaskPrefab.GetComponent<MeshRenderer>().enabled = true;
         }
         else
         {
@@ -281,27 +281,5 @@ public class MapGenerator : MonoBehaviour
             return -1;
         }
         #endregion
-    }
-    [System.Serializable]
-    public class Map
-    {
-        public Transform[] tilePrefabs;
-        [Range(0, 1)] public float tileOutlinePercent;
-        public bool gradientObstacleColor;
-        public Coord mapSize;
-        [Range(0, 1)] public float obstaclePercent;
-        public int seed;
-        [Min(0)] public float minObstacleHeight;
-        [Min(0)] public float maxObstacleHeight;
-        public Color foregroundColor;
-        public Color backgroundColor;
-
-        public Coord mapCentre
-        {
-            get
-            {
-                return new Coord(mapSize.x / 2, mapSize.y / 2);
-            }
-        }
     }
 }

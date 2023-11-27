@@ -87,8 +87,9 @@ public class Spawner : MonoBehaviour
         {
             spawnTile = _map.GetTileFromPosition(_playerTransform.position);
         }
-
-        Material tileMat = spawnTile.GetComponent<Renderer>().material;
+        /*var renderer = spawnTile.GetComponent<Renderer>();
+        renderer.enabled = true;
+        Material tileMat = renderer.sharedMaterial;
         Color initialColor = Color.white;
         Color flashColour = Color.red;
         float spawnTimer = 0;
@@ -99,9 +100,11 @@ public class Spawner : MonoBehaviour
             spawnTimer += Time.deltaTime;
             yield return null;
         }
+        renderer.enabled = false;*/
 
 
         Enemy spawnedEnemy = Instantiate(_enemyPrefab, spawnTile.position + Vector3.up, Quaternion.identity);
+        spawnedEnemy.Poof();
 
         spawnedEnemy.OnDeath += OnEnemyDeath;
 
@@ -112,6 +115,7 @@ public class Spawner : MonoBehaviour
         _currentWave.enemyHealth,
         _currentWave.bloodColor,
         _currentWave.enemyModels.Length == 0 || _currentWave.enemyModels == null ? _defaultEnemyModels[rEnemyPrefab] : _currentWave.enemyModels[rEnemyPrefab]);
+        yield return null;
     }
     private void OnPlayerDeath()
     {

@@ -1,3 +1,4 @@
+using FlexibleSaveSystem;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,7 +22,6 @@ public class Player : LivingEntity
         Controller = GetComponent<PlayerController>();
         GunControllerScript = GetComponent<GunController>();
         _cameraMain = Camera.main;
-
         FindObjectOfType<Spawner>().OnNewWave += OnNewWave;
     }
     protected override void Start()

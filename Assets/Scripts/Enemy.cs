@@ -24,6 +24,7 @@ public class Enemy : LivingEntity
     [SerializeField] private float _attackDistanceThreshold = 0.5f;
     [SerializeField] private float _timeBetweenAttack = 1f;
     [SerializeField] private float damage = 1f;
+    [SerializeField] private ParticleSystem _poofEffect;
     private float nextAttackTime;
 
     private float _enemyCollisionRadius;
@@ -119,6 +120,9 @@ public class Enemy : LivingEntity
         SetState(State.Chasing);
         _pathfinder.enabled = true;
     }
+
+    public void Poof() => _poofEffect.Play();
+
     public void SetState(State state)
     {
         currentState = state;

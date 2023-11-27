@@ -38,7 +38,6 @@ public class PlusModal : MonoBehaviour
     public void Show()
     {
         if (_isShowing) return;
-
         _isShowing = true;
         _canvasGroup.alpha = 1;
         _canvasGroup.blocksRaycasts = true;
@@ -48,7 +47,6 @@ public class PlusModal : MonoBehaviour
     public void Hide()
     {
         if (!_isShowing) return;
-
         _isShowing = false;
         _canvasGroup.alpha = 0;
         _canvasGroup.blocksRaycasts = false;
