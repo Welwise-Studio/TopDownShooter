@@ -45,9 +45,6 @@ public class GameUI : MonoBehaviour
         StartCoroutine(Fade(Color.clear, new Color(0, 0, 0, 0.95f), 1f));
 
         _gameOverScoreUi.text = _scoreUi.text;
-        _scoreUi.gameObject.SetActive(false);
-        _healthBarPresenter.transform.parent.gameObject.SetActive(false);
-        _gameOverUI.SetActive(true);
     }
         
     private IEnumerator Fade(Color from, Color to, float time)

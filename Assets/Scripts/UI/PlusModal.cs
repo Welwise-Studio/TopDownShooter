@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -41,7 +42,7 @@ public class PlusModal : MonoBehaviour
         _isShowing = true;
         _canvasGroup.alpha = 1;
         _canvasGroup.blocksRaycasts = true;
-        StartCoroutine(MoveRoutine(_hidePosition, _showPosition));
+        StartCoroutine(MoveRoutine(_hidePosition, _showPosition,1, .000000003f));
     }
 
     public void Hide()
@@ -50,11 +51,12 @@ public class PlusModal : MonoBehaviour
         _isShowing = false;
         _canvasGroup.alpha = 0;
         _canvasGroup.blocksRaycasts = false;
-        StartCoroutine(MoveRoutine(_showPosition, _hidePosition));
+        StartCoroutine(MoveRoutine(_showPosition, _hidePosition, 1,1));
     }
 
-    private IEnumerator MoveRoutine(float from, float to)
+    private IEnumerator MoveRoutine(float from, float to, float inScale, float outScale)
     {
+        Time.timeScale = inScale;
         var destination = new Vector3(_modalRect.anchoredPosition.x, to);
         var start = new Vector3(_modalRect.anchoredPosition.x, from);
         for (float t = 0; t <= _movingDuration; t += Time.deltaTime)
@@ -63,5 +65,6 @@ public class PlusModal : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         _modalRect.anchoredPosition = destination;
+        Time.timeScale = outScale;
     }
 }

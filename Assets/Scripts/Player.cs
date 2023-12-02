@@ -11,6 +11,7 @@ public class Player : LivingEntity
     public GunController GunControllerScript {  get; private set; }
     public PlayerController Controller { get; private set; }
     [field: SerializeField] public Crosshairs Crosshairs {  get; private set; }
+    [SerializeField] private DieModal _dieModal;
     [SerializeField] private Joystick _variableJoystickMove;
     [SerializeField] private Animator _playerAnimator;
     [SerializeField] private float _moveSpeed = 5f;
@@ -61,8 +62,6 @@ public class Player : LivingEntity
     private void MovementInput()
     {
         Vector3 moveInput = MobileControll ? new Vector3(_variableJoystickMove.Horizontal, 0, _variableJoystickMove.Vertical) : new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
-        Debug.Log(moveInput);
-        Debug.Log(MobileControll);
         Vector3 moveVelocity = moveInput.normalized * _moveSpeed;
         Controller.Move(moveVelocity);
 
@@ -126,7 +125,8 @@ public class Player : LivingEntity
     public override void Die()
     {
         AudioManager.Instance.PlaySound("Player Death", transform.position);
-
+        _dieModal.Show();
+        Debug.Log("Die");
         base.Die();
     }
 }
