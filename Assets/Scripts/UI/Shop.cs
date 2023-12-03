@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using YG;
 
 public class Shop : MonoBehaviour
 {
@@ -16,6 +17,22 @@ public class Shop : MonoBehaviour
             item.OnClicked += Interaction;
         }
         _gunController.OnGunChanged += LightCurrentItem;
+        YandexGame.GetDataEvent += Load;
+    }
+
+    private void Load()
+    {
+        foreach (var item in YandexGame.savesData.openedWeapons)
+        {
+            Debug.Log(item);
+        }
+        foreach (var item in _items)
+        {         
+            if (YandexGame.savesData.openedWeapons.ContainsKey(item.Id) && YandexGame.savesData.openedWeapons[item.Id] == true)
+                item.Unlock();
+            else
+                item.Lock();
+        }
     }
 
     private void LightCurrentItem(Gun gun)

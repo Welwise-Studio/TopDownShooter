@@ -1,5 +1,5 @@
 {
-  "idSave": 12,
+  "idSave": 132,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
@@ -11,6 +11,19 @@
     false
   ],
   "Storage": {
-    "FlexibleSaveSystem.Test.Value": "73"
+    "FlexibleSaveSystem.Test.Value": "73",
+    "Wallet._value": "140"
+  },
+  "openedWeapons": {
+    "pistol": true,
+    "autogun": true,
+    "shotgub": false,
+    "pph": false,
+    "pumpActionShootgun": false,
+    "revolver": false,
+    "rifle": true,
+    "sniperRifle": true,
+    "shotgun2": false,
+    "machineGun": false
   }
 }

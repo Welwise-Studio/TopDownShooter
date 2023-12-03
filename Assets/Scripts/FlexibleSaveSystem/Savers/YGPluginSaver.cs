@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEngine;
 using YG;
 
 namespace FlexibleSaveSystem.Savers
@@ -49,6 +50,10 @@ namespace FlexibleSaveSystem.Savers
         {
             _isInit = true;
 
+            foreach (var keys in YandexGame.savesData.Storage.Keys)
+            {
+                Debug.Log($"{keys}:{YandexGame.savesData.Storage[keys]}");
+            }
             while (_requests.Count > 0)
                 _requests.Pop().Invoke(); ;
         }

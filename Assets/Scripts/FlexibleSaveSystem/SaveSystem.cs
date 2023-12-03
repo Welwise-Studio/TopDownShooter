@@ -15,6 +15,7 @@ namespace FlexibleSaveSystem
         /// Event triggered when the save system is ready.
         /// </summary>
         public static Action OnReady;
+        public static Action OnLoaded;
 
         private static List<MemberToSave> _members= new List<MemberToSave>();
         private static List<ISaver> _savers = new List<ISaver>();
@@ -66,6 +67,8 @@ namespace FlexibleSaveSystem
             if (!_isInstall)
                 return;
 
+            Debug.Log("Save");
+
             foreach (var saver in _savers)
                 foreach (var member in _members)
                     saver.SaveMember(member);
@@ -83,6 +86,8 @@ namespace FlexibleSaveSystem
             foreach (var saver in _savers)
                 foreach (var member in _members)
                     saver.LoadMember(member);
+
+            OnLoaded?.Invoke();
         }
         private static bool IsInstanceInjected(object instance)
         {

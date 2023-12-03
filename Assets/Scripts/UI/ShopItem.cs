@@ -3,12 +3,14 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using YG;
 
 public class ShopItem : MonoBehaviour, IPointerDownHandler
 {
     public Action<ShopItem> OnClicked;
     [field: SerializeField] public int Price { get; private set; }
     [field: SerializeField] public Gun Gun { get; private set; }
+    [field: SerializeField] public string Id { get; private set; }
     public bool IsLocked {  get; private set; }
 
     [SerializeField] private Image _icon;
@@ -39,6 +41,16 @@ public class ShopItem : MonoBehaviour, IPointerDownHandler
     public void Unlock()
     {
         IsLocked = false;
+        YandexGame.savesData.openedWeapons[Id] = true;
+        YandexGame.SaveProgress();
+        UpdateStyle();
+    }
+
+    public void Lock()
+    {
+        IsLocked = true;
+        YandexGame.savesData.openedWeapons[Id] = false;
+        YandexGame.SaveProgress();
         UpdateStyle();
     }
 

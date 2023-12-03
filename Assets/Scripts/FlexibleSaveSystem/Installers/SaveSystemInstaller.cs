@@ -19,7 +19,13 @@ namespace FlexibleSaveSystem.Installers
             {
                 SaveSystem.InjectInstance(instance);
             }
+            SaveSystem.OnReady += SaveSystem.Load;
             SaveSystem.Install(this);
+        }
+
+        private void OnApplicationQuit()
+        {
+            SaveSystem.Save();
         }
     }
 }

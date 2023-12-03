@@ -19,6 +19,7 @@ namespace YG
 
         // Ваши сохранения
         public Dictionary<string, string> Storage = new Dictionary<string, string>();
+        public Dictionary<string, bool> openedWeapons = new Dictionary<string, bool>();
         // ...
 
         // Поля (сохранения) можно удалять и создавать новые. При обновлении игры сохранения ломаться не должны
@@ -30,6 +31,7 @@ namespace YG
             // Допустим, задать значения по умолчанию для отдельных элементов массива
 
             openLevels[1] = true;
+            openedWeapons["pistol"] = true;
         }
     }
 }
