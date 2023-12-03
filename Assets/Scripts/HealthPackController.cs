@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HealthPackController : MonoBehaviour
 {
+    [SerializeField] private int _addHealth;
     private Player _player;
 
     private void Awake()
@@ -11,18 +12,13 @@ public class HealthPackController : MonoBehaviour
         _player = FindObjectOfType<Player>();
         Destroy(gameObject, 5);
     }
-    private void OnCollisionEnter (Collision collision)
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            _player.AddHealth(50);
+            _player.AddHealth(_addHealth);
             Destroy(gameObject);
         }
-
-        //if (TryGetComponent<Player>(out var Player))
-        //{
-        //    Player.AddHealth(50);
-        //    Destroy(gameObject);
-        //}
     }
 }

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6732785138850551186}
   - component: {fileID: 7504721902237387934}
+  - component: {fileID: 1626293813462444354}
   - component: {fileID: 5777914697123104224}
   - component: {fileID: 5225535079598756671}
   - component: {fileID: 3377880343346348927}
@@ -49,6 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c11f505a43fc4bb82112d46102e27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _itemDrop: {fileID: 1626293813462444354}
   startingHealth: 1
   _deathEffect: {fileID: 4624936986759223459, guid: c7de7f20141bb044e8f74d9b1ea4b4c8, type: 3}
   _takeDamageEffect: {fileID: 8708391255908533546, guid: f1d62224a4d0ea04dbea2258fee82d31, type: 3}
@@ -57,6 +59,23 @@ MonoBehaviour:
   _timeBetweenAttack: 1
   damage: 1
   _poofEffect: {fileID: 7908463283482602038}
+  ItemDrop: {fileID: 0}
+--- !u!114 &1626293813462444354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4153431265265886846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 940a63613ee82a443b63439baa4695cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _coinDropChance: 0.5
+  _healDropChance: 0.1
+  _coin: {fileID: 782683922246527504, guid: 8ae479a375c20fd44bcbf33745c5d92f, type: 3}
+  heal: {fileID: 3172858360438098128, guid: ca0a3dd4899934b4aa20baad3f2ae2a1, type: 3}
 --- !u!33 &5777914697123104224
 MeshFilter:
   m_ObjectHideFlags: 0

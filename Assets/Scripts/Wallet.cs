@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FlexibleSaveSystem;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,20 +9,12 @@ using UnityEngine;
 public class Wallet : MonoBehaviour
 {
     public Action<int> OnValuseChanged;
-    public int Value = 0; /*{  get; private set; }*/
-
-    //Проверка счета
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Backspace))
-        {
-            Debug.Log("Money = " + Value);
-        }
-    }
+    public int Value { get => _value; }
+    [SaveData] private int _value = 0;
 
     public void Add(int amount)
     {
-        Value += amount;
+        _value += amount;
         OnValuseChanged?.Invoke(Value);
     }
 
@@ -31,7 +24,7 @@ public class Wallet : MonoBehaviour
     {
         if (Enough(amount))
         {
-            Value -= amount;
+            _value -= amount;
             OnValuseChanged?.Invoke(Value);
             return true;
         }

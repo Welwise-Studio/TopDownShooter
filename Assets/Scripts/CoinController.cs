@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CoinController : MonoBehaviour
 {
+    [SerializeField] private int _addValue;
     private Wallet _wallet;
 
     private void Awake()
@@ -11,11 +12,12 @@ public class CoinController : MonoBehaviour
         _wallet = FindObjectOfType<Wallet>();
         Destroy(gameObject,5);
     }
-    private void OnCollisionEnter (Collision collision)
+
+    private void OnTriggerEnter (Collider other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            _wallet.Add(50);
+            _wallet.Add(_addValue);
             Destroy(gameObject);
         }
     }

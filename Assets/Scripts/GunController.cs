@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GunController : MonoBehaviour
@@ -18,7 +16,7 @@ public class GunController : MonoBehaviour
             Destroy(_equippedGun.gameObject);
         }
 
-        _equippedGun = Instantiate(gunToEquip, _weaponHold.position, _weaponHold.rotation, _weaponHold);
+        _equippedGun = Instantiate(gunToEquip, _weaponHold.position,gunToEquip.transform.rotation,_weaponHold);
         OnGunChanged?.Invoke(gunToEquip);
     }
     public void EquipGun(int weaponIndex)
