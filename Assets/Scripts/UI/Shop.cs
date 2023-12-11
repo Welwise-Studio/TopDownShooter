@@ -18,14 +18,13 @@ public class Shop : MonoBehaviour
         }
         _gunController.OnGunChanged += LightCurrentItem;
         YandexGame.GetDataEvent += Load;
+
+        if (YandexGame.SDKEnabled)
+            Load();
     }
 
     private void Load()
     {
-        foreach (var item in YandexGame.savesData.openedWeapons)
-        {
-            Debug.Log(item);
-        }
         foreach (var item in _items)
         {         
             if (YandexGame.savesData.openedWeapons.ContainsKey(item.Id) && YandexGame.savesData.openedWeapons[item.Id] == true)

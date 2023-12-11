@@ -1,4 +1,3 @@
-using FlexibleSaveSystem;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,11 +22,11 @@ public class Player : LivingEntity
         Controller = GetComponent<PlayerController>();
         GunControllerScript = GetComponent<GunController>();
         _cameraMain = Camera.main;
-        FindObjectOfType<Spawner>().OnNewWave += OnNewWave;
     }
     protected override void Start()
     {
         base.Start();
+        GunControllerScript.EquipGun(0);
     }
     private void Update()
     {
@@ -40,12 +39,6 @@ public class Player : LivingEntity
         CheckPlayerIsFall();
 
         CheckAmmoForReload();
-    }
-    public void OnNewWave(int waveNumber)
-    {
-        //health = startingHealth;
-        //_gunControllerScript.EquipGun(waveNumber - 1);
-        GunControllerScript.EquipGun(0);
     }
     private void CheckAmmoForReload()
     {

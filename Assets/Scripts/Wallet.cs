@@ -1,16 +1,31 @@
-﻿using FlexibleSaveSystem;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using UnityEngine;
+using YG;
 
 public class Wallet : MonoBehaviour
 {
     public Action<int> OnValuseChanged;
     public int Value { get => _value; }
-    [SaveData] private int _value = 0;
+    private int _value = 0;
+
+    private void Load()
+    {
+        _value = YandexGame.savesData.Balance;
+        OnValuseChanged?.Invoke(Value);
+    }
+
+    private void Start()
+    {
+        YandexGame.GetDataEvent += Load;
+        if (YandexGame.SDKEnabled)
+            Load();
+    }
+
+    private void OnDestroy()
+    {
+        YandexGame.savesData.Balance = _value;
+        YandexGame.SaveProgress();
+    }
 
     public void Add(int amount)
     {

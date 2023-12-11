@@ -1,13 +1,26 @@
 {
-    "idSave": 483,
-    "isFirstSession": false,
-    "language": "ru",
-    "promptDone": false,
-    "money": 1,
-    "newPlayerName": "Hello!",
-    "openLevels": [
-        false,
-        true,
-        false
-    ]
+  "idSave": 636,
+  "isFirstSession": false,
+  "language": "ru",
+  "promptDone": false,
+  "money": 1,
+  "newPlayerName": "Hello!",
+  "openLevels": [
+    false,
+    true,
+    false
+  ],
+  "Balance": 110,
+  "openedWeapons": {
+    "pistol": true,
+    "autogun": false,
+    "shotgub": true,
+    "pph": false,
+    "pumpActionShootgun": false,
+    "revolver": false,
+    "rifle": false,
+    "sniperRifle": false,
+    "shotgun2": false,
+    "machineGun": false
+  }
 }

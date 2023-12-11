@@ -18,7 +18,7 @@ namespace YG
         public bool[] openLevels = new bool[3];
 
         // Ваши сохранения
-        public Dictionary<string, string> Storage = new Dictionary<string, string>();
+        public int Balance;
         public Dictionary<string, bool> openedWeapons = new Dictionary<string, bool>();
         // ...
 
@@ -32,6 +32,7 @@ namespace YG
 
             openLevels[1] = true;
             openedWeapons["pistol"] = true;
+            Balance = 0;
         }
     }
 }

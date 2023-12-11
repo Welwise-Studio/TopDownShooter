@@ -49,7 +49,7 @@ public class LivingEntity : MonoBehaviour, IDamageble
     [ContextMenu("Self Destruct")]
     public virtual void Die()
     {
-        _itemDrop.Drop();
+        _itemDrop?.Drop();
         dead = true;
 
         OnDeath?.Invoke();
