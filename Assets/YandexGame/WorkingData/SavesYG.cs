@@ -24,6 +24,11 @@ namespace YG
 
         // Поля (сохранения) можно удалять и создавать новые. При обновлении игры сохранения ломаться не должны
 
+        // REFACTORED
+        public int Balance;
+        public float Sfx = .5f;
+        public float Master = .5f;
+        public float Music = .5f;
 
         // Вы можете выполнить какие то действия при загрузке сохранений
         public SavesYG()
@@ -32,6 +37,7 @@ namespace YG
 
             openLevels[1] = true;
             openedWeapons["pistol"] = true;
+            Balance = 0;
         }
     }
 }
