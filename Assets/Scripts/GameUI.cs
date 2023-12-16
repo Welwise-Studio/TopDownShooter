@@ -1,9 +1,10 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using YG;
 
 public class GameUI : MonoBehaviour
 {
@@ -33,8 +34,28 @@ public class GameUI : MonoBehaviour
     }
     private void OnNewWave(int waveNumber)
     {
-        string[] numbers = { "One", "Two", "Three", "Four", "Five" };
-        string enemyCountString = (_spawnerScript.waves[waveNumber - 1].infinite) ? "Infinite" : $"{_spawnerScript.waves[waveNumber - 1].enemyCount}";
+        string[] numbers = new string[5];
+        string enemyCountString;
+        if (YandexGame.EnvironmentData.language == "ru")
+        {
+            numbers[0] = "Один";
+            numbers[1] = "Два";
+            numbers[2] = "Три";
+            numbers[3] = "Четыре";
+            numbers[4] = "Пять";
+            enemyCountString = (_spawnerScript.waves[waveNumber - 1].infinite) ? "Бесконечность" : $"{_spawnerScript.waves[waveNumber - 1].enemyCount}";
+        }
+        else
+        {
+
+            numbers[0] = "One";
+            numbers[1] = "Two";
+            numbers[2] = "Three";
+            numbers[3] = "Four";
+            numbers[4] = "Five";
+            enemyCountString = (_spawnerScript.waves[waveNumber - 1].infinite) ? "Infinite" : $"{_spawnerScript.waves[waveNumber - 1].enemyCount}";
+        }
+
 
         _wavePresenter.Show(numbers[waveNumber - 1], enemyCountString);
     }
