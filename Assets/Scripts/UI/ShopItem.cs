@@ -11,7 +11,7 @@ public class ShopItem : MonoBehaviour, IPointerDownHandler
     [field: SerializeField] public int Price { get; private set; }
     [field: SerializeField] public Gun Gun { get; private set; }
     [field: SerializeField] public string Id { get; private set; }
-    public bool IsLocked {  get; private set; }
+    [field: SerializeField] public bool IsLocked {  get; private set; }
 
     [SerializeField] private Image _icon;
     [SerializeField] private TextMeshProUGUI _priceLabel;
@@ -22,6 +22,7 @@ public class ShopItem : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        Debug.Log("cliked");
         OnClicked?.Invoke(this);
     }
 
@@ -41,16 +42,12 @@ public class ShopItem : MonoBehaviour, IPointerDownHandler
     public void Unlock()
     {
         IsLocked = false;
-        YandexGame.savesData.openedWeapons[Id] = true;
-        YandexGame.SaveProgress();
         UpdateStyle();
     }
 
     public void Lock()
     {
         IsLocked = true;
-        YandexGame.savesData.openedWeapons[Id] = false;
-        YandexGame.SaveProgress();
         UpdateStyle();
     }
 

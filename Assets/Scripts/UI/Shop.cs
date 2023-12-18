@@ -19,14 +19,25 @@ public class Shop : MonoBehaviour
         _gunController.OnGunChanged += LightCurrentItem;
         YandexGame.GetDataEvent += Load;
 
+    }
+
+    private void Start()
+    {
         if (YandexGame.SDKEnabled)
             Load();
     }
 
+
     private void Load()
     {
+        Debug.Log("Loaded-");
+        foreach (var item in YandexGame.savesData.openedWeapons)
+        {
+            Debug.Log($"{item.Key} : {item.Value}");
+        }
+        Debug.Log("Loaded-");
         foreach (var item in _items)
-        {         
+        {
             if (YandexGame.savesData.openedWeapons.ContainsKey(item.Id) && YandexGame.savesData.openedWeapons[item.Id] == true)
                 item.Unlock();
             else
@@ -56,6 +67,8 @@ public class Shop : MonoBehaviour
         else if (_wallet.TrySpend(item.Price))
         {
             item.Unlock();
+            YandexGame.savesData.openedWeapons[item.Id] = true;
+            YandexGame.SaveProgress();
             _gunController.EquipGun(item.Gun);;
         }
         else
