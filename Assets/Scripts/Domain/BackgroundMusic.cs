@@ -2,18 +2,24 @@
 using AudioManagement;
 using UnityEngine;
 
+#if UNITY_EDITOR
+using System.IO;
+#endif
+
 namespace Domain
 {
+#if UNITY_EDITOR
+    [ExecuteInEditMode]
+#endif
     public class BackgroundMusic : MonoBehaviour
     {
+
         [SerializeField]
-        private AudioClip _backgroundMusic;
+        private string _musicFile;
 
-        private AudioSourceWorker _worker;
-
-        private void Start()
+        private async void Start()
         {
-            _worker = ProjectContext.Instance.Container.Resolve<AudioCore>().SetLoop(_backgroundMusic, PlayableChannels.Music);
+            ProjectContext.Instance.Container.Resolve<AudioCore>().SetLoop(await _loader.Load(_musicFile), PlayableChannels.Music);
         }
     }
 }

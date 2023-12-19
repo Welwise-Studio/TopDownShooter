@@ -8,7 +8,7 @@ namespace Domain.Installers
     {
         public override void InstallBindings(IDIContainer container)
         {
-            var settings = new SettingsFactory().FromYG();
+            var settings = SettingsFactory.Create();
             container.Bind(settings);
         }
     }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Domain.WalletSystem
+namespace Domain.Wallets
 {
     ///<summary>
     /// Represents a wallet that stores and manages a balance.

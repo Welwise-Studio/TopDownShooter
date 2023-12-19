@@ -1,6 +1,6 @@
 ﻿using Architecture.DI;
 using Architecture.Installers;
-using Domain.WalletSystem;
+using Domain.Wallets;
 
 namespace Domain.Installers
 {
@@ -8,7 +8,7 @@ namespace Domain.Installers
     {
         public override void InstallBindings(IDIContainer container)
         {
-            var wallet = new WalletFactory().FromYG();
+            var wallet = WalletFactory.Create();
             container.Bind<IWallet>(wallet);
         }
     }

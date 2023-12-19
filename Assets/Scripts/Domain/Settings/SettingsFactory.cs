@@ -2,11 +2,8 @@
 
 namespace Domain.SettingsSystem
 {
-    public class SettingsFactory
+    public static class SettingsFactory
     {
-        public Settings FromYG()
-        {
-            return new Settings(YandexGame.savesData.Sfx, YandexGame.savesData.Master, YandexGame.savesData.Music);
-        }
+        public static Settings Create() => new Settings(YandexGame.savesData.Sfx, YandexGame.savesData.Master, YandexGame.savesData.Music);
     }
 }
