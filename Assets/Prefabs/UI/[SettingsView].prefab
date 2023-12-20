@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 383792815395805637}
   - component: {fileID: 5850890004103010762}
-  - component: {fileID: 267705574129101007}
   m_Layer: 5
   m_Name: '[SettingsView]'
   m_TagString: Untagged
@@ -56,19 +55,6 @@ MonoBehaviour:
   <MusicVolumeSlider>k__BackingField: {fileID: 4561765865094851385}
   <SFXVolumeSlider>k__BackingField: {fileID: 4727111379222949319}
   <BackButton>k__BackingField: {fileID: 4904063033020861293}
---- !u!114 &267705574129101007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1193342137846516235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 0
 --- !u!1 &2659109379235922172
 GameObject:
   m_ObjectHideFlags: 0

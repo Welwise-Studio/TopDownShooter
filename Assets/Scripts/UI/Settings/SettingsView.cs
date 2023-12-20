@@ -1,12 +1,11 @@
 ﻿using Architecture.MVP;
-using System;
 using UI.Components;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace UI.Settings
 {
-    public sealed class SettingsView : MonoBehaviour, IView
+    public sealed class SettingsView : View
     {
 
         [field: SerializeField] 
@@ -21,20 +20,7 @@ namespace UI.Settings
         [field: SerializeField]
         public Button BackButton { get; private set; }
 
-        public event Action OnShow;
-        public event Action OnHide;
-
-        public void Hide()
-        {
-            this.gameObject.SetActive(false);
-            this.OnHide?.Invoke();
-        }
-
-
-        public void Show() 
-        {
-            this.gameObject.SetActive(true);
-            OnShow?.Invoke();
-        }
+        [field: SerializeField]
+        public View MainMenuWindow { get; private set;}
     }
 }

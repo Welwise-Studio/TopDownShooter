@@ -1,41 +1,29 @@
-﻿using System;
-using UI.MainMenu;
+﻿using Architecture.MVP;
 using SettingsModel = Domain.SettingsSystem.Settings;
 
 namespace UI.Settings
 {
-    public sealed class SettingsPresenter : IDisposable
+    public sealed class SettingsPresenter : Presenter<SettingsView, SettingsModel>
     {
-        private readonly SettingsView _settingsView;
-        private readonly SettingsModel _model;
-        private readonly MainMenuView _mainMenuView;
+        public SettingsPresenter(SettingsView view, SettingsModel model) : base(view, model) { }
 
-        public SettingsPresenter(SettingsView settingsView, SettingsModel model, MainMenuView mainMenuView)
+        public override void Dispose()
         {
-            _settingsView = settingsView;
-            _model = model;
-            _mainMenuView = mainMenuView;
-
-            Init();
+            _view?.SFXVolumeSlider?.Slider?.onValueChanged.RemoveListener(OnSFXVolumeChanged);
+            _view?.MusicVolumeSlider?.Slider?.onValueChanged.RemoveListener(OnMusicVolumeChanged);
+            _view?.MasterVolumeSlider?.Slider?.onValueChanged.RemoveListener(OnMasterVolumeChanged);
         }
 
-        public void Dispose()
+        protected override void Init()
         {
-            _settingsView?.SFXVolumeSlider?.Slider?.onValueChanged.RemoveListener(OnSFXVolumeChanged);
-            _settingsView?.MusicVolumeSlider?.Slider?.onValueChanged.RemoveListener(OnMusicVolumeChanged);
-            _settingsView?.MasterVolumeSlider?.Slider?.onValueChanged.RemoveListener(OnMasterVolumeChanged);
-        }
+            _view.SFXVolumeSlider.Slider.onValueChanged.AddListener(OnSFXVolumeChanged);
+            _view.MusicVolumeSlider.Slider.onValueChanged.AddListener(OnMusicVolumeChanged);
+            _view.MasterVolumeSlider.Slider.onValueChanged.AddListener(OnMasterVolumeChanged);
+            _view.BackButton.onClick.AddListener(OnBackClicked);
 
-        private void Init()
-        {
-            _settingsView.SFXVolumeSlider.Slider.onValueChanged.AddListener(OnSFXVolumeChanged);
-            _settingsView.MusicVolumeSlider.Slider.onValueChanged.AddListener(OnMusicVolumeChanged);
-            _settingsView.MasterVolumeSlider.Slider.onValueChanged.AddListener(OnMasterVolumeChanged);
-            _settingsView.BackButton.onClick.AddListener(OnBackClicked);
-
-            _settingsView.SFXVolumeSlider.Slider.value = _model.SFXVolume.Value;
-            _settingsView.MusicVolumeSlider.Slider.value = _model.MusicVolume.Value;
-            _settingsView.MasterVolumeSlider.Slider.value = _model.MasterVolume.Value;
+            _view.SFXVolumeSlider.Slider.value = _model.SFXVolume.Value;
+            _view.MusicVolumeSlider.Slider.value = _model.MusicVolume.Value;
+            _view.MasterVolumeSlider.Slider.value = _model.MasterVolume.Value;
 
             _model.MusicVolume.Subscribe(UpdateMusicVolumeValue);
             _model.SFXVolume.Subscribe(UpdateSFXVolumeValue);
@@ -46,14 +34,14 @@ namespace UI.Settings
         private void OnMusicVolumeChanged(float value) => _model.MusicVolume.Value = value;
         private void OnMasterVolumeChanged(float value) => _model.MasterVolume.Value = value;
 
-        private void UpdateMasterVolumeValue(float value) => _settingsView.MasterVolumeSlider.Slider.value = value;
-        private void UpdateSFXVolumeValue(float value) => _settingsView.SFXVolumeSlider.Slider.value = value;
-        private void UpdateMusicVolumeValue(float value) => _settingsView.MusicVolumeSlider.Slider.value = value;
+        private void UpdateMasterVolumeValue(float value) => _view.MasterVolumeSlider.Slider.value = value;
+        private void UpdateSFXVolumeValue(float value) => _view.SFXVolumeSlider.Slider.value = value;
+        private void UpdateMusicVolumeValue(float value) => _view.MusicVolumeSlider.Slider.value = value;
 
         private void OnBackClicked()
         {
-            _settingsView.Hide();
-            _mainMenuView.Show();
+            _view.Hide();
+            _view.MainMenuWindow.Show();
             _model.Save();
         }
     }

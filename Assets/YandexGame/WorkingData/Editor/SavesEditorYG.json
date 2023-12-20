@@ -1,33 +1,17 @@
 {
-  "idSave": 371,
-  "isFirstSession": false,
-  "language": "ru",
-  "promptDone": false,
-  "money": 1,
-  "newPlayerName": "Hello!",
-  "openLevels": [
-    false,
-    true,
-    false
-  ],
-  "Storage": {
-    "FlexibleSaveSystem.Test.Value": "73",
-    "Wallet._value": "240"
-  },
-  "openedWeapons": {
-    "pistol": true,
-    "autogun": true,
-    "shotgub": true,
-    "pph": true,
-    "pumpActionShootgun": true,
-    "revolver": true,
-    "rifle": true,
-    "sniperRifle": true,
-    "shotgun2": true,
-    "machineGun": true
-  },
-  "Balance": 0,
-  "Sfx": 0.331565231,
-  "Master": 0.8024951,
-  "Music": 0.57906127
+    "idSave": 374,
+    "isFirstSession": false,
+    "language": "ru",
+    "promptDone": false,
+    "money": 1,
+    "newPlayerName": "Hello!",
+    "openLevels": [
+        false,
+        true,
+        false
+    ],
+    "Balance": 0,
+    "Sfx": 1.0,
+    "Master": 1.0,
+    "Music": 0.31583908200263979
 }

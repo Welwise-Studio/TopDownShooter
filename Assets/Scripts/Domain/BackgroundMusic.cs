@@ -15,11 +15,11 @@ namespace Domain
     {
 
         [SerializeField]
-        private string _musicFile;
+        private AudioClip _music;
 
-        private async void Start()
+        private void Start()
         {
-            ProjectContext.Instance.Container.Resolve<AudioCore>().SetLoop(await _loader.Load(_musicFile), PlayableChannels.Music);
+            ProjectContext.Instance.Container.Resolve<AudioCore>().SetLoop(_music, PlayableChannels.Music);
         }
     }
 }

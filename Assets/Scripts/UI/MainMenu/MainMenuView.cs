@@ -5,34 +5,19 @@ using UnityEngine.UI;
 
 namespace UI.MainMenu
 {
-    public sealed class MainMenuView : MonoBehaviour, IView
+    public sealed class MainMenuView : View
     {
-
         [field: SerializeField]
         public Button SettingsButton {  get; private set; }
 
         [field: SerializeField]
         public Button PlayButton { get; private set; }
 
-        [SerializeField]
-        private Image _logoImage;
+        [field: SerializeField]
+        public Image LogoImage { get; private set; }
 
-        public void SetLogo(Sprite logo) => _logoImage.sprite = logo;
+        [field: SerializeField]
+        public View SettingsWindow { get; private set; }
 
-        public event Action OnShow;
-        public event Action OnHide;
-
-        public void Show()
-        {
-            this.gameObject.SetActive(true);
-            OnShow?.Invoke();
-        }
-
-
-        public void Hide()
-        {
-            this.gameObject.SetActive(false);
-            OnHide?.Invoke();
-        }
     }
 }

@@ -1,41 +1,31 @@
-﻿using System;
+﻿using Architecture.MVP;
+using System;
 using UI.Settings;
 using UnityEngine.SceneManagement;
 
 namespace UI.MainMenu
 {
-    public sealed class MainMenuPresenter : IDisposable
+    public sealed class MainMenuPresenter : Presenter<MainMenuView, MainMenuModel>
     {
-        private readonly MainMenuView _mainMenuView;
-        private readonly SettingsView _settingsView;
-        private readonly MainMenuModel _mainMenuModel;
+        public MainMenuPresenter(MainMenuView view, MainMenuModel model) : base(view, model) { }
 
-        public MainMenuPresenter(MainMenuView menuView, MainMenuModel model, SettingsView settingsView)
+        public override void Dispose()
         {
-            _mainMenuView = menuView;
-            _settingsView = settingsView;
-            _mainMenuModel = model;
-
-            Init();
+            _view?.SettingsButton?.onClick.RemoveListener(OnSettingsClick);
+            _view?.PlayButton?.onClick.RemoveListener(OnPlayClick);
         }
 
-        private void Init()
+        protected override void Init()
         {
-            _mainMenuView.SettingsButton.onClick.AddListener(OnSettingsClick);
-            _mainMenuView.PlayButton.onClick.AddListener(OnPlayClick);
+            _view.SettingsButton.onClick.AddListener(OnSettingsClick);
+            _view.PlayButton.onClick.AddListener(OnPlayClick);
         }
 
-        public void Dispose()
-        {
-            _mainMenuView?.SettingsButton?.onClick.RemoveListener(OnSettingsClick);
-            _mainMenuView?.PlayButton?.onClick.RemoveListener(OnPlayClick);
-        }
-
-        private void OnPlayClick() => SceneManager.LoadScene(_mainMenuModel.PlaySceneName);
+        private void OnPlayClick() => SceneManager.LoadScene(_model.PlaySceneName);
         private void OnSettingsClick()
         {
-            _mainMenuView.Hide();
-            _settingsView.Show();
+            _view.Hide();
+            _view.SettingsWindow.Show();
         }
     }
 }
