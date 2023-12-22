@@ -67,8 +67,7 @@ namespace Utils.ConditionalField
                 }
                 catch (Exception e)
                 {
-                    WarningsPool.LogWarning(property,
-                        "Unable to use CustomDrawer of type " + _customPropertyDrawer.GetType() + ": " + e,
+                    Debug.LogWarning("Unable to use CustomDrawer of type " + _customPropertyDrawer.GetType() + ": " + e,
                         property.serializedObject.targetObject);
 
                     return false;

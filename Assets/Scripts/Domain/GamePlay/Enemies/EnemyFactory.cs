@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UnityEngine;
 
-namespace Assets.Scripts.UI
+namespace Assets.Scripts.Domain.GamePlay.Enemies
 {
-    public sealed class WalletBinder : MonoBehaviour
+    public class EnemyFactory
     {
-        [SerializeField] private
     }
 }

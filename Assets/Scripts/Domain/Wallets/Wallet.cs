@@ -61,13 +61,7 @@ namespace Domain.Wallets
         /// Spends funds from the wallet.
         ///</summary>
         ///<param name="amount">The amount to spend from the wallet.</param>
-        public void Spend(uint amount)
-        {
-            if (HasEnough(amount))
-                return;
-
-            UnsafeSpend(amount);
-        }
+        public void Spend(uint amount) => TrySpend(amount);
 
         ///<summary>
         /// Attempts to spend funds from the wallet.
@@ -79,7 +73,9 @@ namespace Domain.Wallets
             if (!HasEnough(amount))
                 return false;
 
-            UnsafeSpend(_balance);
+            _balance -= amount;
+            OnSpend?.Invoke(amount);
+            OnValueChanged?.Invoke(_balance);
             return true;
         }
 
@@ -91,13 +87,6 @@ namespace Domain.Wallets
             OnValueChanged = null;
             OnSpend = null;
             OnAdd = null;
-        }
-
-        private void UnsafeSpend(uint amount)
-        {
-            _balance -= amount;
-            OnSpend?.Invoke(amount);
-            OnValueChanged?.Invoke(_balance);
         }
     }
 }

@@ -2,49 +2,47 @@
 
 namespace Architecture.MVP
 {
-    public abstract class Binder<TView, TPresenter, TModel> : MonoBehaviour
+    public abstract class PresenterFactory<TView, TPresenter, TModel> : MonoBehaviour
         where TView : View
         where TModel : class
         where TPresenter : Presenter<TView, TModel>
     {
         [SerializeField] protected TView _view;
 
-        protected TPresenter _presenter;
+        private TPresenter _presenter;
         protected TModel _model;
 
-        protected abstract void Bind();
-        protected abstract void Unbind();
+        protected abstract TPresenter Create();
 
         private void Start()
         {
-            Bind();
+            _presenter = Create();
         }
 
         private void OnDestroy()
         {
-            Unbind();
+            _presenter.Dispose();
         }
     }
 
-    public abstract class Binder<TView, TPresenter> : MonoBehaviour
+    public abstract class PresenterFactory<TView, TPresenter> : MonoBehaviour
         where TView : View
         where TPresenter : Presenter<TView>
     {
         [SerializeField] protected TView _view;
 
-        protected TPresenter _presenter;
+        private TPresenter _presenter;
 
-        protected abstract void Bind();
-        protected abstract void Unbind();
+        protected abstract TPresenter Create();
 
         private void Start()
         {
-            Bind();
+            _presenter = Create();
         }
 
         private void OnDestroy()
         {
-            Unbind();
+            _presenter.Dispose();
         }
     }
 }

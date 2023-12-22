@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 
-namespace Assets.Scripts.Domain
+namespace Domain
 {
     public sealed class GameLifeCycle : MonoBehaviour
     {
-        public static void Pause() { 
+        public void Pause() { 
         }
 
-        public static void Unpause() { }
+        public void Unpause() { }
     }
 }

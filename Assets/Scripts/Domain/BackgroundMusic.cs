@@ -2,15 +2,8 @@
 using AudioManagement;
 using UnityEngine;
 
-#if UNITY_EDITOR
-using System.IO;
-#endif
-
 namespace Domain
 {
-#if UNITY_EDITOR
-    [ExecuteInEditMode]
-#endif
     public class BackgroundMusic : MonoBehaviour
     {
 
