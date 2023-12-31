@@ -2,7 +2,7 @@
 
 namespace GraphicsManagement
 {
-    public class FXService : MonoGraphicsService
+    public class ObjectDisableService : MonoGraphicsService
     {
         [SerializeField]
         private GameObject[] _desktopGroup;
@@ -29,6 +29,7 @@ namespace GraphicsManagement
         {
             foreach (var item in _desktopGroup)
             {
+                Debug.Log($"disable: {item.name}");
                 item.SetActive(state);
             }
         }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using YG;
 
 public class Gun : MonoBehaviour
 {
@@ -100,7 +101,9 @@ public class Gun : MonoBehaviour
                 newProjectile.SetDamage(_bulletDamage);
             }
 
-            Instantiate(_shell, _shellEjection.position, _shell.rotation);
+            if (YandexGame.EnvironmentData.isDesktop)
+                Instantiate(_shell, _shellEjection.position, _shell.rotation);
+
             _muzzleFlash.Activate();
             transform.localPosition -= Vector3.forward * Random.Range(_kickMinMax.x, _kickMinMax.y);
             _recoilAngle += Random.Range(_recoilAngleMinMax.x, _recoilAngleMinMax.y);

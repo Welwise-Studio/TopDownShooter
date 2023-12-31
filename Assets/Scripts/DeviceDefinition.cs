@@ -31,6 +31,9 @@ public class DeviceDefinition : MonoBehaviour
         {
             togler.IsMobile = false;
         }
+
+        if (YandexGame.SDKEnabled)
+            DefineDevice();
     }
 
     private void OnEnable() => YandexGame.GetDataEvent += DefineDevice;
