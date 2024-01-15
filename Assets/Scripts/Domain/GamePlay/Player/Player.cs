@@ -6,6 +6,9 @@ namespace Domain.GamePlay.Player
 {
     public class Player : Unit
     {
+        [field: SerializeField]
+        public PlayerMovement Movement { get; private set; }
+
         [SerializeField]
         private PlayerStats Stats;
         public override void Hit(Vector3 point, Vector3 direction)
