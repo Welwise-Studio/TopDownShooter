@@ -173,7 +173,7 @@ public class Spawner : MonoBehaviour
             OnNewWave?.Invoke(_currentWaveNumber);
         }
 
-        ResetPlayerPosition();
+        //ResetPlayerPosition();
     }
 
     [System.Serializable]
