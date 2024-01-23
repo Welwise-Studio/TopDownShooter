@@ -143,11 +143,11 @@ public class MapGenerator : MonoBehaviour
         //Creating NavMash mask.
         if (_perimeterCollider)
         {
-            _navMeshMaskPrefab.GetComponent<BoxCollider>().enabled = true;
+            //_navMeshMaskPrefab.GetComponent<BoxCollider>().enabled = true;
         }
         else
         {
-            _navMeshMaskPrefab.GetComponent<BoxCollider>().enabled = false;
+            //_navMeshMaskPrefab.GetComponent<BoxCollider>().enabled = false;
         }
 
         if (_perimeterMeshRender)

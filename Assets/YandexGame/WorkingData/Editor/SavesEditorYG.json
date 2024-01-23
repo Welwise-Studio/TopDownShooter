@@ -1,5 +1,5 @@
 {
-  "idSave": 1142,
+  "idSave": 1177,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
@@ -10,7 +10,7 @@
     true,
     false
   ],
-  "Balance": 0,
+  "Balance": 715,
   "openedWeapons": {
     "pistol": true,
     "shotgub": true

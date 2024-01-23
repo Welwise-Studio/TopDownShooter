@@ -1,2 +1,2 @@
-Build path: D:/Files/Unity/TopDownShooter/Builds/FullWork
-Build number: 26
+Build path: D:/Files/Unity/TopDownShooter/Builds/LightAndEnemy
+Build number: 30

@@ -102,8 +102,28 @@ public class Spawner : MonoBehaviour
         }
         renderer.enabled = false;*/
 
+        var pos = Vector3.up + _playerEntity.transform.position + new Vector3(1, 0, 1) * Random.Range(5, 5);
+        Enemy spawnedEnemy = Instantiate(_enemyPrefab, pos, Quaternion.identity);
+        Collider[] hitColliders = Physics.OverlapSphere(pos, 2.5f);
+        bool inObject = true;
 
-        Enemy spawnedEnemy = Instantiate(_enemyPrefab, spawnTile.position + Vector3.up, Quaternion.identity);
+        while(inObject)
+        {
+            pos = Vector3.up + _playerEntity.transform.position + new Vector3(1, 0, 1) * Random.Range(5, 5);
+            hitColliders = Physics.OverlapSphere(pos, 2.5f);
+            foreach (Collider collider in hitColliders)
+            {
+                // Проверяем, является ли коллайдер объектом врага
+                Enemy enemyComponent = collider.GetComponent<Enemy>();
+                if (enemyComponent != null)
+                {
+                    inObject = true;
+                    break; // прерываем цикл, поскольку уже найден враг
+                }
+            }
+            inObject = false;
+        }
+        spawnedEnemy.transform.position = pos;
         spawnedEnemy.Poof();
 
         spawnedEnemy.OnDeath += OnEnemyDeath;
