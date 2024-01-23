@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts;
+using UnityEngine;
 using YG;
 
 namespace GraphicsManagement
@@ -9,23 +10,25 @@ namespace GraphicsManagement
 
         private void Awake()
         {
-            YandexGame.GetDataEvent += Define;
+            YandexGame.GetDataEvent += () => Define(YandexGame.EnvironmentData.deviceType);
         }
 
         private void Start()
         {
             if (YandexGame.SDKEnabled)
-                Define();
+                Define(YandexGame.EnvironmentData.deviceType);
+
+            if (YGPluginFix.DeviceType != null)
+                Define(YGPluginFix.DeviceType);
         }
 
-        private void Define()
+        private void Define(string type)
         {
-            var type = new GraphicsTypeConverter().FromDevice(YandexGame.EnvironmentData.deviceType);
-            Debug.Log(type.ToString());
+            var ttype = new GraphicsTypeConverter().FromDevice(type);
 
             foreach (var service in _graphicsServices)
             {
-                service.Apply(type);
+                service.Apply(ttype);
             }
         }
     }

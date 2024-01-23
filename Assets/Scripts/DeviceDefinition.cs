@@ -1,3 +1,4 @@
+using Assets.Scripts;
 using UnityEngine;
 using YG;
 
@@ -7,9 +8,9 @@ public class DeviceDefinition : MonoBehaviour
     [SerializeField] private ShopTogler[] _togglers;
     [SerializeField] private AimAssistent _aimAssistent;
     [SerializeField] private Player _player;
-    public void DefineDevice()
+    public void DefineDevice(string type)
     {
-        if (YandexGame.EnvironmentData.isMobile)
+        if (type == "mobile")
         {
             _player.MobileControll = true;
             _mobileUI.SetActive(true);
@@ -33,10 +34,13 @@ public class DeviceDefinition : MonoBehaviour
         }
 
         if (YandexGame.SDKEnabled)
-            DefineDevice();
+            DefineDevice(YandexGame.EnvironmentData.deviceType);
+
+        if (YGPluginFix.DeviceType != null)
+            DefineDevice(YGPluginFix.DeviceType);
     }
 
-    private void OnEnable() => YandexGame.GetDataEvent += DefineDevice;
+    private void OnEnable() => YandexGame.GetDataEvent += () => DefineDevice(YandexGame.EnvironmentData.deviceType);
 
-    private void OnDisable() => YandexGame.GetDataEvent -= DefineDevice;
+    private void OnDisable() => YandexGame.GetDataEvent -= () => DefineDevice(YandexGame.EnvironmentData.deviceType);
 }
