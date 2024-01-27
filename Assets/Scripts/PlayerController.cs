@@ -21,7 +21,10 @@ public class PlayerController : MonoBehaviour
     }
     public void LookAt(Vector3 lookPoint)
     {
+        //Vector3 heightCorrectedPoint = new Vector3(lookPoint.x, transform.position.y, lookPoint.z);
+        //transform.LookAt(heightCorrectedPoint);
         Vector3 heightCorrectedPoint = new Vector3(lookPoint.x, transform.position.y, lookPoint.z);
-        transform.LookAt(heightCorrectedPoint);
+        Quaternion targetRotation = Quaternion.LookRotation(heightCorrectedPoint - transform.position);
+        _objectRb.MoveRotation(targetRotation);
     }
 }

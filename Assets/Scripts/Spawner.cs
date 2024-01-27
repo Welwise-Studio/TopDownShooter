@@ -8,6 +8,7 @@ public class Spawner : MonoBehaviour
 
     [Header("Enemy Spawn:")]
     [Space(10)]
+    [SerializeField] private float _spawnDistance = 5;
     [SerializeField] private Enemy _enemyPrefab;
     [SerializeField] private GameObject[] _defaultEnemyModels;
     [field: SerializeField] public Wave[] waves { get; private set; }
@@ -76,6 +77,7 @@ public class Spawner : MonoBehaviour
         }
 #endif
     }
+
     private IEnumerator SpawnEnemy()
     {
         float spawnDelay = 1f;
@@ -101,29 +103,22 @@ public class Spawner : MonoBehaviour
             yield return null;
         }
         renderer.enabled = false;*/
-
-        var pos = Vector3.up + _playerEntity.transform.position + new Vector3(1, 0, 1) * Random.Range(5, 5);
-        Enemy spawnedEnemy = Instantiate(_enemyPrefab, pos, Quaternion.identity);
-        Collider[] hitColliders = Physics.OverlapSphere(pos, 2.5f);
-        bool inObject = true;
-
-        while(inObject)
+        var playerPos = _playerEntity.transform.position;
+        Vector3 spawnPos;
+        var rand = Random.insideUnitCircle.normalized;
+        rand = rand == Vector2.zero ? Vector2.one : rand;
+        Vector3 randomPoint = new Vector3(rand.x, 0 , rand.y) * _spawnDistance;
+        var endPoint = playerPos + randomPoint;
+        if (Physics.Linecast(playerPos, endPoint, out var hit, LayerMask.NameToLayer("Player")))
         {
-            pos = Vector3.up + _playerEntity.transform.position + new Vector3(1, 0, 1) * Random.Range(5, 5);
-            hitColliders = Physics.OverlapSphere(pos, 2.5f);
-            foreach (Collider collider in hitColliders)
-            {
-                // Проверяем, является ли коллайдер объектом врага
-                Enemy enemyComponent = collider.GetComponent<Enemy>();
-                if (enemyComponent != null)
-                {
-                    inObject = true;
-                    break; // прерываем цикл, поскольку уже найден враг
-                }
-            }
-            inObject = false;
+            spawnPos = hit.point;
         }
-        spawnedEnemy.transform.position = pos;
+        else
+        {
+            spawnPos = endPoint;
+        }
+        var spawnedEnemy = Instantiate(_enemyPrefab, spawnPos, Quaternion.identity);
+
         spawnedEnemy.Poof();
 
         spawnedEnemy.OnDeath += OnEnemyDeath;

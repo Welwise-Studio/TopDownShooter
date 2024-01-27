@@ -15321,7 +15321,6 @@ MonoBehaviour:
   - {fileID: 1963772177}
   - {fileID: 1564228824}
   - {fileID: 1426877294}
-  - {fileID: 1754285491}
 --- !u!4 &1333389134
 Transform:
   m_ObjectHideFlags: 0
@@ -19206,6 +19205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FogService
       objectReference: {fileID: 0}
+    - target: {fileID: 2838358005464487943, guid: 6b5383bf0b8c69c459ee0ea95b8f2d0f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19216,17 +19219,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1951576886650032690, guid: 6b5383bf0b8c69c459ee0ea95b8f2d0f, type: 3}
   m_PrefabInstance: {fileID: 1754285489}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1754285491 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1226544665802482983, guid: 6b5383bf0b8c69c459ee0ea95b8f2d0f, type: 3}
-  m_PrefabInstance: {fileID: 1754285489}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bd120dd9d4334f4c9e616069761518d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1766756679 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 490118, guid: dc1fc76610eebf640999c1900c654825, type: 3}
@@ -20944,8 +20936,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _postProcessVolume: {fileID: 371720675}
-  _mobileProfile: {fileID: 11400000, guid: 5bd3efa92282bbc4297352a04da8f4da, type: 2}
-  _desktopProfile: {fileID: 11400000, guid: 2876fd9384d16af4f9610fdbc7ddd14f, type: 2}
+  _mobileProfile: {fileID: 11400000, guid: 2876fd9384d16af4f9610fdbc7ddd14f, type: 2}
+  _desktopProfile: {fileID: 11400000, guid: 5bd3efa92282bbc4297352a04da8f4da, type: 2}
 --- !u!4 &1963772178
 Transform:
   m_ObjectHideFlags: 0

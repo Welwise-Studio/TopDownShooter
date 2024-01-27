@@ -20,10 +20,12 @@ public class PlusModal : MonoBehaviour
     [SerializeField] private int _adId = 1;
 
     private bool _isShowing;
+    private float _master;
+
     private void Awake()
     {
         _closeButton.onClick.AddListener(Hide);
-        _rewardButton.onClick.AddListener(()=> YandexGame.RewVideoShow(_adId));
+        _rewardButton.onClick.AddListener( () => YandexGame.RewVideoShow(_adId));
         _textMesh.text = _reward.ToString();
     }
 
@@ -33,11 +35,15 @@ public class PlusModal : MonoBehaviour
     private void Rewarded(int id)
     {
         if (id == _adId)
+        {
             _wallet.Add(_reward);
+        }
     }
 
     public void Show()
     {
+        _master = PlayerPrefs.GetFloat("Master Volume", 0.5f);
+        AudioManager.Instance.SetVolume(0, AudioManager.AudioChannel.Master);
         if (_isShowing) return;
         _isShowing = true;
         _canvasGroup.alpha = 1;
@@ -47,6 +53,7 @@ public class PlusModal : MonoBehaviour
 
     public void Hide()
     {
+        AudioManager.Instance.SetVolume(_master, AudioManager.AudioChannel.Master);
         if (!_isShowing) return;
         _isShowing = false;
         _canvasGroup.alpha = 0;

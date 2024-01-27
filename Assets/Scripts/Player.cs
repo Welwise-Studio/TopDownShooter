@@ -23,6 +23,12 @@ public class Player : LivingEntity
         GunControllerScript = GetComponent<GunController>();
         _cameraMain = Camera.main;
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(collision.gameObject.name);
+    }
+
     protected override void Start()
     {
         base.Start();
