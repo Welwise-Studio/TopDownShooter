@@ -5,6 +5,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(GunController))]
 public class Player : LivingEntity
 {
+    public Vector3 Movement {  get; private set; }
     public bool ControllLook = true;
     public bool MobileControll = false;
     public GunController GunControllerScript {  get; private set; }
@@ -61,6 +62,7 @@ public class Player : LivingEntity
     private void MovementInput()
     {
         Vector3 moveInput = MobileControll ? new Vector3(_variableJoystickMove.Horizontal, 0, _variableJoystickMove.Vertical) : new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
+        Movement = moveInput.normalized;
         Vector3 moveVelocity = moveInput.normalized * _moveSpeed;
         Controller.Move(moveVelocity);
 

@@ -27,6 +27,14 @@ public class DieModal : MonoBehaviour
             SceneManager.LoadScene("Game");
         });
     }
+    private void Update()
+    {
+        if (!_isShowing)
+            return;
+
+        Cursor.visible = true;
+    }
+
     public void Show()
     {
         if (_isShowing) return;

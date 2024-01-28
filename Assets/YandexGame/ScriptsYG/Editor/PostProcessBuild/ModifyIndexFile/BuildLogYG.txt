@@ -1,2 +1,2 @@
-Build path: D:/Files/Unity/TopDownShooter/Builds/Full
-Build number: 35
+Build path: D:/Files/Unity/TopDownShooter/Builds/Finals
+Build number: 37

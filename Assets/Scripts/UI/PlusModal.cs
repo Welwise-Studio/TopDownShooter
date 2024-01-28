@@ -37,6 +37,7 @@ public class PlusModal : MonoBehaviour
         if (id == _adId)
         {
             _wallet.Add(_reward);
+            Hide();
         }
     }
 

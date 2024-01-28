@@ -9,6 +9,7 @@ public class AimAssistent : MonoBehaviour
     [SerializeField] private LayerMask _detectMask;
     [SerializeField] private float _detectRadius;
     [SerializeField] private float _aimOffset = .05f;
+    [SerializeField] private float _aimDistanceWithoutTarget = 3;
     private int _frameCount = 0;
     private Transform _currentTarget;
     private GameObject _crosshairObject;
@@ -31,6 +32,7 @@ public class AimAssistent : MonoBehaviour
     private void DetectEnemy()
     {
         var enemies = GetNearestEnemies();
+        _currentTarget = null;
 
         foreach (var enemy in enemies)
         {
@@ -44,9 +46,17 @@ public class AimAssistent : MonoBehaviour
 
     private void AimToTarget()
     {
-        _crosshairObject.SetActive(_currentTarget != null);
+        _crosshairObject.SetActive(true);
+
         if (_currentTarget == null)
+        {
+
+            var targetPos = _player.transform.position + _player.transform.forward * _aimDistanceWithoutTarget;
+            _player.Controller.LookAt(_player.transform.position + _player.Movement * _aimDistanceWithoutTarget);
+            _player.Crosshairs.transform.position = targetPos;
+            _player.GunControllerScript.Aim(targetPos);
             return;
+        }
 
         _player.Controller.LookAt(_currentTarget.position);
         _player.Crosshairs.transform.position = _currentTarget.position + _currentTarget.forward * _aimOffset;
