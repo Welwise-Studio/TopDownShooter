@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 using YG;
+using ShelterSystem;
 
 public class GameUI : MonoBehaviour
 {
@@ -16,11 +17,17 @@ public class GameUI : MonoBehaviour
     [SerializeField] private WavePresenter _wavePresenter;
 
     private Player _playerScript;
-    private Spawner _spawnerScript;
+    private ISpawner _spawnerScript;
 
     private void Awake()
     {
-        _spawnerScript = FindObjectOfType<Spawner>();
+        var spawner = FindObjectOfType<Spawner>();
+        var waves = FindObjectOfType<WavesController>();
+        if (spawner != null)
+            _spawnerScript = spawner;
+        else if (waves != null)
+            _spawnerScript = waves;
+
         _spawnerScript.OnNewWave += OnNewWave;
     }
     void Start()

@@ -1,19 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
+using HealthSystem;
 using UnityEngine;
 
 public class LivingEntity : MonoBehaviour, IDamageble
 {
+
     [SerializeField]
     private ItemDropController _itemDrop;
     public float startingHealth;
+
+    [field: SerializeField]
     public float health { get; protected set; }
-    protected bool dead;
+    public bool dead;
     public event System.Action OnDeath;
-    protected virtual void Start()
+    protected virtual void Awake()
     {
         AddHealth(startingHealth);
     }
+    protected virtual void Start()
+    {
+    }
+
     public virtual void TakeHit(float damage, Vector3 hitPoint, Vector3 hitDirection)
     {
         TakeDamage(damage);
@@ -57,4 +63,6 @@ public class LivingEntity : MonoBehaviour, IDamageble
         Destroy(gameObject);
 
     }
+
+    protected void CallOnDeath() => OnDeath?.Invoke();
 }

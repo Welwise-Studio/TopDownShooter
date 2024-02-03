@@ -1,3 +1,4 @@
+using ShelterSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -31,7 +32,12 @@ public class MapGenerator : MonoBehaviour
 
     private void Start()
     {
-        FindObjectOfType<Spawner>().OnNewWave += OnNewWave;
+        var spawner = FindObjectOfType<Spawner>();
+        var waves = FindObjectOfType<WavesController>();
+        if (spawner != null)
+            spawner.OnNewWave += OnNewWave;
+        else if (waves != null)
+            waves.OnNewWave += OnNewWave;
     }
 
     public void OnNewWave(int waveNumber)

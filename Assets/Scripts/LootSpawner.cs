@@ -1,3 +1,4 @@
+using ShelterSystem;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,10 +13,24 @@ public class LootSpawner : MonoBehaviour
     [SerializeField] private GameObject _dropEffect;
     [SerializeField][Tooltip("Seconds to destroy item")] private float _objectDestroyTimeout = 10f;
     private readonly List<GameObject> _spawnObjects = new List<GameObject>();
+    private ISpawner _spawnerScript;
     private void Start()
     {
-        FindObjectOfType<Spawner>().OnNewWave += OnNewWave;
+        var spawner = FindObjectOfType<Spawner>();
+        var waves = FindObjectOfType<WavesController>();
+        if (spawner != null)
+            _spawnerScript = spawner;
+        else if (waves != null)
+            _spawnerScript = waves;
+
+        _spawnerScript.OnNewWave += OnNewWave;
         Enemy.OnDeathStaticPosition += OnEnemyKilled;
+    }
+
+    private void OnDestroy()
+    {
+        if (_spawnerScript != null)
+            _spawnerScript.OnNewWave -= OnNewWave;
     }
     private void OnEnemyKilled(Vector3 position)
     {

@@ -18,8 +18,10 @@ public class Player : LivingEntity
     [SerializeField] private float _playerFallBound = -10.0f;
     private Camera _cameraMain;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
+
         Controller = GetComponent<PlayerController>();
         GunControllerScript = GetComponent<GunController>();
         _cameraMain = Camera.main;
@@ -33,6 +35,7 @@ public class Player : LivingEntity
     protected override void Start()
     {
         base.Start();
+
         GunControllerScript.EquipGun(0);
     }
     private void Update()

@@ -52,7 +52,9 @@ public class AimAssistent : MonoBehaviour
         {
 
             var targetPos = _player.transform.position + _player.transform.forward * _aimDistanceWithoutTarget;
-            _player.Controller.LookAt(_player.transform.position + _player.Movement * _aimDistanceWithoutTarget);
+            var look = _player.transform.position + _player.Movement * _aimDistanceWithoutTarget;
+            if (look != Vector3.zero)
+                _player.Controller.LookAt(look);
             _player.Crosshairs.transform.position = targetPos;
             _player.GunControllerScript.Aim(targetPos);
             return;

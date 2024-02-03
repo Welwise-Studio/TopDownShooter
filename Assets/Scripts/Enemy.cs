@@ -9,15 +9,15 @@ public class Enemy : LivingEntity
     public static event System.Action OnDeathStatic;
     public static event System.Action<Vector3> OnDeathStaticPosition;
     public enum State { Spawning, Idle, Chasing, Attacking, TakeDamage };
-    public State currentState { get; private set; }
+    [field: SerializeField] public State currentState { get; private set; }
     [SerializeField] private ParticleSystem _deathEffect;
     [SerializeField] private ParticleSystem _takeDamageEffect;
 
-    private LivingEntity _targetEntity;
+    [SerializeField] private LivingEntity _targetEntity;
 
     [SerializeField] private float _pathRefrashRate = 0.25f;
     public NavMeshAgent _pathfinder { get; private set; }
-    private Transform _target;
+    [SerializeField] private Transform _target;
     //private Material _skinMaterial;
     //private Color _originalColor;
 
@@ -29,26 +29,49 @@ public class Enemy : LivingEntity
 
     private float _enemyCollisionRadius;
     private float _targetCollisionRadius;
-    private bool _hasTarget;
+    [SerializeField] public bool _hasTarget;
 
     //Система дропа предметов
     [SerializeField]
     private ItemDropController ItemDrop;
+    private int _hitsToKillPlayer;
+    public bool UseTargetDeath;
+
+    public void SetTarget(LivingEntity entity)
+    {
+        if (_hasTarget)
+            _targetEntity.OnDeath -= OnTargetDeath;
+        _hasTarget = true;
+
+        Debug.Log("SET TARGET "+ entity.gameObject.name);
+        _target = entity.transform;
+        _targetEntity = entity;
+
+        if (_target.TryGetComponent<CapsuleCollider>(out var capsule))
+            _targetCollisionRadius = capsule.radius;
+        else
+        {
+            var bounds = _target.GetComponent<Collider>().bounds;
+            float largestAxis = Mathf.Max(bounds.size.x, Mathf.Max(bounds.size.y, bounds.size.z));
+            float radiusEquivalent = largestAxis / 2f;
+            _targetCollisionRadius = radiusEquivalent;
+        }
+
+        _enemyCollisionRadius = GetComponent<CapsuleCollider>().radius;
+        damage = Mathf.Ceil(_targetEntity.startingHealth / _hitsToKillPlayer);
+        SetState(State.Chasing);
+    }
 
     #region MONO
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
+
         _pathfinder = GetComponent<NavMeshAgent>();
 
         if (FindObjectOfType<Player>() != null)
         {
-            _hasTarget = true;
-
-            _target = FindObjectOfType<Player>().transform;
-            _targetEntity = _target.GetComponent<LivingEntity>();
-
-            _enemyCollisionRadius = GetComponent<CapsuleCollider>().radius;
-            _targetCollisionRadius = _target.GetComponent<CapsuleCollider>().radius;
+            SetTarget(FindObjectOfType<Player>());
         }
     }
     protected override void Start()
@@ -87,6 +110,7 @@ public class Enemy : LivingEntity
     #endregion
     private IEnumerator Attack()
     {
+        damage = Mathf.Ceil(_targetEntity.startingHealth / _hitsToKillPlayer);
         SetState(State.Attacking);
         _pathfinder.enabled = false;
 
@@ -130,7 +154,7 @@ public class Enemy : LivingEntity
     public void SetCharacteristics(float moveSpeed, int hitsToKillPlayer, float enemyHealth, Color skinColor, GameObject skin)
     {
         _pathfinder.speed = moveSpeed;
-
+        _hitsToKillPlayer = hitsToKillPlayer;
         if (_hasTarget)
         {
             damage = Mathf.Ceil(_targetEntity.startingHealth / hitsToKillPlayer);
@@ -150,7 +174,6 @@ public class Enemy : LivingEntity
         this.transform.position - Vector3.up,
         Quaternion.identity,
         this.transform).AddComponent<EnemyAnimator>();
-
         // _skinMaterial = GetComponent<Renderer>().material;
         // _skinMaterial.color = skinColor;
         // _originalColor = _skinMaterial.color;
@@ -181,6 +204,8 @@ public class Enemy : LivingEntity
     }
     private void OnTargetDeath()
     {
+        if (!UseTargetDeath)
+            return;
         _hasTarget = false;
         SetState(State.Idle);
     }

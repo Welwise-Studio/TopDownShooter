@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class Spawner : MonoBehaviour, ISpawner
 {
     public event System.Action<int> OnNewWave;
 
@@ -80,8 +80,6 @@ public class Spawner : MonoBehaviour
 
     private IEnumerator SpawnEnemy()
     {
-        float spawnDelay = 1f;
-        float tileFlashSpeed = 4f;
 
         Transform spawnTile = _map.GetRandomOpenTile();
 
@@ -170,17 +168,17 @@ public class Spawner : MonoBehaviour
 
         //ResetPlayerPosition();
     }
+}
 
-    [System.Serializable]
-    public class Wave
-    {
-        public GameObject[] enemyModels;
-        public bool infinite;
-        [Min(0)] public int enemyCount;
-        [Min(0.1f)] public float timeBetweenSpawns;
-        [Min(0)] public float moveSpeed;
-        [Min(1)] [Tooltip("Hits / Player Health")] public int hitsToKillPlayer;
-        [Min(1)] public float enemyHealth;
-        public Color bloodColor = Color.green;
-    }
+[System.Serializable]
+public class Wave
+{
+    public GameObject[] enemyModels;
+    public bool infinite;
+    [Min(0)] public int enemyCount;
+    [Min(0.1f)] public float timeBetweenSpawns;
+    [Min(0)] public float moveSpeed;
+    [Min(1)][Tooltip("Hits / Player Health")] public int hitsToKillPlayer;
+    [Min(1)] public float enemyHealth;
+    public Color bloodColor = Color.green;
 }
