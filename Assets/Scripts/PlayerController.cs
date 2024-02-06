@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        _objectRb.MovePosition(_objectRb.position + _velocity * Time.fixedDeltaTime);
+        _objectRb.velocity = _velocity;
     }
     public void Move(Vector3 velocity)
     {
