@@ -84,17 +84,17 @@ namespace ShelterSystem
         private void HideObject(GameObject obj)
         {
             _poofParticle.Play();
-            StartCoroutine(ScaleObject(_lastModel.transform, _showScale, _hideScale,
-                    () => _lastModel.SetActive(true),
-                    () => _lastModel.SetActive(false)));
+            StartCoroutine(ScaleObject(obj.transform, _showScale, _hideScale,
+                    () => obj.SetActive(true),
+                    () => obj.SetActive(false)));
         }
 
         private void ShowObject(GameObject obj)
         {
             _poofParticle.Play();
-            StartCoroutine(ScaleObject(_lastModel.transform, _hideScale, _showScale,
-                    () => _lastModel.SetActive(false),
-                    () => _lastModel.SetActive(true)));
+            StartCoroutine(ScaleObject(obj.transform, _hideScale, _showScale,
+                    () => obj.SetActive(false),
+                    () => obj.SetActive(true)));
         }
 
         private IEnumerator ScaleObject(Transform obj, float from, float to, Action startAction = null, Action endAction = null)

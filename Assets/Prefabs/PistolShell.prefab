@@ -101,8 +101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _forceMin: 90
   _forceMax: 120
-  _lifeTime: 5
-  _fadeTime: 5
+  _lifeTime: 2.5
+  _fadeTime: 2.5
 --- !u!54 &-1979711840279019472
 Rigidbody:
   m_ObjectHideFlags: 0

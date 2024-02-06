@@ -29,6 +29,7 @@ public class Teleport : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Break();
         if (other.TryGetComponent<Player>(out var player))
         {
             if (_usePosition)
