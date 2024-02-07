@@ -8,6 +8,8 @@ public class LivingEntity : MonoBehaviour, IDamageble
     private ItemDropController _itemDrop;
     public float startingHealth;
 
+    public bool IsDropItems = true;
+
     [field: SerializeField]
     public float health { get; protected set; }
     public bool dead;
@@ -55,7 +57,8 @@ public class LivingEntity : MonoBehaviour, IDamageble
     [ContextMenu("Self Destruct")]
     public virtual void Die()
     {
-        _itemDrop?.Drop();
+        if (IsDropItems)
+            _itemDrop?.Drop();
         dead = true;
 
         OnDeath?.Invoke();

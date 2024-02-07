@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using Utils;
 using Utils.ConditionalField;
@@ -29,7 +24,6 @@ public class Teleport : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Break();
         if (other.TryGetComponent<Player>(out var player))
         {
             if (_usePosition)

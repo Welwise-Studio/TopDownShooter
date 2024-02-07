@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using YG;
 
 public class Spawner : MonoBehaviour, ISpawner
 {
@@ -17,7 +18,8 @@ public class Spawner : MonoBehaviour, ISpawner
     private Transform _playerTransform;
 
     private Wave _currentWave;
-    private int _currentWaveNumber;
+    public int MaxWaveNumber => waves.Length;
+    public int CurrentWaveNumber;
 
     private int _enemiesRemainingToSpawn;
     private int _enemiesRemeiningAlives;
@@ -32,9 +34,15 @@ public class Spawner : MonoBehaviour, ISpawner
     private void OnDisable()
     {
         _playerEntity.OnDeath -= OnPlayerDeath;
+        YandexGame.GetDataEvent -= GetData;
+    }
+    private void OnEnable()
+    {
+        YandexGame.GetDataEvent += GetData;
     }
     private void Start()
     {
+        _isDisabled = true;
         _playerEntity = FindObjectOfType<Player>();
         _playerTransform = _playerEntity.transform;
         _nextCampCheckTime = _timeBetweenCampingChecks + Time.time;
@@ -43,6 +51,14 @@ public class Spawner : MonoBehaviour, ISpawner
         _playerEntity.OnDeath += OnPlayerDeath;
 
         _map = FindObjectOfType<MapGenerator>();
+        if (YandexGame.SDKEnabled)
+            GetData();
+        //NextWave();
+    }
+    private void GetData()
+    {
+        CurrentWaveNumber = YandexGame.savesData.LastWaveIndex;
+        _isDisabled = false;
         NextWave();
     }
     private void Update()
@@ -149,21 +165,21 @@ public class Spawner : MonoBehaviour, ISpawner
     }
     private void NextWave()
     {
-        if (_currentWaveNumber > 0)
+        if (CurrentWaveNumber > 0)
         {
             AudioManager.Instance.PlaySound2D("Level Complete");
         }
 
-        _currentWaveNumber++;
+        CurrentWaveNumber++;
 
-        if (_currentWaveNumber - 1 < waves.Length)
+        if (CurrentWaveNumber - 1 < waves.Length)
         {
-            _currentWave = waves[_currentWaveNumber - 1];
+            _currentWave = waves[CurrentWaveNumber - 1];
 
             _enemiesRemainingToSpawn = _currentWave.enemyCount;
             _enemiesRemeiningAlives = _enemiesRemainingToSpawn;
 
-            OnNewWave?.Invoke(_currentWaveNumber);
+            OnNewWave?.Invoke(CurrentWaveNumber);
         }
 
         //ResetPlayerPosition();

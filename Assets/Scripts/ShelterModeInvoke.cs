@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using YG;
 
 public class ShelterModeInvoke : MonoBehaviour
 {
@@ -10,22 +11,15 @@ public class ShelterModeInvoke : MonoBehaviour
     [SerializeField]
     private Teleport _teleport;
 
-
-    [SerializeField]
-    private Vector2Int _spawnRandomRange = new Vector2Int(4,6);
-
     [SerializeField]
     private float _distance = 5;
-
-    private int _spawnIndex;
     private Player _player;
-
+    private bool _isFirst = true;
 
     private void Awake()
     {
         _player = FindObjectOfType<Player>();
         _teleport.gameObject.SetActive(false);
-        _spawnIndex = Random.Range(_spawnRandomRange.x, _spawnRandomRange.y + 1);
     }
 
     private void OnEnable()
@@ -40,25 +34,30 @@ public class ShelterModeInvoke : MonoBehaviour
 
     private void OnNewWave(int index)
     {
-        if (index == _spawnIndex)
+        if (_isFirst)
         {
-            var playerPos = _player.transform.position;
-            Vector3 spawnPos;
-            var rand = Random.insideUnitCircle.normalized;
-            rand = rand == Vector2.zero ? Vector2.one : rand;
-            Vector3 randomPoint = new Vector3(rand.x, 0, rand.y) * _distance;
-            var endPoint = playerPos + randomPoint;
-            if (Physics.Linecast(playerPos, endPoint, out var hit, LayerMask.NameToLayer("Player")))
-            {
-                spawnPos = hit.point;
-            }
-            else
-            {
-                spawnPos = endPoint;
-            }
-            _teleport.transform.position = spawnPos;
-            _teleport.gameObject.SetActive(true);
+            _isFirst = false;
+            return;
         }
+        var playerPos = _player.transform.position;
+        Vector3 spawnPos;
+        var rand = Random.insideUnitCircle.normalized;
+        rand = rand == Vector2.zero ? Vector2.one : rand;
+        Vector3 randomPoint = new Vector3(rand.x, 0, rand.y) * _distance;
+        var endPoint = playerPos + randomPoint;
+        if (Physics.Linecast(playerPos, endPoint, out var hit, LayerMask.NameToLayer("Player")))
+        {
+            spawnPos = hit.point;
+        }
+        else
+        {
+            spawnPos = endPoint;
+        }
+        _teleport.transform.position = spawnPos;
+        _teleport.gameObject.SetActive(true);
+        _spawner.enabled = false;
+        YandexGame.savesData.LastWaveIndex = Mathf.Clamp(_spawner.CurrentWaveNumber -1, 1, _spawner.MaxWaveNumber);
+        YandexGame.SaveProgress();
     }
 
 }

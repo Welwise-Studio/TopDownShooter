@@ -7,6 +7,7 @@ namespace ShelterSystem
     public class WavesController : MonoBehaviour, ISpawner
     {
         public event System.Action<int> OnNewWave;
+        public event System.Action OnEndSpawn;
         public bool IsLastWave => _currentWaveNumber >= (waves.Length);
 
         [SerializeField]
@@ -87,6 +88,7 @@ namespace ShelterSystem
             _currentWave.bloodColor,
             _currentWave.enemyModels.Length == 0 || _currentWave.enemyModels == null ? _defaultEnemyModels[rEnemyPrefab] : _currentWave.enemyModels[rEnemyPrefab]);
             spawnedEnemy.SetTarget(_currentTarget);
+            spawnedEnemy.IsDropItems = false;
             //spawnedEnemy.UseTargetDeath = false;
             yield return null;
         }
@@ -120,6 +122,8 @@ namespace ShelterSystem
         }
         private void NextWave()
         {
+            if (_currentWaveNumber >= waves.Length)
+                OnEndSpawn?.Invoke();
             if (_currentWaveNumber > 0)
             {
                 AudioManager.Instance.PlaySound2D("Level Complete");

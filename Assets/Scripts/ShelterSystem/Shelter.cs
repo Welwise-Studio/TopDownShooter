@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using HealthSystem;
+using YG;
 
 
 namespace ShelterSystem
@@ -42,10 +43,27 @@ namespace ShelterSystem
         {
             base.Start();
 
+            if (YandexGame.SDKEnabled)
+                GetLevelData();
+        }
+
+        private void OnEnable()
+        {
+            YandexGame.GetDataEvent += GetLevelData;
+        }
+
+        private void OnDisable()
+        {   
+            YandexGame.GetDataEvent -= GetLevelData;
+        }
+
+        private void GetLevelData()
+        {
+            Level = YandexGame.savesData.ShelterLevel;
             UpdateElements();
             UpdateStats();
             AddHealth(startingHealth);
-            OnLevelUp?.Invoke(1);
+            OnLevelUp?.Invoke(Level);
         }
 
 
@@ -57,6 +75,9 @@ namespace ShelterSystem
             Level++;
             UpdateElements();
             UpdateStats();
+            AddHealth(startingHealth);
+            YandexGame.savesData.ShelterLevel = Level;
+            YandexGame.SaveProgress();
             OnLevelUp?.Invoke(Level);
         }
 

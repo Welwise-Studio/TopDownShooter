@@ -31,9 +31,6 @@ public class Enemy : LivingEntity
     private float _targetCollisionRadius;
     [SerializeField] public bool _hasTarget;
 
-    //Система дропа предметов
-    [SerializeField]
-    private ItemDropController ItemDrop;
     private int _hitsToKillPlayer;
     public bool UseTargetDeath;
 

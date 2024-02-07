@@ -22,13 +22,13 @@ namespace ShelterSystem
         private void OnEnable()
         {
             _wavesController.OnNewWave += RestoreEvent;
-            _wavesController.OnNewWave += TeleportCheck;
+            _wavesController.OnEndSpawn += TeleportCheck;
         }
 
         private void OnDisable()
         {
             _wavesController.OnNewWave -= RestoreEvent;
-            _wavesController.OnNewWave -= TeleportCheck;
+            _wavesController.OnEndSpawn -= TeleportCheck;
         }
 
         private void Awake()
@@ -41,13 +41,10 @@ namespace ShelterSystem
             _fence.Restore();
         }
 
-        private void TeleportCheck(int wave)
+        private void TeleportCheck()
         {
-            if (_wavesController.IsLastWave)
-            {
-                _teleport.gameObject.SetActive(true);
-                AudioManager.Instance.PlaySound(_tpAwakeSound, _teleport.transform.position);
-            }
+            _teleport.gameObject.SetActive(true);
+            AudioManager.Instance.PlaySound(_tpAwakeSound, _teleport.transform.position);
         }
     }
 }

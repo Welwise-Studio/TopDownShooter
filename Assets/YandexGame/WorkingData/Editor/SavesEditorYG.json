@@ -1,5 +1,5 @@
 {
-  "idSave": 1426,
+  "idSave": 1458,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
@@ -10,7 +10,7 @@
     true,
     false
   ],
-  "Balance": 91708,
+  "Balance": 91776,
   "openedWeapons": {
     "pistol": true,
     "shotgub": true,
@@ -20,5 +20,7 @@
     "pumpActionShootgun": true,
     "sniperRifle": true,
     "autogun": true
-  }
+  },
+  "ShelterLevel": 2,
+  "LastWaveIndex": 4
 }
