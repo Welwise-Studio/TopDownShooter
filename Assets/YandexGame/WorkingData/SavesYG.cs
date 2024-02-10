@@ -22,6 +22,7 @@ namespace YG
         public Dictionary<string, bool> openedWeapons = new Dictionary<string, bool>();
         public int ShelterLevel;
         public int LastWaveIndex;
+        public int LastGunIndex;
         // ...
 
         // Поля (сохранения) можно удалять и создавать новые. При обновлении игры сохранения ломаться не должны
@@ -37,6 +38,7 @@ namespace YG
             Balance = 0;
             ShelterLevel = 1;
             LastWaveIndex = 0;
+            LastGunIndex = 0;
         }
     }
 }
