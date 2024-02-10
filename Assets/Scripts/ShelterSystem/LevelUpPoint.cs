@@ -7,7 +7,8 @@ namespace ShelterSystem
     public class LevelUpPoint : MonoBehaviour
     {
         [SerializeField]
-        private int _levelUpPrice = 100;
+        private int[] _levelUpPrices = new int[] {100, 150, 200, 300, 400, 500, 600, 1000, 1500, 2000};
+        private int _currentPrice;
         [SerializeField]
         private float _couldDownTime;
         [SerializeField]
@@ -30,12 +31,17 @@ namespace ShelterSystem
 
         private void Start()
         {
-            _priceHolder.text = _levelUpPrice.ToString();
+            if (_shelter.Level > _levelUpPrices.Length)
+                _currentPrice = _levelUpPrices[0];
+            else
+                _currentPrice = _levelUpPrices[_shelter.Level-1];
+
+            _priceHolder.text = _currentPrice.ToString();
         }
 
         private void Update()
         {
-            if (_wallet.Enough(_levelUpPrice))
+            if (_wallet.Enough(_currentPrice))
                 _couldDownProgress.color = _enoughColor;
             else
                 _couldDownProgress.color = _notEnoughColor;
@@ -52,12 +58,13 @@ namespace ShelterSystem
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.TryGetComponent<Player>(out var player) && !_inCouldDown && _wallet.TrySpend(_levelUpPrice))
+            if (other.TryGetComponent<Player>(out var player) && !_inCouldDown && _wallet.TrySpend(_currentPrice))
             {
                 _shelter.Upgrade();
                 _inCouldDown = true;
                 _couldDownProgress.fillAmount = 0;
                 _couldDownTimer = _couldDownTime;
+                _currentPrice = _levelUpPrices[_shelter.Level - 1];
             }
         }
     }

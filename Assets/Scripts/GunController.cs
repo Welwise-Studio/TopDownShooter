@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using YG;
 
 public class GunController : MonoBehaviour
 {
@@ -24,11 +25,14 @@ public class GunController : MonoBehaviour
         if (weaponIndex < _allGuns.Length)
         {
             EquipGun(_allGuns[weaponIndex]);
+            YandexGame.savesData.LastGunIndex = weaponIndex;
         }
         else
         {
             EquipGun(_allGuns[^1]);
+            YandexGame.savesData.LastGunIndex = 0;
         }
+        YandexGame.SaveProgress();
     }
     public void OnTriggerHold()
     {

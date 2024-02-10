@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using YG;
 
 namespace ShelterSystem
 {
@@ -30,23 +31,43 @@ namespace ShelterSystem
         [SerializeField ]private List<Enemy> _enemies = new List<Enemy>();
 
         [SerializeField][Tooltip("Disable enemy spawn")] private bool _isDisabled;
+        [SerializeField] private float _timeToStart = 7;
         private void OnDisable()
         {
             foreach (var item in _targetsPriority)
             {
                 item.OnDeath -= OnTargetDeath;
             }
+            YandexGame.GetDataEvent -= GetData;
         }
+
+        private void OnEnable()
+        {
+            YandexGame.GetDataEvent += GetData;
+        }
+
         private void Start()
         {
+            _isDisabled = true;
             foreach (var item in _targetsPriority)
             {
                 item.OnDeath += OnTargetDeath;
             }
             _currentTarget = _targetsPriority[0];
 
+            if (YandexGame.SDKEnabled)
+                GetData();
+            Invoke(nameof(EnableSpawner), _timeToStart);
+        }
+
+        private void EnableSpawner() => _isDisabled = false; 
+
+        private void GetData()
+        {
+            _currentWaveNumber = YandexGame.savesData.LastWaveIndex - 1;
             NextWave();
         }
+
         private void Update()
         {
             if (!_isDisabled)
