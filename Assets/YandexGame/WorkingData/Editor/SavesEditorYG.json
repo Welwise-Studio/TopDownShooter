@@ -1,0 +1,19 @@
+{
+  "idSave": 7,
+  "isFirstSession": false,
+  "language": "ru",
+  "promptDone": false,
+  "money": 1,
+  "newPlayerName": "Hello!",
+  "openLevels": [
+    false,
+    true,
+    false
+  ],
+  "Balance": 0,
+  "openedWeapons": {
+    "pistol": true
+  },
+  "ShelterLevel": 1,
+  "LastWaveIndex": 2
+}

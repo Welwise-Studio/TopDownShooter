@@ -38,6 +38,8 @@ namespace ShelterSystem
 
         [SerializeField]
         private ShelterUpgradeElement[] _elements;
+        [SerializeField]
+        private DieModal _dieModal;
 
         protected override void Start()
         {
@@ -118,6 +120,11 @@ namespace ShelterSystem
             }
 
             return stats;
+        }
+
+        public override void Die()
+        {
+            _dieModal.Show();
         }
     }
 }

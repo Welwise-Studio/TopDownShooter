@@ -6,6 +6,7 @@ using Utils.ConditionalField;
 
 public class Teleport : MonoBehaviour
 {
+    private static readonly string _catSceneName = "CatScene";
     [SerializeField]
     private bool _useSceneLoad;
 
@@ -30,7 +31,10 @@ public class Teleport : MonoBehaviour
                 player.transform.position = _tpPosition.position;
 
             if (_useSceneLoad)
-                SceneManager.LoadScene(_sceneToLoad.SceneName);
+            {
+                CatSceneLoader.NextSceneName = _sceneToLoad.SceneName;
+                SceneManager.LoadScene(_catSceneName);
+            }
         }
     }
 }

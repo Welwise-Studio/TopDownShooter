@@ -707,6 +707,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1530156627}
   - component: {fileID: 1530156628}
+  - component: {fileID: 1530156629}
   m_Layer: 0
   m_Name: Director
   m_TagString: Untagged
@@ -750,6 +751,18 @@ PlayableDirector:
     value: {fileID: 963194232}
   m_ExposedReferences:
     m_References: []
+--- !u!114 &1530156629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530156626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebdc135d67be8b74ea87608854377ec6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1589025424
 GameObject:
   m_ObjectHideFlags: 0
