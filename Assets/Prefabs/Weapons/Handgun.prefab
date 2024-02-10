@@ -175,7 +175,7 @@ MonoBehaviour:
   _firerate: 140
   _muzzleVelocity: 30
   _bulletDamage: 1
-  _burstCount: 3
+  _burstCount: 1
   _projectilesPerMag: 6
   _reloadTime: 0.36
   _kickMinMax: {x: 0.05, y: 0.2}
