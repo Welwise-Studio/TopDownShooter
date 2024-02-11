@@ -11,6 +11,7 @@ namespace ShelterSystem
     {
         [SerializeField]
         private WavesController _wavesController;
+        private bool _isFirstWave = true;
 
         [SerializeField]
         private Teleport _teleport;
@@ -22,13 +23,13 @@ namespace ShelterSystem
         private void OnEnable()
         {
             _wavesController.OnNewWave += RestoreEvent;
-            _wavesController.OnEndSpawn += TeleportCheck;
+            _wavesController.OnNewWave += TeleportCheck;
         }
 
         private void OnDisable()
         {
             _wavesController.OnNewWave -= RestoreEvent;
-            _wavesController.OnEndSpawn -= TeleportCheck;
+            _wavesController.OnNewWave -= TeleportCheck;
         }
 
         private void Awake()
@@ -41,10 +42,16 @@ namespace ShelterSystem
             _fence.Restore();
         }
 
-        private void TeleportCheck()
+        private void TeleportCheck(int index)
         {
-            _teleport.gameObject.SetActive(true);
-            AudioManager.Instance.PlaySound(_tpAwakeSound, _teleport.transform.position);
+            if (!_isFirstWave)
+            {
+                _teleport.gameObject.SetActive(true);
+                AudioManager.Instance.PlaySound(_tpAwakeSound, _teleport.transform.position);
+                _wavesController.IsDisabled = true;
+            }
+
+            _isFirstWave = false;
         }
     }
 }

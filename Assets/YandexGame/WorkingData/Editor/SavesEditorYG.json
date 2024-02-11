@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "idSave": 3,
+=======
+  "idSave": 31,
+>>>>>>> f5eeff9 (Stage)
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
@@ -10,11 +14,23 @@
     true,
     false
   ],
+<<<<<<< HEAD
   "Balance": 200,
   "openedWeapons": {
     "pistol": true
   },
   "ShelterLevel": 1,
   "LastWaveIndex": 2,
+=======
+  "Balance": 675,
+  "openedWeapons": {
+    "pistol": true,
+    "shotgub": true,
+    "machineGun": true,
+    "sniperRifle": true
+  },
+  "ShelterLevel": 1,
+  "LastWaveIndex": 4,
+>>>>>>> f5eeff9 (Stage)
   "LastGunIndex": 0
 }

@@ -30,7 +30,7 @@ namespace ShelterSystem
         private float _nextSpawnTime;
         [SerializeField] private List<Enemy> _enemies = new List<Enemy>();
 
-        [SerializeField][Tooltip("Disable enemy spawn")] private bool _isDisabled;
+        [SerializeField][Tooltip("Disable enemy spawn")] public bool IsDisabled;
         [SerializeField] private float _timeToStart = 7;
         private void OnDisable()
         {
@@ -48,7 +48,7 @@ namespace ShelterSystem
 
         private void Start()
         {
-            _isDisabled = true;
+            IsDisabled = true;
             foreach (var item in _targetsPriority)
             {
                 item.OnDeath += OnTargetDeath;
@@ -61,7 +61,7 @@ namespace ShelterSystem
             Invoke(nameof(EnableSpawner), _timeToStart);
         }
 
-        private void EnableSpawner() => _isDisabled = false; 
+        private void EnableSpawner() => IsDisabled = false; 
 
         private void GetData()
         {
@@ -71,7 +71,7 @@ namespace ShelterSystem
 
         private void Update()
         {
-            if (!_isDisabled)
+            if (!IsDisabled)
             {                
                 if ((_enemiesRemainingToSpawn > 0 || _currentWave.infinite) && Time.time > _nextSpawnTime)
                 {
@@ -131,7 +131,7 @@ namespace ShelterSystem
                 }
             }
 
-            _isDisabled = true;
+            IsDisabled = true;
         }
         private void OnEnemyDeath()
         {
