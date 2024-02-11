@@ -157,7 +157,7 @@ public class Enemy : LivingEntity
             damage = Mathf.Ceil(_targetEntity.startingHealth / hitsToKillPlayer);
         }
 
-        startingHealth = enemyHealth;
+        health = enemyHealth;
 
         //Set color take damage effect particles.
         ParticleSystem.MainModule particleSystemMainTakeDamageEffect = _takeDamageEffect.main;
