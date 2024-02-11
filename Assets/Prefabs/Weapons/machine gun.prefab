@@ -370,7 +370,7 @@ MonoBehaviour:
   _projectile: {fileID: -5138646287536290796, guid: 77f205d6d2fe9334b8c75b48da9ab758, type: 3}
   _firerate: 90
   _muzzleVelocity: 40
-  _bulletDamage: 0.6
+  _bulletDamage: 0.4
   _burstCount: 3
   _projectilesPerMag: 50
   _reloadTime: 2
