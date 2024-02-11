@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using YG;
 
 [RequireComponent(typeof(PlayerController))]
 [RequireComponent(typeof(GunController))]
@@ -18,6 +19,16 @@ public class Player : LivingEntity
     [SerializeField] private float _playerFallBound = -10.0f;
     private Camera _cameraMain;
 
+    private void OnEnable()
+    {
+        YandexGame.GetDataEvent += GetData;
+    }
+
+    private void OnDisable()
+    {
+        YandexGame.GetDataEvent -= GetData;
+    }
+
     protected override void Awake()
     {
         base.Awake();
@@ -27,17 +38,19 @@ public class Player : LivingEntity
         _cameraMain = Camera.main;
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log(collision.gameObject.name);
-    }
-
     protected override void Start()
     {
         base.Start();
-
-        GunControllerScript.EquipGun(0);
+        
+        if (YandexGame.SDKEnabled)
+            GetData();
     }
+
+    private void GetData()
+    {
+        GunControllerScript.EquipGun(YandexGame.savesData.LastGunIndex);
+    }
+
     private void Update()
     {
         MovementInput();
