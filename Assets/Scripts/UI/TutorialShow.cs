@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TutorialShow : MonoBehaviour
@@ -7,11 +5,14 @@ public class TutorialShow : MonoBehaviour
     public static bool IsShown;
 
     private bool _currentShown;
+    [SerializeField] private GameObject _gameObject;
 
     private void Start()
     {
+        _gameObject.SetActive(false);
         if (!IsShown)
         {
+            _gameObject.SetActive(true);
             Time.timeScale = .000000003f;
             IsShown = true;
             _currentShown = true;
@@ -27,7 +28,7 @@ public class TutorialShow : MonoBehaviour
         {
             Time.timeScale = 1;
 
-            gameObject.SetActive(false);
+            _gameObject.SetActive(false);
         }
     }
 
