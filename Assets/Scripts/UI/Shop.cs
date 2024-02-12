@@ -10,6 +10,16 @@ public class Shop : MonoBehaviour
     [SerializeField] private ShopItem[] _items;
     private ShopItem _lastItem;
 
+    private void OnEnable()
+    {
+        CombinedSDK.OnCombinedSDKInitilizedEvent += Load;
+    }
+
+    private void OnDisable()
+    {
+        CombinedSDK.OnCombinedSDKInitilizedEvent -= Load;
+    }
+
     private void Awake()
     {
         foreach (var item in _items)
@@ -17,28 +27,20 @@ public class Shop : MonoBehaviour
             item.OnClicked += Interaction;
         }
         _gunController.OnGunChanged += LightCurrentItem;
-        YandexGame.GetDataEvent += Load;
-
     }
 
     private void Start()
     {
-        if (YandexGame.SDKEnabled)
+        if (CombinedSDK.IsInitilized)
             Load();
     }
 
 
     private void Load()
     {
-        Debug.Log("Loaded-");
-        foreach (var item in YandexGame.savesData.openedWeapons)
-        {
-            Debug.Log($"{item.Key} : {item.Value}");
-        }
-        Debug.Log("Loaded-");
         foreach (var item in _items)
         {
-            if (YandexGame.savesData.openedWeapons.ContainsKey(item.Id) && YandexGame.savesData.openedWeapons[item.Id] == true)
+            if (CombinedSDK.AllSavesCombinedSDK.openedWeapons.ContainsKey(item.Id) && CombinedSDK.AllSavesCombinedSDK.openedWeapons[item.Id] == true)
                 item.Unlock();
             else
                 item.Lock();
@@ -67,8 +69,8 @@ public class Shop : MonoBehaviour
         else if (_wallet.TrySpend(item.Price))
         {
             item.Unlock();
-            YandexGame.savesData.openedWeapons[item.Id] = true;
-            YandexGame.SaveProgress();
+            CombinedSDK.AllSavesCombinedSDK.openedWeapons[item.Id] = true;
+            CombinedSDK.SaveProgressData();
             _gunController.EquipGun(item.Gun);;
         }
         else

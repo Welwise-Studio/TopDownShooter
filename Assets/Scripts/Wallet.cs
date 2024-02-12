@@ -10,21 +10,30 @@ public class Wallet : MonoBehaviour
 
     private void Load()
     {
-        _value = YandexGame.savesData.Balance;
+        _value = CombinedSDK.AllSavesCombinedSDK.Balance;
         OnValuseChanged?.Invoke(Value);
+    }
+
+    private void OnEnable()
+    {
+        CombinedSDK.OnCombinedSDKInitilizedEvent += Load;
+    }
+
+    private void OnDisable()
+    {
+        CombinedSDK.OnCombinedSDKInitilizedEvent -= Load;
     }
 
     private void Start()
     {
-        YandexGame.GetDataEvent += Load;
-        if (YandexGame.SDKEnabled)
+        if (CombinedSDK.IsInitilized)
             Load();
     }
 
     private void OnDestroy()
     {
-        YandexGame.savesData.Balance = _value;
-        YandexGame.SaveProgress();
+        CombinedSDK.AllSavesCombinedSDK.Balance = _value;
+        CombinedSDK.SaveProgressData();
     }
 
     public void Add(int amount)

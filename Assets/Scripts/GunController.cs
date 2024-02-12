@@ -18,6 +18,17 @@ public class GunController : MonoBehaviour
         }
 
         _equippedGun = Instantiate(gunToEquip, _weaponHold.position,gunToEquip.transform.rotation,_weaponHold);
+        _equippedGun.name = gunToEquip.name;
+        CombinedSDK.AllSavesCombinedSDK.LastGunIndex = 0;
+        for (int i = _allGuns.Length - 1; i >= 0; i--)
+        {
+            if (_allGuns[i].name == gunToEquip.name)
+            {
+                CombinedSDK.AllSavesCombinedSDK.LastGunIndex = i;
+                break;
+            }
+        }
+
         OnGunChanged?.Invoke(gunToEquip);
     }
     public void EquipGun(int weaponIndex)
@@ -25,14 +36,14 @@ public class GunController : MonoBehaviour
         if (weaponIndex < _allGuns.Length)
         {
             EquipGun(_allGuns[weaponIndex]);
-            YandexGame.savesData.LastGunIndex = weaponIndex;
+            CombinedSDK.AllSavesCombinedSDK.LastGunIndex = weaponIndex;
         }
         else
         {
             EquipGun(_allGuns[^1]);
-            YandexGame.savesData.LastGunIndex = 0;
+            CombinedSDK.AllSavesCombinedSDK.LastGunIndex = 0;
         }
-        YandexGame.SaveProgress();
+        CombinedSDK.SaveProgressData();
     }
     public void OnTriggerHold()
     {

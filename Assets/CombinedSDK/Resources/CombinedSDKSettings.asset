@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc5e5adfbfc8df439cffa480a3ab74b, type: 3}
   m_Name: CombinedSDKSettings
   m_EditorClassIdentifier: 
-  selectSDK: 0
+  selectSDK: 1

@@ -34,6 +34,8 @@
 
 #endif
 
+using UnityEngine;
+
 public static class CombinedSDK
 {
     public static System.Action OnCombinedSDKInitilizedEvent;
@@ -56,8 +58,9 @@ public static class CombinedSDK
             AllSavesCombinedSDK = executor.DataSavesCombinedSDK;
             IsInitilized = true;
 
-            OnCombinedSDKInitilizedEvent?.Invoke();
             SelectedSDK.LoadProgressData();
+            OnCombinedSDKInitilizedEvent?.Invoke();
+            Debug.Log("InitSDK");
         }
         else
         {

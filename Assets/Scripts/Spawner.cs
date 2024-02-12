@@ -34,11 +34,11 @@ public class Spawner : MonoBehaviour, ISpawner
     private void OnDisable()
     {
         _playerEntity.OnDeath -= OnPlayerDeath;
-        YandexGame.GetDataEvent -= GetData;
+        CombinedSDK.OnCombinedSDKInitilizedEvent -= GetData;
     }
     private void OnEnable()
     {
-        YandexGame.GetDataEvent += GetData;
+        CombinedSDK.OnCombinedSDKInitilizedEvent += GetData;
     }
     private void Start()
     {
@@ -51,13 +51,13 @@ public class Spawner : MonoBehaviour, ISpawner
         _playerEntity.OnDeath += OnPlayerDeath;
 
         _map = FindObjectOfType<MapGenerator>();
-        if (YandexGame.SDKEnabled)
+        if (CombinedSDK.IsInitilized)
             GetData();
         //NextWave();
     }
     private void GetData()
     {
-        CurrentWaveNumber = YandexGame.savesData.LastWaveIndex;
+        CurrentWaveNumber = CombinedSDK.AllSavesCombinedSDK.LastWaveIndex;
         _isDisabled = false;
         NextWave();
     }
@@ -103,20 +103,7 @@ public class Spawner : MonoBehaviour, ISpawner
         {
             spawnTile = _map.GetTileFromPosition(_playerTransform.position);
         }
-        /*var renderer = spawnTile.GetComponent<Renderer>();
-        renderer.enabled = true;
-        Material tileMat = renderer.sharedMaterial;
-        Color initialColor = Color.white;
-        Color flashColour = Color.red;
-        float spawnTimer = 0;
 
-        while (spawnTimer < spawnDelay)
-        {
-            tileMat.color = Color.Lerp(initialColor, flashColour, Mathf.PingPong(spawnTimer * tileFlashSpeed, 1f));
-            spawnTimer += Time.deltaTime;
-            yield return null;
-        }
-        renderer.enabled = false;*/
         var playerPos = _playerEntity.transform.position;
         Vector3 spawnPos;
         var rand = Random.insideUnitCircle.normalized;

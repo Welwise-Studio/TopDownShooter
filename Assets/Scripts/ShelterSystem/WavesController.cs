@@ -28,7 +28,7 @@ namespace ShelterSystem
         private int _enemiesRemainingToSpawn;
         private int _enemiesRemeiningAlives;
         private float _nextSpawnTime;
-        [SerializeField ]private List<Enemy> _enemies = new List<Enemy>();
+        [SerializeField] private List<Enemy> _enemies = new List<Enemy>();
 
         [SerializeField][Tooltip("Disable enemy spawn")] private bool _isDisabled;
         [SerializeField] private float _timeToStart = 7;
@@ -38,12 +38,12 @@ namespace ShelterSystem
             {
                 item.OnDeath -= OnTargetDeath;
             }
-            YandexGame.GetDataEvent -= GetData;
+            CombinedSDK.OnCombinedSDKInitilizedEvent -= GetData;
         }
 
         private void OnEnable()
         {
-            YandexGame.GetDataEvent += GetData;
+            CombinedSDK.OnCombinedSDKInitilizedEvent += GetData;
         }
 
         private void Start()
@@ -55,8 +55,9 @@ namespace ShelterSystem
             }
             _currentTarget = _targetsPriority[0];
 
-            if (YandexGame.SDKEnabled)
+            if (CombinedSDK.IsInitilized)
                 GetData();
+
             Invoke(nameof(EnableSpawner), _timeToStart);
         }
 
@@ -64,7 +65,7 @@ namespace ShelterSystem
 
         private void GetData()
         {
-            _currentWaveNumber = YandexGame.savesData.LastWaveIndex - 1;
+            _currentWaveNumber = CombinedSDK.AllSavesCombinedSDK.LastWaveIndex - 1;
             NextWave();
         }
 

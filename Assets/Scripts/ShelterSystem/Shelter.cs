@@ -41,27 +41,28 @@ namespace ShelterSystem
         [SerializeField]
         private DieModal _dieModal;
 
+
         protected override void Start()
         {
             base.Start();
 
-            if (YandexGame.SDKEnabled)
+            if (CombinedSDK.IsInitilized)
                 GetLevelData();
         }
 
         private void OnEnable()
         {
-            YandexGame.GetDataEvent += GetLevelData;
+            CombinedSDK.OnCombinedSDKInitilizedEvent += GetLevelData;
         }
 
         private void OnDisable()
         {   
-            YandexGame.GetDataEvent -= GetLevelData;
+            CombinedSDK.OnCombinedSDKInitilizedEvent -= GetLevelData;
         }
 
         private void GetLevelData()
         {
-            Level = YandexGame.savesData.ShelterLevel;
+            Level = CombinedSDK.AllSavesCombinedSDK.ShelterLevel;
             UpdateElements();
             UpdateStats();
             AddHealth(startingHealth);
@@ -78,8 +79,8 @@ namespace ShelterSystem
             UpdateElements();
             UpdateStats();
             AddHealth(startingHealth);
-            YandexGame.savesData.ShelterLevel = Level;
-            YandexGame.SaveProgress();
+            CombinedSDK.AllSavesCombinedSDK.ShelterLevel = Level;
+            CombinedSDK.SaveProgressData();
             OnLevelUp?.Invoke(Level);
         }
 

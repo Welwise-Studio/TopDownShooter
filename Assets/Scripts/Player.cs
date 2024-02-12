@@ -21,12 +21,12 @@ public class Player : LivingEntity
 
     private void OnEnable()
     {
-        YandexGame.GetDataEvent += GetData;
+        CombinedSDK.OnCombinedSDKInitilizedEvent += GetData;
     }
 
     private void OnDisable()
     {
-        YandexGame.GetDataEvent -= GetData;
+        CombinedSDK.OnCombinedSDKInitilizedEvent -= GetData;
     }
 
     protected override void Awake()
@@ -42,13 +42,13 @@ public class Player : LivingEntity
     {
         base.Start();
         
-        if (YandexGame.SDKEnabled)
+        if (CombinedSDK.IsInitilized)
             GetData();
     }
 
     private void GetData()
     {
-        GunControllerScript.EquipGun(YandexGame.savesData.LastGunIndex);
+        GunControllerScript.EquipGun(CombinedSDK.AllSavesCombinedSDK.LastGunIndex);
     }
 
     private void Update()

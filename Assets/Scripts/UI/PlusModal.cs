@@ -17,7 +17,7 @@ public class PlusModal : MonoBehaviour
     [SerializeField] private float _hidePosition;
     [SerializeField] private float _showPosition;
     [SerializeField] private Wallet _wallet;
-    [SerializeField] private int _adId = 1;
+    [SerializeField] private string _adId = "1";
 
     private bool _isShowing;
     private float _master;
@@ -25,14 +25,14 @@ public class PlusModal : MonoBehaviour
     private void Awake()
     {
         _closeButton.onClick.AddListener(Hide);
-        _rewardButton.onClick.AddListener( () => YandexGame.RewVideoShow(_adId));
+        _rewardButton.onClick.AddListener( () => CombinedSDK.OpenRewardAd(_adId));
         _textMesh.text = _reward.ToString();
     }
 
-    private void OnEnable() => YandexGame.RewardVideoEvent += Rewarded;
-    private void OnDisable() => YandexGame.RewardVideoEvent -= Rewarded;
+    private void OnEnable() => CombinedSDK.OnCombinedSDKCloseRewardVideo += Rewarded;
+    private void OnDisable() => CombinedSDK.OnCombinedSDKCloseRewardVideo -= Rewarded;
 
-    private void Rewarded(int id)
+    private void Rewarded(string id)
     {
         if (id == _adId)
         {

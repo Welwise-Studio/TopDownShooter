@@ -56,8 +56,8 @@ public class ShelterModeInvoke : MonoBehaviour
         _teleport.transform.position = spawnPos;
         _teleport.gameObject.SetActive(true);
         _spawner.enabled = false;
-        YandexGame.savesData.LastWaveIndex = Mathf.Clamp(_spawner.CurrentWaveNumber -1, 1, _spawner.MaxWaveNumber);
-        YandexGame.SaveProgress();
+        CombinedSDK.AllSavesCombinedSDK.LastWaveIndex = Mathf.Clamp(_spawner.CurrentWaveNumber -1, 1, _spawner.MaxWaveNumber);
+        CombinedSDK.SaveProgressData();
     }
 
 }
