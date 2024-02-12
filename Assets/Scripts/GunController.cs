@@ -28,6 +28,7 @@ public class GunController : MonoBehaviour
                 break;
             }
         }
+        CombinedSDK.SaveProgressData();
 
         OnGunChanged?.Invoke(gunToEquip);
     }

@@ -5523,81 +5523,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000012219609572, guid: eb470454773400c439cfaee738fca518, type: 3}
   m_PrefabInstance: {fileID: 156134538}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &158121652
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 158121653}
-  - component: {fileID: 158121655}
-  - component: {fileID: 158121654}
-  m_Layer: 5
-  m_Name: coin
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &158121653
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 158121652}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2051627074}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 128.53, y: -26.683}
-  m_SizeDelta: {x: 40, y: 40}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &158121654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 158121652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ecd5b19f90e27f04dab0f43f088a33d3, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &158121655
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 158121652}
-  m_CullTransparentMesh: 1
 --- !u!4 &158620422 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010169053890, guid: 0238ca7407f87aa4ba3ff66a5e9de5ba, type: 3}
@@ -9090,81 +9015,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 268256352}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &269086433
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 269086434}
-  - component: {fileID: 269086436}
-  - component: {fileID: 269086435}
-  m_Layer: 5
-  m_Name: bg
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &269086434
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269086433}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2051627074}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 298, y: 93}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &269086435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269086433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 81cc4958a354a7e4eae9e5b13953681e, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &269086436
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269086433}
-  m_CullTransparentMesh: 1
 --- !u!1001 &270146663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11125,11 +10975,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011135863620, guid: 068714d3a2d4683488a7b812c65bd98f, type: 3}
   m_PrefabInstance: {fileID: 325783762}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &332059730 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5740288234728135425, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-  m_PrefabInstance: {fileID: 3756648434728423844}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &332280420
 PrefabInstance:
@@ -25881,140 +25726,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000013993364058, guid: f96807861d9da70428993ecd9e1ad1b2, type: 3}
   m_PrefabInstance: {fileID: 816173804}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &823879231
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 823879232}
-  - component: {fileID: 823879234}
-  - component: {fileID: 823879233}
-  m_Layer: 5
-  m_Name: price
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &823879232
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 823879231}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2051627074}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 63.291, y: -21.5}
-  m_SizeDelta: {x: 90.4788, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &823879233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 823879231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 12345
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0299b47934ddf3f458024325ed9719c3, type: 2}
-  m_sharedMaterial: {fileID: -1064879322822255559, guid: 0299b47934ddf3f458024325ed9719c3, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4279573021
-  m_fontColor: {r: 0.11372549, g: 0.101960786, b: 0.08235294, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 46
-  m_fontSizeBase: 46
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 5.94
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &823879234
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 823879231}
-  m_CullTransparentMesh: 1
 --- !u!1001 &825546400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35984,81 +35695,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000012219609572, guid: eb470454773400c439cfaee738fca518, type: 3}
   m_PrefabInstance: {fileID: 1077154689}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1082449237
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1082449238}
-  - component: {fileID: 1082449240}
-  - component: {fileID: 1082449239}
-  m_Layer: 5
-  m_Name: check
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1082449238
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1082449237}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2051627074}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 134.9, y: 30.5}
-  m_SizeDelta: {x: 67, y: 51}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1082449239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1082449237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3e84a858d04598e4cacc458c32fa0c06, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1082449240
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1082449237}
-  m_CullTransparentMesh: 1
 --- !u!1001 &1084056857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42312,81 +41948,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000013889594438, guid: ded97c442c374184a9daaa057042bccc, type: 3}
   m_PrefabInstance: {fileID: 1281070213}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1283360288
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1283360289}
-  - component: {fileID: 1283360291}
-  - component: {fileID: 1283360290}
-  m_Layer: 5
-  m_Name: lock_icon
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1283360289
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1283360288}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2051627074}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50.5, y: -0.0000090599}
-  m_SizeDelta: {x: 51.2651, y: 58.9549}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1283360290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1283360288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1b9dfe9b152733e4e887ae5f0b51f731, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1283360291
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1283360288}
-  m_CullTransparentMesh: 1
 --- !u!1001 &1288898697
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46665,81 +46226,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1460157207}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1460890428
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1460890429}
-  - component: {fileID: 1460890431}
-  - component: {fileID: 1460890430}
-  m_Layer: 5
-  m_Name: overlay
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1460890429
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1460890428}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2051627074}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.23496, y: -0.00001049}
-  m_SizeDelta: {x: 297.53, y: 93}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1460890430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1460890428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 0.41960785}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 81cc4958a354a7e4eae9e5b13953681e, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1460890431
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1460890428}
-  m_CullTransparentMesh: 1
 --- !u!1001 &1462018534
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51359,81 +50845,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000013889594438, guid: ded97c442c374184a9daaa057042bccc, type: 3}
   m_PrefabInstance: {fileID: 1594775259}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1595837273
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1595837274}
-  - component: {fileID: 1595837276}
-  - component: {fileID: 1595837275}
-  m_Layer: 5
-  m_Name: plus
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1595837274
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1595837273}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2051627074}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 134.9, y: 30.5}
-  m_SizeDelta: {x: 61, y: 61}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1595837275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1595837273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 12517b73c06837d4ebf3d8fbdadde1e1, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1595837276
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1595837273}
-  m_CullTransparentMesh: 1
 --- !u!1 &1595884586
 GameObject:
   m_ObjectHideFlags: 0
@@ -65194,7 +64605,7 @@ MonoBehaviour:
     timeBetweenSpawns: 0.7
     moveSpeed: 5
     hitsToKillPlayer: 10
-    enemyHealth: 1
+    enemyHealth: 2
     bloodColor: {r: 0.69411767, g: 0.6784314, b: 0.4862745, a: 1}
   - enemyModels:
     - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
@@ -65241,7 +64652,7 @@ MonoBehaviour:
     timeBetweenSpawns: 0.5
     moveSpeed: 7
     hitsToKillPlayer: 10
-    enemyHealth: 1
+    enemyHealth: 2
     bloodColor: {r: 0.81960785, g: 0.8862745, b: 0.6627451, a: 1}
   - enemyModels:
     - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
@@ -65287,8 +64698,8 @@ MonoBehaviour:
     enemyCount: 20
     timeBetweenSpawns: 1
     moveSpeed: 5
-    hitsToKillPlayer: 5
-    enemyHealth: 2
+    hitsToKillPlayer: 8
+    enemyHealth: 3
     bloodColor: {r: 0.53333336, g: 0.7294118, b: 0.5568628, a: 1}
   - enemyModels:
     - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
@@ -65334,9 +64745,714 @@ MonoBehaviour:
     enemyCount: 30
     timeBetweenSpawns: 0.7
     moveSpeed: 6
-    hitsToKillPlayer: 5
-    enemyHealth: 2
+    hitsToKillPlayer: 8
+    enemyHealth: 3
     bloodColor: {r: 0.32156864, g: 0.4745098, b: 0.35686275, a: 1}
+  - enemyModels:
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 171506, guid: 2fc5c9ca302edf647b81862df624d3f9, type: 3}
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 133696, guid: f3f50aa19e3e1a74587d2254af2fc0d4, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 158876, guid: 0acb0fb6b483a2a43834369eb93299ed, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    - {fileID: 144502, guid: 90cad25c702ebdb48b42a67396f57304, type: 3}
+    - {fileID: 114856, guid: ee4ed8b706ff72c4f925f89a3d7d5717, type: 3}
+    - {fileID: 119814, guid: 991492433da449c42a7af48bf42e686a, type: 3}
+    - {fileID: 135148, guid: ebb30f916d75f8e43add69628ba7f4da, type: 3}
+    - {fileID: 145232, guid: f37441b520a39b44ba99ea52e5abf8dc, type: 3}
+    - {fileID: 147572, guid: d9bd481ba81ab5644a1cde6ab92e1056, type: 3}
+    - {fileID: 171204, guid: a1b5adce90377cf439731fb900f2a45a, type: 3}
+    - {fileID: 169036, guid: cb1b929ab7d73f94087a9b4cdca8ed59, type: 3}
+    - {fileID: 193508, guid: e7d16897c7e623049889ee327d7ec1c9, type: 3}
+    - {fileID: 140806, guid: e9ba2677fd8e8c74aa0b91971286ab13, type: 3}
+    - {fileID: 119662, guid: a5dadc47e554b324a87386cea088486c, type: 3}
+    - {fileID: 174124, guid: 153fa01c5b4861646930d507a2320118, type: 3}
+    - {fileID: 164708, guid: 965d3ca33dddc614695187e54026ba0e, type: 3}
+    - {fileID: 148744, guid: a867d4e67c7bbe8409bed204bab3953b, type: 3}
+    - {fileID: 110650, guid: f764cac7cb2c0aa45aea768e665e40d7, type: 3}
+    - {fileID: 151748, guid: 5435ed64d041f7846b217b4c39d1f417, type: 3}
+    - {fileID: 166564, guid: c54f52a5df45af949803688189314bd8, type: 3}
+    - {fileID: 146448, guid: dc1fc76610eebf640999c1900c654825, type: 3}
+    - {fileID: 108946, guid: 1ce7604532dbce04e812a36937c3b5d4, type: 3}
+    - {fileID: 117270, guid: 634130a0b5997d14da4e9e1b1ef75f6a, type: 3}
+    - {fileID: 123140, guid: 57970e1e7f602eb4eb914aedf228d196, type: 3}
+    - {fileID: 142606, guid: f9b32b5d38f32394496bb8a5cb504b31, type: 3}
+    - {fileID: 130740, guid: 2aa63e14c2c606747827a38f3619c5c6, type: 3}
+    - {fileID: 198234, guid: e19af22b368abd042a86d90dd69d45f5, type: 3}
+    - {fileID: 171800, guid: 22e71aa69abfb734994b47e1d651d410, type: 3}
+    - {fileID: 193652, guid: 23b26bb3ce7a6be4881c1c75c979fa8e, type: 3}
+    - {fileID: 171666, guid: 8bec46e175243f64187c6f997a4613ac, type: 3}
+    - {fileID: 136402, guid: a4fbee618f7e9d047adb5b681ecc0441, type: 3}
+    - {fileID: 159244, guid: de2bb72ae5869604ea6b16e336da3d35, type: 3}
+    - {fileID: 185554, guid: 377104e47bea14d419691f39b4dbfa58, type: 3}
+    infinite: 0
+    enemyCount: 35
+    timeBetweenSpawns: 0.5
+    moveSpeed: 8
+    hitsToKillPlayer: 8
+    enemyHealth: 4
+    bloodColor: {r: 0.21960784, g: 0.29411766, b: 0.2509804, a: 1}
+  - enemyModels:
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 171506, guid: 2fc5c9ca302edf647b81862df624d3f9, type: 3}
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 133696, guid: f3f50aa19e3e1a74587d2254af2fc0d4, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 158876, guid: 0acb0fb6b483a2a43834369eb93299ed, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    - {fileID: 144502, guid: 90cad25c702ebdb48b42a67396f57304, type: 3}
+    - {fileID: 114856, guid: ee4ed8b706ff72c4f925f89a3d7d5717, type: 3}
+    - {fileID: 119814, guid: 991492433da449c42a7af48bf42e686a, type: 3}
+    - {fileID: 135148, guid: ebb30f916d75f8e43add69628ba7f4da, type: 3}
+    - {fileID: 145232, guid: f37441b520a39b44ba99ea52e5abf8dc, type: 3}
+    - {fileID: 147572, guid: d9bd481ba81ab5644a1cde6ab92e1056, type: 3}
+    - {fileID: 171204, guid: a1b5adce90377cf439731fb900f2a45a, type: 3}
+    - {fileID: 169036, guid: cb1b929ab7d73f94087a9b4cdca8ed59, type: 3}
+    - {fileID: 193508, guid: e7d16897c7e623049889ee327d7ec1c9, type: 3}
+    - {fileID: 140806, guid: e9ba2677fd8e8c74aa0b91971286ab13, type: 3}
+    - {fileID: 119662, guid: a5dadc47e554b324a87386cea088486c, type: 3}
+    - {fileID: 174124, guid: 153fa01c5b4861646930d507a2320118, type: 3}
+    - {fileID: 164708, guid: 965d3ca33dddc614695187e54026ba0e, type: 3}
+    - {fileID: 148744, guid: a867d4e67c7bbe8409bed204bab3953b, type: 3}
+    - {fileID: 110650, guid: f764cac7cb2c0aa45aea768e665e40d7, type: 3}
+    - {fileID: 151748, guid: 5435ed64d041f7846b217b4c39d1f417, type: 3}
+    - {fileID: 166564, guid: c54f52a5df45af949803688189314bd8, type: 3}
+    - {fileID: 146448, guid: dc1fc76610eebf640999c1900c654825, type: 3}
+    - {fileID: 108946, guid: 1ce7604532dbce04e812a36937c3b5d4, type: 3}
+    - {fileID: 117270, guid: 634130a0b5997d14da4e9e1b1ef75f6a, type: 3}
+    - {fileID: 123140, guid: 57970e1e7f602eb4eb914aedf228d196, type: 3}
+    - {fileID: 142606, guid: f9b32b5d38f32394496bb8a5cb504b31, type: 3}
+    - {fileID: 130740, guid: 2aa63e14c2c606747827a38f3619c5c6, type: 3}
+    - {fileID: 198234, guid: e19af22b368abd042a86d90dd69d45f5, type: 3}
+    - {fileID: 171800, guid: 22e71aa69abfb734994b47e1d651d410, type: 3}
+    - {fileID: 193652, guid: 23b26bb3ce7a6be4881c1c75c979fa8e, type: 3}
+    - {fileID: 171666, guid: 8bec46e175243f64187c6f997a4613ac, type: 3}
+    - {fileID: 136402, guid: a4fbee618f7e9d047adb5b681ecc0441, type: 3}
+    - {fileID: 159244, guid: de2bb72ae5869604ea6b16e336da3d35, type: 3}
+    - {fileID: 185554, guid: 377104e47bea14d419691f39b4dbfa58, type: 3}
+    infinite: 0
+    enemyCount: 35
+    timeBetweenSpawns: 0.4
+    moveSpeed: 9
+    hitsToKillPlayer: 8
+    enemyHealth: 4
+    bloodColor: {r: 0.3764706, g: 0.43529412, b: 0.3137255, a: 1}
+  - enemyModels:
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 171506, guid: 2fc5c9ca302edf647b81862df624d3f9, type: 3}
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 133696, guid: f3f50aa19e3e1a74587d2254af2fc0d4, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 158876, guid: 0acb0fb6b483a2a43834369eb93299ed, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    - {fileID: 144502, guid: 90cad25c702ebdb48b42a67396f57304, type: 3}
+    - {fileID: 114856, guid: ee4ed8b706ff72c4f925f89a3d7d5717, type: 3}
+    - {fileID: 119814, guid: 991492433da449c42a7af48bf42e686a, type: 3}
+    - {fileID: 135148, guid: ebb30f916d75f8e43add69628ba7f4da, type: 3}
+    - {fileID: 145232, guid: f37441b520a39b44ba99ea52e5abf8dc, type: 3}
+    - {fileID: 147572, guid: d9bd481ba81ab5644a1cde6ab92e1056, type: 3}
+    - {fileID: 171204, guid: a1b5adce90377cf439731fb900f2a45a, type: 3}
+    - {fileID: 169036, guid: cb1b929ab7d73f94087a9b4cdca8ed59, type: 3}
+    - {fileID: 193508, guid: e7d16897c7e623049889ee327d7ec1c9, type: 3}
+    - {fileID: 140806, guid: e9ba2677fd8e8c74aa0b91971286ab13, type: 3}
+    - {fileID: 119662, guid: a5dadc47e554b324a87386cea088486c, type: 3}
+    - {fileID: 174124, guid: 153fa01c5b4861646930d507a2320118, type: 3}
+    - {fileID: 164708, guid: 965d3ca33dddc614695187e54026ba0e, type: 3}
+    - {fileID: 148744, guid: a867d4e67c7bbe8409bed204bab3953b, type: 3}
+    - {fileID: 110650, guid: f764cac7cb2c0aa45aea768e665e40d7, type: 3}
+    - {fileID: 151748, guid: 5435ed64d041f7846b217b4c39d1f417, type: 3}
+    - {fileID: 166564, guid: c54f52a5df45af949803688189314bd8, type: 3}
+    - {fileID: 146448, guid: dc1fc76610eebf640999c1900c654825, type: 3}
+    - {fileID: 108946, guid: 1ce7604532dbce04e812a36937c3b5d4, type: 3}
+    - {fileID: 117270, guid: 634130a0b5997d14da4e9e1b1ef75f6a, type: 3}
+    - {fileID: 123140, guid: 57970e1e7f602eb4eb914aedf228d196, type: 3}
+    - {fileID: 142606, guid: f9b32b5d38f32394496bb8a5cb504b31, type: 3}
+    - {fileID: 130740, guid: 2aa63e14c2c606747827a38f3619c5c6, type: 3}
+    - {fileID: 198234, guid: e19af22b368abd042a86d90dd69d45f5, type: 3}
+    - {fileID: 171800, guid: 22e71aa69abfb734994b47e1d651d410, type: 3}
+    - {fileID: 193652, guid: 23b26bb3ce7a6be4881c1c75c979fa8e, type: 3}
+    - {fileID: 171666, guid: 8bec46e175243f64187c6f997a4613ac, type: 3}
+    - {fileID: 136402, guid: a4fbee618f7e9d047adb5b681ecc0441, type: 3}
+    - {fileID: 159244, guid: de2bb72ae5869604ea6b16e336da3d35, type: 3}
+    - {fileID: 185554, guid: 377104e47bea14d419691f39b4dbfa58, type: 3}
+    infinite: 0
+    enemyCount: 35
+    timeBetweenSpawns: 0.4
+    moveSpeed: 9
+    hitsToKillPlayer: 8
+    enemyHealth: 4
+    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
+  - enemyModels:
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 171506, guid: 2fc5c9ca302edf647b81862df624d3f9, type: 3}
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 133696, guid: f3f50aa19e3e1a74587d2254af2fc0d4, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 158876, guid: 0acb0fb6b483a2a43834369eb93299ed, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    - {fileID: 144502, guid: 90cad25c702ebdb48b42a67396f57304, type: 3}
+    - {fileID: 114856, guid: ee4ed8b706ff72c4f925f89a3d7d5717, type: 3}
+    - {fileID: 119814, guid: 991492433da449c42a7af48bf42e686a, type: 3}
+    - {fileID: 135148, guid: ebb30f916d75f8e43add69628ba7f4da, type: 3}
+    - {fileID: 145232, guid: f37441b520a39b44ba99ea52e5abf8dc, type: 3}
+    - {fileID: 147572, guid: d9bd481ba81ab5644a1cde6ab92e1056, type: 3}
+    - {fileID: 171204, guid: a1b5adce90377cf439731fb900f2a45a, type: 3}
+    - {fileID: 169036, guid: cb1b929ab7d73f94087a9b4cdca8ed59, type: 3}
+    - {fileID: 193508, guid: e7d16897c7e623049889ee327d7ec1c9, type: 3}
+    - {fileID: 140806, guid: e9ba2677fd8e8c74aa0b91971286ab13, type: 3}
+    - {fileID: 119662, guid: a5dadc47e554b324a87386cea088486c, type: 3}
+    - {fileID: 174124, guid: 153fa01c5b4861646930d507a2320118, type: 3}
+    - {fileID: 164708, guid: 965d3ca33dddc614695187e54026ba0e, type: 3}
+    - {fileID: 148744, guid: a867d4e67c7bbe8409bed204bab3953b, type: 3}
+    - {fileID: 110650, guid: f764cac7cb2c0aa45aea768e665e40d7, type: 3}
+    - {fileID: 151748, guid: 5435ed64d041f7846b217b4c39d1f417, type: 3}
+    - {fileID: 166564, guid: c54f52a5df45af949803688189314bd8, type: 3}
+    - {fileID: 146448, guid: dc1fc76610eebf640999c1900c654825, type: 3}
+    - {fileID: 108946, guid: 1ce7604532dbce04e812a36937c3b5d4, type: 3}
+    - {fileID: 117270, guid: 634130a0b5997d14da4e9e1b1ef75f6a, type: 3}
+    - {fileID: 123140, guid: 57970e1e7f602eb4eb914aedf228d196, type: 3}
+    - {fileID: 142606, guid: f9b32b5d38f32394496bb8a5cb504b31, type: 3}
+    - {fileID: 130740, guid: 2aa63e14c2c606747827a38f3619c5c6, type: 3}
+    - {fileID: 198234, guid: e19af22b368abd042a86d90dd69d45f5, type: 3}
+    - {fileID: 171800, guid: 22e71aa69abfb734994b47e1d651d410, type: 3}
+    - {fileID: 193652, guid: 23b26bb3ce7a6be4881c1c75c979fa8e, type: 3}
+    - {fileID: 171666, guid: 8bec46e175243f64187c6f997a4613ac, type: 3}
+    - {fileID: 136402, guid: a4fbee618f7e9d047adb5b681ecc0441, type: 3}
+    - {fileID: 159244, guid: de2bb72ae5869604ea6b16e336da3d35, type: 3}
+    - {fileID: 185554, guid: 377104e47bea14d419691f39b4dbfa58, type: 3}
+    infinite: 0
+    enemyCount: 40
+    timeBetweenSpawns: 0.4
+    moveSpeed: 8
+    hitsToKillPlayer: 8
+    enemyHealth: 4
+    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
+  - enemyModels:
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 171506, guid: 2fc5c9ca302edf647b81862df624d3f9, type: 3}
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 133696, guid: f3f50aa19e3e1a74587d2254af2fc0d4, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 158876, guid: 0acb0fb6b483a2a43834369eb93299ed, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    - {fileID: 144502, guid: 90cad25c702ebdb48b42a67396f57304, type: 3}
+    - {fileID: 114856, guid: ee4ed8b706ff72c4f925f89a3d7d5717, type: 3}
+    - {fileID: 119814, guid: 991492433da449c42a7af48bf42e686a, type: 3}
+    - {fileID: 135148, guid: ebb30f916d75f8e43add69628ba7f4da, type: 3}
+    - {fileID: 145232, guid: f37441b520a39b44ba99ea52e5abf8dc, type: 3}
+    - {fileID: 147572, guid: d9bd481ba81ab5644a1cde6ab92e1056, type: 3}
+    - {fileID: 171204, guid: a1b5adce90377cf439731fb900f2a45a, type: 3}
+    - {fileID: 169036, guid: cb1b929ab7d73f94087a9b4cdca8ed59, type: 3}
+    - {fileID: 193508, guid: e7d16897c7e623049889ee327d7ec1c9, type: 3}
+    - {fileID: 140806, guid: e9ba2677fd8e8c74aa0b91971286ab13, type: 3}
+    - {fileID: 119662, guid: a5dadc47e554b324a87386cea088486c, type: 3}
+    - {fileID: 174124, guid: 153fa01c5b4861646930d507a2320118, type: 3}
+    - {fileID: 164708, guid: 965d3ca33dddc614695187e54026ba0e, type: 3}
+    - {fileID: 148744, guid: a867d4e67c7bbe8409bed204bab3953b, type: 3}
+    - {fileID: 110650, guid: f764cac7cb2c0aa45aea768e665e40d7, type: 3}
+    - {fileID: 151748, guid: 5435ed64d041f7846b217b4c39d1f417, type: 3}
+    - {fileID: 166564, guid: c54f52a5df45af949803688189314bd8, type: 3}
+    - {fileID: 146448, guid: dc1fc76610eebf640999c1900c654825, type: 3}
+    - {fileID: 108946, guid: 1ce7604532dbce04e812a36937c3b5d4, type: 3}
+    - {fileID: 117270, guid: 634130a0b5997d14da4e9e1b1ef75f6a, type: 3}
+    - {fileID: 123140, guid: 57970e1e7f602eb4eb914aedf228d196, type: 3}
+    - {fileID: 142606, guid: f9b32b5d38f32394496bb8a5cb504b31, type: 3}
+    - {fileID: 130740, guid: 2aa63e14c2c606747827a38f3619c5c6, type: 3}
+    - {fileID: 198234, guid: e19af22b368abd042a86d90dd69d45f5, type: 3}
+    - {fileID: 171800, guid: 22e71aa69abfb734994b47e1d651d410, type: 3}
+    - {fileID: 193652, guid: 23b26bb3ce7a6be4881c1c75c979fa8e, type: 3}
+    - {fileID: 171666, guid: 8bec46e175243f64187c6f997a4613ac, type: 3}
+    - {fileID: 136402, guid: a4fbee618f7e9d047adb5b681ecc0441, type: 3}
+    - {fileID: 159244, guid: de2bb72ae5869604ea6b16e336da3d35, type: 3}
+    - {fileID: 185554, guid: 377104e47bea14d419691f39b4dbfa58, type: 3}
+    infinite: 0
+    enemyCount: 45
+    timeBetweenSpawns: 0.3
+    moveSpeed: 8
+    hitsToKillPlayer: 8
+    enemyHealth: 4
+    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
+  - enemyModels:
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 171506, guid: 2fc5c9ca302edf647b81862df624d3f9, type: 3}
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 133696, guid: f3f50aa19e3e1a74587d2254af2fc0d4, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 158876, guid: 0acb0fb6b483a2a43834369eb93299ed, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    - {fileID: 144502, guid: 90cad25c702ebdb48b42a67396f57304, type: 3}
+    - {fileID: 114856, guid: ee4ed8b706ff72c4f925f89a3d7d5717, type: 3}
+    - {fileID: 119814, guid: 991492433da449c42a7af48bf42e686a, type: 3}
+    - {fileID: 135148, guid: ebb30f916d75f8e43add69628ba7f4da, type: 3}
+    - {fileID: 145232, guid: f37441b520a39b44ba99ea52e5abf8dc, type: 3}
+    - {fileID: 147572, guid: d9bd481ba81ab5644a1cde6ab92e1056, type: 3}
+    - {fileID: 171204, guid: a1b5adce90377cf439731fb900f2a45a, type: 3}
+    - {fileID: 169036, guid: cb1b929ab7d73f94087a9b4cdca8ed59, type: 3}
+    - {fileID: 193508, guid: e7d16897c7e623049889ee327d7ec1c9, type: 3}
+    - {fileID: 140806, guid: e9ba2677fd8e8c74aa0b91971286ab13, type: 3}
+    - {fileID: 119662, guid: a5dadc47e554b324a87386cea088486c, type: 3}
+    - {fileID: 174124, guid: 153fa01c5b4861646930d507a2320118, type: 3}
+    - {fileID: 164708, guid: 965d3ca33dddc614695187e54026ba0e, type: 3}
+    - {fileID: 148744, guid: a867d4e67c7bbe8409bed204bab3953b, type: 3}
+    - {fileID: 110650, guid: f764cac7cb2c0aa45aea768e665e40d7, type: 3}
+    - {fileID: 151748, guid: 5435ed64d041f7846b217b4c39d1f417, type: 3}
+    - {fileID: 166564, guid: c54f52a5df45af949803688189314bd8, type: 3}
+    - {fileID: 146448, guid: dc1fc76610eebf640999c1900c654825, type: 3}
+    - {fileID: 108946, guid: 1ce7604532dbce04e812a36937c3b5d4, type: 3}
+    - {fileID: 117270, guid: 634130a0b5997d14da4e9e1b1ef75f6a, type: 3}
+    - {fileID: 123140, guid: 57970e1e7f602eb4eb914aedf228d196, type: 3}
+    - {fileID: 142606, guid: f9b32b5d38f32394496bb8a5cb504b31, type: 3}
+    - {fileID: 130740, guid: 2aa63e14c2c606747827a38f3619c5c6, type: 3}
+    - {fileID: 198234, guid: e19af22b368abd042a86d90dd69d45f5, type: 3}
+    - {fileID: 171800, guid: 22e71aa69abfb734994b47e1d651d410, type: 3}
+    - {fileID: 193652, guid: 23b26bb3ce7a6be4881c1c75c979fa8e, type: 3}
+    - {fileID: 171666, guid: 8bec46e175243f64187c6f997a4613ac, type: 3}
+    - {fileID: 136402, guid: a4fbee618f7e9d047adb5b681ecc0441, type: 3}
+    - {fileID: 159244, guid: de2bb72ae5869604ea6b16e336da3d35, type: 3}
+    - {fileID: 185554, guid: 377104e47bea14d419691f39b4dbfa58, type: 3}
+    infinite: 0
+    enemyCount: 50
+    timeBetweenSpawns: 0.3
+    moveSpeed: 8
+    hitsToKillPlayer: 8
+    enemyHealth: 4
+    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
+  - enemyModels:
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 171506, guid: 2fc5c9ca302edf647b81862df624d3f9, type: 3}
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 133696, guid: f3f50aa19e3e1a74587d2254af2fc0d4, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 158876, guid: 0acb0fb6b483a2a43834369eb93299ed, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    - {fileID: 144502, guid: 90cad25c702ebdb48b42a67396f57304, type: 3}
+    - {fileID: 114856, guid: ee4ed8b706ff72c4f925f89a3d7d5717, type: 3}
+    - {fileID: 119814, guid: 991492433da449c42a7af48bf42e686a, type: 3}
+    - {fileID: 135148, guid: ebb30f916d75f8e43add69628ba7f4da, type: 3}
+    - {fileID: 145232, guid: f37441b520a39b44ba99ea52e5abf8dc, type: 3}
+    - {fileID: 147572, guid: d9bd481ba81ab5644a1cde6ab92e1056, type: 3}
+    - {fileID: 171204, guid: a1b5adce90377cf439731fb900f2a45a, type: 3}
+    - {fileID: 169036, guid: cb1b929ab7d73f94087a9b4cdca8ed59, type: 3}
+    - {fileID: 193508, guid: e7d16897c7e623049889ee327d7ec1c9, type: 3}
+    - {fileID: 140806, guid: e9ba2677fd8e8c74aa0b91971286ab13, type: 3}
+    - {fileID: 119662, guid: a5dadc47e554b324a87386cea088486c, type: 3}
+    - {fileID: 174124, guid: 153fa01c5b4861646930d507a2320118, type: 3}
+    - {fileID: 164708, guid: 965d3ca33dddc614695187e54026ba0e, type: 3}
+    - {fileID: 148744, guid: a867d4e67c7bbe8409bed204bab3953b, type: 3}
+    - {fileID: 110650, guid: f764cac7cb2c0aa45aea768e665e40d7, type: 3}
+    - {fileID: 151748, guid: 5435ed64d041f7846b217b4c39d1f417, type: 3}
+    - {fileID: 166564, guid: c54f52a5df45af949803688189314bd8, type: 3}
+    - {fileID: 146448, guid: dc1fc76610eebf640999c1900c654825, type: 3}
+    - {fileID: 108946, guid: 1ce7604532dbce04e812a36937c3b5d4, type: 3}
+    - {fileID: 117270, guid: 634130a0b5997d14da4e9e1b1ef75f6a, type: 3}
+    - {fileID: 123140, guid: 57970e1e7f602eb4eb914aedf228d196, type: 3}
+    - {fileID: 142606, guid: f9b32b5d38f32394496bb8a5cb504b31, type: 3}
+    - {fileID: 130740, guid: 2aa63e14c2c606747827a38f3619c5c6, type: 3}
+    - {fileID: 198234, guid: e19af22b368abd042a86d90dd69d45f5, type: 3}
+    - {fileID: 171800, guid: 22e71aa69abfb734994b47e1d651d410, type: 3}
+    - {fileID: 193652, guid: 23b26bb3ce7a6be4881c1c75c979fa8e, type: 3}
+    - {fileID: 171666, guid: 8bec46e175243f64187c6f997a4613ac, type: 3}
+    - {fileID: 136402, guid: a4fbee618f7e9d047adb5b681ecc0441, type: 3}
+    - {fileID: 159244, guid: de2bb72ae5869604ea6b16e336da3d35, type: 3}
+    - {fileID: 185554, guid: 377104e47bea14d419691f39b4dbfa58, type: 3}
+    infinite: 0
+    enemyCount: 50
+    timeBetweenSpawns: 0.8
+    moveSpeed: 10
+    hitsToKillPlayer: 8
+    enemyHealth: 5
+    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
+  - enemyModels:
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 171506, guid: 2fc5c9ca302edf647b81862df624d3f9, type: 3}
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 133696, guid: f3f50aa19e3e1a74587d2254af2fc0d4, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 158876, guid: 0acb0fb6b483a2a43834369eb93299ed, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    - {fileID: 144502, guid: 90cad25c702ebdb48b42a67396f57304, type: 3}
+    - {fileID: 114856, guid: ee4ed8b706ff72c4f925f89a3d7d5717, type: 3}
+    - {fileID: 119814, guid: 991492433da449c42a7af48bf42e686a, type: 3}
+    - {fileID: 135148, guid: ebb30f916d75f8e43add69628ba7f4da, type: 3}
+    - {fileID: 145232, guid: f37441b520a39b44ba99ea52e5abf8dc, type: 3}
+    - {fileID: 147572, guid: d9bd481ba81ab5644a1cde6ab92e1056, type: 3}
+    - {fileID: 171204, guid: a1b5adce90377cf439731fb900f2a45a, type: 3}
+    - {fileID: 169036, guid: cb1b929ab7d73f94087a9b4cdca8ed59, type: 3}
+    - {fileID: 193508, guid: e7d16897c7e623049889ee327d7ec1c9, type: 3}
+    - {fileID: 140806, guid: e9ba2677fd8e8c74aa0b91971286ab13, type: 3}
+    - {fileID: 119662, guid: a5dadc47e554b324a87386cea088486c, type: 3}
+    - {fileID: 174124, guid: 153fa01c5b4861646930d507a2320118, type: 3}
+    - {fileID: 164708, guid: 965d3ca33dddc614695187e54026ba0e, type: 3}
+    - {fileID: 148744, guid: a867d4e67c7bbe8409bed204bab3953b, type: 3}
+    - {fileID: 110650, guid: f764cac7cb2c0aa45aea768e665e40d7, type: 3}
+    - {fileID: 151748, guid: 5435ed64d041f7846b217b4c39d1f417, type: 3}
+    - {fileID: 166564, guid: c54f52a5df45af949803688189314bd8, type: 3}
+    - {fileID: 146448, guid: dc1fc76610eebf640999c1900c654825, type: 3}
+    - {fileID: 108946, guid: 1ce7604532dbce04e812a36937c3b5d4, type: 3}
+    - {fileID: 117270, guid: 634130a0b5997d14da4e9e1b1ef75f6a, type: 3}
+    - {fileID: 123140, guid: 57970e1e7f602eb4eb914aedf228d196, type: 3}
+    - {fileID: 142606, guid: f9b32b5d38f32394496bb8a5cb504b31, type: 3}
+    - {fileID: 130740, guid: 2aa63e14c2c606747827a38f3619c5c6, type: 3}
+    - {fileID: 198234, guid: e19af22b368abd042a86d90dd69d45f5, type: 3}
+    - {fileID: 171800, guid: 22e71aa69abfb734994b47e1d651d410, type: 3}
+    - {fileID: 193652, guid: 23b26bb3ce7a6be4881c1c75c979fa8e, type: 3}
+    - {fileID: 171666, guid: 8bec46e175243f64187c6f997a4613ac, type: 3}
+    - {fileID: 136402, guid: a4fbee618f7e9d047adb5b681ecc0441, type: 3}
+    - {fileID: 159244, guid: de2bb72ae5869604ea6b16e336da3d35, type: 3}
+    - {fileID: 185554, guid: 377104e47bea14d419691f39b4dbfa58, type: 3}
+    infinite: 0
+    enemyCount: 50
+    timeBetweenSpawns: 0.7
+    moveSpeed: 10
+    hitsToKillPlayer: 8
+    enemyHealth: 5
+    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
+  - enemyModels:
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 171506, guid: 2fc5c9ca302edf647b81862df624d3f9, type: 3}
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 133696, guid: f3f50aa19e3e1a74587d2254af2fc0d4, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 158876, guid: 0acb0fb6b483a2a43834369eb93299ed, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    - {fileID: 144502, guid: 90cad25c702ebdb48b42a67396f57304, type: 3}
+    - {fileID: 114856, guid: ee4ed8b706ff72c4f925f89a3d7d5717, type: 3}
+    - {fileID: 119814, guid: 991492433da449c42a7af48bf42e686a, type: 3}
+    - {fileID: 135148, guid: ebb30f916d75f8e43add69628ba7f4da, type: 3}
+    - {fileID: 145232, guid: f37441b520a39b44ba99ea52e5abf8dc, type: 3}
+    - {fileID: 147572, guid: d9bd481ba81ab5644a1cde6ab92e1056, type: 3}
+    - {fileID: 171204, guid: a1b5adce90377cf439731fb900f2a45a, type: 3}
+    - {fileID: 169036, guid: cb1b929ab7d73f94087a9b4cdca8ed59, type: 3}
+    - {fileID: 193508, guid: e7d16897c7e623049889ee327d7ec1c9, type: 3}
+    - {fileID: 140806, guid: e9ba2677fd8e8c74aa0b91971286ab13, type: 3}
+    - {fileID: 119662, guid: a5dadc47e554b324a87386cea088486c, type: 3}
+    - {fileID: 174124, guid: 153fa01c5b4861646930d507a2320118, type: 3}
+    - {fileID: 164708, guid: 965d3ca33dddc614695187e54026ba0e, type: 3}
+    - {fileID: 148744, guid: a867d4e67c7bbe8409bed204bab3953b, type: 3}
+    - {fileID: 110650, guid: f764cac7cb2c0aa45aea768e665e40d7, type: 3}
+    - {fileID: 151748, guid: 5435ed64d041f7846b217b4c39d1f417, type: 3}
+    - {fileID: 166564, guid: c54f52a5df45af949803688189314bd8, type: 3}
+    - {fileID: 146448, guid: dc1fc76610eebf640999c1900c654825, type: 3}
+    - {fileID: 108946, guid: 1ce7604532dbce04e812a36937c3b5d4, type: 3}
+    - {fileID: 117270, guid: 634130a0b5997d14da4e9e1b1ef75f6a, type: 3}
+    - {fileID: 123140, guid: 57970e1e7f602eb4eb914aedf228d196, type: 3}
+    - {fileID: 142606, guid: f9b32b5d38f32394496bb8a5cb504b31, type: 3}
+    - {fileID: 130740, guid: 2aa63e14c2c606747827a38f3619c5c6, type: 3}
+    - {fileID: 198234, guid: e19af22b368abd042a86d90dd69d45f5, type: 3}
+    - {fileID: 171800, guid: 22e71aa69abfb734994b47e1d651d410, type: 3}
+    - {fileID: 193652, guid: 23b26bb3ce7a6be4881c1c75c979fa8e, type: 3}
+    - {fileID: 171666, guid: 8bec46e175243f64187c6f997a4613ac, type: 3}
+    - {fileID: 136402, guid: a4fbee618f7e9d047adb5b681ecc0441, type: 3}
+    - {fileID: 159244, guid: de2bb72ae5869604ea6b16e336da3d35, type: 3}
+    - {fileID: 185554, guid: 377104e47bea14d419691f39b4dbfa58, type: 3}
+    infinite: 0
+    enemyCount: 55
+    timeBetweenSpawns: 0.7
+    moveSpeed: 8
+    hitsToKillPlayer: 8
+    enemyHealth: 5
+    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
+  - enemyModels:
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 171506, guid: 2fc5c9ca302edf647b81862df624d3f9, type: 3}
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 133696, guid: f3f50aa19e3e1a74587d2254af2fc0d4, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 158876, guid: 0acb0fb6b483a2a43834369eb93299ed, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    - {fileID: 144502, guid: 90cad25c702ebdb48b42a67396f57304, type: 3}
+    - {fileID: 114856, guid: ee4ed8b706ff72c4f925f89a3d7d5717, type: 3}
+    - {fileID: 119814, guid: 991492433da449c42a7af48bf42e686a, type: 3}
+    - {fileID: 135148, guid: ebb30f916d75f8e43add69628ba7f4da, type: 3}
+    - {fileID: 145232, guid: f37441b520a39b44ba99ea52e5abf8dc, type: 3}
+    - {fileID: 147572, guid: d9bd481ba81ab5644a1cde6ab92e1056, type: 3}
+    - {fileID: 171204, guid: a1b5adce90377cf439731fb900f2a45a, type: 3}
+    - {fileID: 169036, guid: cb1b929ab7d73f94087a9b4cdca8ed59, type: 3}
+    - {fileID: 193508, guid: e7d16897c7e623049889ee327d7ec1c9, type: 3}
+    - {fileID: 140806, guid: e9ba2677fd8e8c74aa0b91971286ab13, type: 3}
+    - {fileID: 119662, guid: a5dadc47e554b324a87386cea088486c, type: 3}
+    - {fileID: 174124, guid: 153fa01c5b4861646930d507a2320118, type: 3}
+    - {fileID: 164708, guid: 965d3ca33dddc614695187e54026ba0e, type: 3}
+    - {fileID: 148744, guid: a867d4e67c7bbe8409bed204bab3953b, type: 3}
+    - {fileID: 110650, guid: f764cac7cb2c0aa45aea768e665e40d7, type: 3}
+    - {fileID: 151748, guid: 5435ed64d041f7846b217b4c39d1f417, type: 3}
+    - {fileID: 166564, guid: c54f52a5df45af949803688189314bd8, type: 3}
+    - {fileID: 146448, guid: dc1fc76610eebf640999c1900c654825, type: 3}
+    - {fileID: 108946, guid: 1ce7604532dbce04e812a36937c3b5d4, type: 3}
+    - {fileID: 117270, guid: 634130a0b5997d14da4e9e1b1ef75f6a, type: 3}
+    - {fileID: 123140, guid: 57970e1e7f602eb4eb914aedf228d196, type: 3}
+    - {fileID: 142606, guid: f9b32b5d38f32394496bb8a5cb504b31, type: 3}
+    - {fileID: 130740, guid: 2aa63e14c2c606747827a38f3619c5c6, type: 3}
+    - {fileID: 198234, guid: e19af22b368abd042a86d90dd69d45f5, type: 3}
+    - {fileID: 171800, guid: 22e71aa69abfb734994b47e1d651d410, type: 3}
+    - {fileID: 193652, guid: 23b26bb3ce7a6be4881c1c75c979fa8e, type: 3}
+    - {fileID: 171666, guid: 8bec46e175243f64187c6f997a4613ac, type: 3}
+    - {fileID: 136402, guid: a4fbee618f7e9d047adb5b681ecc0441, type: 3}
+    - {fileID: 159244, guid: de2bb72ae5869604ea6b16e336da3d35, type: 3}
+    - {fileID: 185554, guid: 377104e47bea14d419691f39b4dbfa58, type: 3}
+    infinite: 0
+    enemyCount: 55
+    timeBetweenSpawns: 0.7
+    moveSpeed: 9
+    hitsToKillPlayer: 8
+    enemyHealth: 5
+    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
+  - enemyModels:
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 171506, guid: 2fc5c9ca302edf647b81862df624d3f9, type: 3}
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 133696, guid: f3f50aa19e3e1a74587d2254af2fc0d4, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 158876, guid: 0acb0fb6b483a2a43834369eb93299ed, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    - {fileID: 144502, guid: 90cad25c702ebdb48b42a67396f57304, type: 3}
+    - {fileID: 114856, guid: ee4ed8b706ff72c4f925f89a3d7d5717, type: 3}
+    - {fileID: 119814, guid: 991492433da449c42a7af48bf42e686a, type: 3}
+    - {fileID: 135148, guid: ebb30f916d75f8e43add69628ba7f4da, type: 3}
+    - {fileID: 145232, guid: f37441b520a39b44ba99ea52e5abf8dc, type: 3}
+    - {fileID: 147572, guid: d9bd481ba81ab5644a1cde6ab92e1056, type: 3}
+    - {fileID: 171204, guid: a1b5adce90377cf439731fb900f2a45a, type: 3}
+    - {fileID: 169036, guid: cb1b929ab7d73f94087a9b4cdca8ed59, type: 3}
+    - {fileID: 193508, guid: e7d16897c7e623049889ee327d7ec1c9, type: 3}
+    - {fileID: 140806, guid: e9ba2677fd8e8c74aa0b91971286ab13, type: 3}
+    - {fileID: 119662, guid: a5dadc47e554b324a87386cea088486c, type: 3}
+    - {fileID: 174124, guid: 153fa01c5b4861646930d507a2320118, type: 3}
+    - {fileID: 164708, guid: 965d3ca33dddc614695187e54026ba0e, type: 3}
+    - {fileID: 148744, guid: a867d4e67c7bbe8409bed204bab3953b, type: 3}
+    - {fileID: 110650, guid: f764cac7cb2c0aa45aea768e665e40d7, type: 3}
+    - {fileID: 151748, guid: 5435ed64d041f7846b217b4c39d1f417, type: 3}
+    - {fileID: 166564, guid: c54f52a5df45af949803688189314bd8, type: 3}
+    - {fileID: 146448, guid: dc1fc76610eebf640999c1900c654825, type: 3}
+    - {fileID: 108946, guid: 1ce7604532dbce04e812a36937c3b5d4, type: 3}
+    - {fileID: 117270, guid: 634130a0b5997d14da4e9e1b1ef75f6a, type: 3}
+    - {fileID: 123140, guid: 57970e1e7f602eb4eb914aedf228d196, type: 3}
+    - {fileID: 142606, guid: f9b32b5d38f32394496bb8a5cb504b31, type: 3}
+    - {fileID: 130740, guid: 2aa63e14c2c606747827a38f3619c5c6, type: 3}
+    - {fileID: 198234, guid: e19af22b368abd042a86d90dd69d45f5, type: 3}
+    - {fileID: 171800, guid: 22e71aa69abfb734994b47e1d651d410, type: 3}
+    - {fileID: 193652, guid: 23b26bb3ce7a6be4881c1c75c979fa8e, type: 3}
+    - {fileID: 171666, guid: 8bec46e175243f64187c6f997a4613ac, type: 3}
+    - {fileID: 136402, guid: a4fbee618f7e9d047adb5b681ecc0441, type: 3}
+    - {fileID: 159244, guid: de2bb72ae5869604ea6b16e336da3d35, type: 3}
+    - {fileID: 185554, guid: 377104e47bea14d419691f39b4dbfa58, type: 3}
+    infinite: 0
+    enemyCount: 30
+    timeBetweenSpawns: 0.8
+    moveSpeed: 7
+    hitsToKillPlayer: 8
+    enemyHealth: 10
+    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
+  - enemyModels:
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 171506, guid: 2fc5c9ca302edf647b81862df624d3f9, type: 3}
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 133696, guid: f3f50aa19e3e1a74587d2254af2fc0d4, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 158876, guid: 0acb0fb6b483a2a43834369eb93299ed, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    - {fileID: 144502, guid: 90cad25c702ebdb48b42a67396f57304, type: 3}
+    - {fileID: 114856, guid: ee4ed8b706ff72c4f925f89a3d7d5717, type: 3}
+    - {fileID: 119814, guid: 991492433da449c42a7af48bf42e686a, type: 3}
+    - {fileID: 135148, guid: ebb30f916d75f8e43add69628ba7f4da, type: 3}
+    - {fileID: 145232, guid: f37441b520a39b44ba99ea52e5abf8dc, type: 3}
+    - {fileID: 147572, guid: d9bd481ba81ab5644a1cde6ab92e1056, type: 3}
+    - {fileID: 171204, guid: a1b5adce90377cf439731fb900f2a45a, type: 3}
+    - {fileID: 169036, guid: cb1b929ab7d73f94087a9b4cdca8ed59, type: 3}
+    - {fileID: 193508, guid: e7d16897c7e623049889ee327d7ec1c9, type: 3}
+    - {fileID: 140806, guid: e9ba2677fd8e8c74aa0b91971286ab13, type: 3}
+    - {fileID: 119662, guid: a5dadc47e554b324a87386cea088486c, type: 3}
+    - {fileID: 174124, guid: 153fa01c5b4861646930d507a2320118, type: 3}
+    - {fileID: 164708, guid: 965d3ca33dddc614695187e54026ba0e, type: 3}
+    - {fileID: 148744, guid: a867d4e67c7bbe8409bed204bab3953b, type: 3}
+    - {fileID: 110650, guid: f764cac7cb2c0aa45aea768e665e40d7, type: 3}
+    - {fileID: 151748, guid: 5435ed64d041f7846b217b4c39d1f417, type: 3}
+    - {fileID: 166564, guid: c54f52a5df45af949803688189314bd8, type: 3}
+    - {fileID: 146448, guid: dc1fc76610eebf640999c1900c654825, type: 3}
+    - {fileID: 108946, guid: 1ce7604532dbce04e812a36937c3b5d4, type: 3}
+    - {fileID: 117270, guid: 634130a0b5997d14da4e9e1b1ef75f6a, type: 3}
+    - {fileID: 123140, guid: 57970e1e7f602eb4eb914aedf228d196, type: 3}
+    - {fileID: 142606, guid: f9b32b5d38f32394496bb8a5cb504b31, type: 3}
+    - {fileID: 130740, guid: 2aa63e14c2c606747827a38f3619c5c6, type: 3}
+    - {fileID: 198234, guid: e19af22b368abd042a86d90dd69d45f5, type: 3}
+    - {fileID: 171800, guid: 22e71aa69abfb734994b47e1d651d410, type: 3}
+    - {fileID: 193652, guid: 23b26bb3ce7a6be4881c1c75c979fa8e, type: 3}
+    - {fileID: 171666, guid: 8bec46e175243f64187c6f997a4613ac, type: 3}
+    - {fileID: 136402, guid: a4fbee618f7e9d047adb5b681ecc0441, type: 3}
+    - {fileID: 159244, guid: de2bb72ae5869604ea6b16e336da3d35, type: 3}
+    - {fileID: 185554, guid: 377104e47bea14d419691f39b4dbfa58, type: 3}
+    infinite: 0
+    enemyCount: 35
+    timeBetweenSpawns: 0.9
+    moveSpeed: 8
+    hitsToKillPlayer: 8
+    enemyHealth: 10
+    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
+  - enemyModels:
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 171506, guid: 2fc5c9ca302edf647b81862df624d3f9, type: 3}
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 133696, guid: f3f50aa19e3e1a74587d2254af2fc0d4, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 158876, guid: 0acb0fb6b483a2a43834369eb93299ed, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    - {fileID: 144502, guid: 90cad25c702ebdb48b42a67396f57304, type: 3}
+    - {fileID: 114856, guid: ee4ed8b706ff72c4f925f89a3d7d5717, type: 3}
+    - {fileID: 119814, guid: 991492433da449c42a7af48bf42e686a, type: 3}
+    - {fileID: 135148, guid: ebb30f916d75f8e43add69628ba7f4da, type: 3}
+    - {fileID: 145232, guid: f37441b520a39b44ba99ea52e5abf8dc, type: 3}
+    - {fileID: 147572, guid: d9bd481ba81ab5644a1cde6ab92e1056, type: 3}
+    - {fileID: 171204, guid: a1b5adce90377cf439731fb900f2a45a, type: 3}
+    - {fileID: 169036, guid: cb1b929ab7d73f94087a9b4cdca8ed59, type: 3}
+    - {fileID: 193508, guid: e7d16897c7e623049889ee327d7ec1c9, type: 3}
+    - {fileID: 140806, guid: e9ba2677fd8e8c74aa0b91971286ab13, type: 3}
+    - {fileID: 119662, guid: a5dadc47e554b324a87386cea088486c, type: 3}
+    - {fileID: 174124, guid: 153fa01c5b4861646930d507a2320118, type: 3}
+    - {fileID: 164708, guid: 965d3ca33dddc614695187e54026ba0e, type: 3}
+    - {fileID: 148744, guid: a867d4e67c7bbe8409bed204bab3953b, type: 3}
+    - {fileID: 110650, guid: f764cac7cb2c0aa45aea768e665e40d7, type: 3}
+    - {fileID: 151748, guid: 5435ed64d041f7846b217b4c39d1f417, type: 3}
+    - {fileID: 166564, guid: c54f52a5df45af949803688189314bd8, type: 3}
+    - {fileID: 146448, guid: dc1fc76610eebf640999c1900c654825, type: 3}
+    - {fileID: 108946, guid: 1ce7604532dbce04e812a36937c3b5d4, type: 3}
+    - {fileID: 117270, guid: 634130a0b5997d14da4e9e1b1ef75f6a, type: 3}
+    - {fileID: 123140, guid: 57970e1e7f602eb4eb914aedf228d196, type: 3}
+    - {fileID: 142606, guid: f9b32b5d38f32394496bb8a5cb504b31, type: 3}
+    - {fileID: 130740, guid: 2aa63e14c2c606747827a38f3619c5c6, type: 3}
+    - {fileID: 198234, guid: e19af22b368abd042a86d90dd69d45f5, type: 3}
+    - {fileID: 171800, guid: 22e71aa69abfb734994b47e1d651d410, type: 3}
+    - {fileID: 193652, guid: 23b26bb3ce7a6be4881c1c75c979fa8e, type: 3}
+    - {fileID: 171666, guid: 8bec46e175243f64187c6f997a4613ac, type: 3}
+    - {fileID: 136402, guid: a4fbee618f7e9d047adb5b681ecc0441, type: 3}
+    - {fileID: 159244, guid: de2bb72ae5869604ea6b16e336da3d35, type: 3}
+    - {fileID: 185554, guid: 377104e47bea14d419691f39b4dbfa58, type: 3}
+    infinite: 0
+    enemyCount: 35
+    timeBetweenSpawns: 0.9
+    moveSpeed: 8
+    hitsToKillPlayer: 8
+    enemyHealth: 10
+    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
+  - enemyModels:
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 171506, guid: 2fc5c9ca302edf647b81862df624d3f9, type: 3}
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 133696, guid: f3f50aa19e3e1a74587d2254af2fc0d4, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 158876, guid: 0acb0fb6b483a2a43834369eb93299ed, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    - {fileID: 144502, guid: 90cad25c702ebdb48b42a67396f57304, type: 3}
+    - {fileID: 114856, guid: ee4ed8b706ff72c4f925f89a3d7d5717, type: 3}
+    - {fileID: 119814, guid: 991492433da449c42a7af48bf42e686a, type: 3}
+    - {fileID: 135148, guid: ebb30f916d75f8e43add69628ba7f4da, type: 3}
+    - {fileID: 145232, guid: f37441b520a39b44ba99ea52e5abf8dc, type: 3}
+    - {fileID: 147572, guid: d9bd481ba81ab5644a1cde6ab92e1056, type: 3}
+    - {fileID: 171204, guid: a1b5adce90377cf439731fb900f2a45a, type: 3}
+    - {fileID: 169036, guid: cb1b929ab7d73f94087a9b4cdca8ed59, type: 3}
+    - {fileID: 193508, guid: e7d16897c7e623049889ee327d7ec1c9, type: 3}
+    - {fileID: 140806, guid: e9ba2677fd8e8c74aa0b91971286ab13, type: 3}
+    - {fileID: 119662, guid: a5dadc47e554b324a87386cea088486c, type: 3}
+    - {fileID: 174124, guid: 153fa01c5b4861646930d507a2320118, type: 3}
+    - {fileID: 164708, guid: 965d3ca33dddc614695187e54026ba0e, type: 3}
+    - {fileID: 148744, guid: a867d4e67c7bbe8409bed204bab3953b, type: 3}
+    - {fileID: 110650, guid: f764cac7cb2c0aa45aea768e665e40d7, type: 3}
+    - {fileID: 151748, guid: 5435ed64d041f7846b217b4c39d1f417, type: 3}
+    - {fileID: 166564, guid: c54f52a5df45af949803688189314bd8, type: 3}
+    - {fileID: 146448, guid: dc1fc76610eebf640999c1900c654825, type: 3}
+    - {fileID: 108946, guid: 1ce7604532dbce04e812a36937c3b5d4, type: 3}
+    - {fileID: 117270, guid: 634130a0b5997d14da4e9e1b1ef75f6a, type: 3}
+    - {fileID: 123140, guid: 57970e1e7f602eb4eb914aedf228d196, type: 3}
+    - {fileID: 142606, guid: f9b32b5d38f32394496bb8a5cb504b31, type: 3}
+    - {fileID: 130740, guid: 2aa63e14c2c606747827a38f3619c5c6, type: 3}
+    - {fileID: 198234, guid: e19af22b368abd042a86d90dd69d45f5, type: 3}
+    - {fileID: 171800, guid: 22e71aa69abfb734994b47e1d651d410, type: 3}
+    - {fileID: 193652, guid: 23b26bb3ce7a6be4881c1c75c979fa8e, type: 3}
+    - {fileID: 171666, guid: 8bec46e175243f64187c6f997a4613ac, type: 3}
+    - {fileID: 136402, guid: a4fbee618f7e9d047adb5b681ecc0441, type: 3}
+    - {fileID: 159244, guid: de2bb72ae5869604ea6b16e336da3d35, type: 3}
+    - {fileID: 185554, guid: 377104e47bea14d419691f39b4dbfa58, type: 3}
+    infinite: 0
+    enemyCount: 40
+    timeBetweenSpawns: 0.9
+    moveSpeed: 10
+    hitsToKillPlayer: 8
+    enemyHealth: 10
+    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
+  - enemyModels:
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 171506, guid: 2fc5c9ca302edf647b81862df624d3f9, type: 3}
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 133696, guid: f3f50aa19e3e1a74587d2254af2fc0d4, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 158876, guid: 0acb0fb6b483a2a43834369eb93299ed, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    - {fileID: 144502, guid: 90cad25c702ebdb48b42a67396f57304, type: 3}
+    - {fileID: 114856, guid: ee4ed8b706ff72c4f925f89a3d7d5717, type: 3}
+    - {fileID: 119814, guid: 991492433da449c42a7af48bf42e686a, type: 3}
+    - {fileID: 135148, guid: ebb30f916d75f8e43add69628ba7f4da, type: 3}
+    - {fileID: 145232, guid: f37441b520a39b44ba99ea52e5abf8dc, type: 3}
+    - {fileID: 147572, guid: d9bd481ba81ab5644a1cde6ab92e1056, type: 3}
+    - {fileID: 171204, guid: a1b5adce90377cf439731fb900f2a45a, type: 3}
+    - {fileID: 169036, guid: cb1b929ab7d73f94087a9b4cdca8ed59, type: 3}
+    - {fileID: 193508, guid: e7d16897c7e623049889ee327d7ec1c9, type: 3}
+    - {fileID: 140806, guid: e9ba2677fd8e8c74aa0b91971286ab13, type: 3}
+    - {fileID: 119662, guid: a5dadc47e554b324a87386cea088486c, type: 3}
+    - {fileID: 174124, guid: 153fa01c5b4861646930d507a2320118, type: 3}
+    - {fileID: 164708, guid: 965d3ca33dddc614695187e54026ba0e, type: 3}
+    - {fileID: 148744, guid: a867d4e67c7bbe8409bed204bab3953b, type: 3}
+    - {fileID: 110650, guid: f764cac7cb2c0aa45aea768e665e40d7, type: 3}
+    - {fileID: 151748, guid: 5435ed64d041f7846b217b4c39d1f417, type: 3}
+    - {fileID: 166564, guid: c54f52a5df45af949803688189314bd8, type: 3}
+    - {fileID: 146448, guid: dc1fc76610eebf640999c1900c654825, type: 3}
+    - {fileID: 108946, guid: 1ce7604532dbce04e812a36937c3b5d4, type: 3}
+    - {fileID: 117270, guid: 634130a0b5997d14da4e9e1b1ef75f6a, type: 3}
+    - {fileID: 123140, guid: 57970e1e7f602eb4eb914aedf228d196, type: 3}
+    - {fileID: 142606, guid: f9b32b5d38f32394496bb8a5cb504b31, type: 3}
+    - {fileID: 130740, guid: 2aa63e14c2c606747827a38f3619c5c6, type: 3}
+    - {fileID: 198234, guid: e19af22b368abd042a86d90dd69d45f5, type: 3}
+    - {fileID: 171800, guid: 22e71aa69abfb734994b47e1d651d410, type: 3}
+    - {fileID: 193652, guid: 23b26bb3ce7a6be4881c1c75c979fa8e, type: 3}
+    - {fileID: 171666, guid: 8bec46e175243f64187c6f997a4613ac, type: 3}
+    - {fileID: 136402, guid: a4fbee618f7e9d047adb5b681ecc0441, type: 3}
+    - {fileID: 159244, guid: de2bb72ae5869604ea6b16e336da3d35, type: 3}
+    - {fileID: 185554, guid: 377104e47bea14d419691f39b4dbfa58, type: 3}
+    infinite: 1
+    enemyCount: 50
+    timeBetweenSpawns: 0.5
+    moveSpeed: 10
+    hitsToKillPlayer: 8
+    enemyHealth: 10
+    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
   - enemyModels:
     - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
     - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
@@ -65380,103 +65496,9 @@ MonoBehaviour:
     infinite: 0
     enemyCount: 50
     timeBetweenSpawns: 0.5
-    moveSpeed: 8
-    hitsToKillPlayer: 10
-    enemyHealth: 2
-    bloodColor: {r: 0.21960784, g: 0.29411766, b: 0.2509804, a: 1}
-  - enemyModels:
-    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
-    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
-    - {fileID: 171506, guid: 2fc5c9ca302edf647b81862df624d3f9, type: 3}
-    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
-    - {fileID: 133696, guid: f3f50aa19e3e1a74587d2254af2fc0d4, type: 3}
-    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
-    - {fileID: 158876, guid: 0acb0fb6b483a2a43834369eb93299ed, type: 3}
-    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
-    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
-    - {fileID: 144502, guid: 90cad25c702ebdb48b42a67396f57304, type: 3}
-    - {fileID: 114856, guid: ee4ed8b706ff72c4f925f89a3d7d5717, type: 3}
-    - {fileID: 119814, guid: 991492433da449c42a7af48bf42e686a, type: 3}
-    - {fileID: 135148, guid: ebb30f916d75f8e43add69628ba7f4da, type: 3}
-    - {fileID: 145232, guid: f37441b520a39b44ba99ea52e5abf8dc, type: 3}
-    - {fileID: 147572, guid: d9bd481ba81ab5644a1cde6ab92e1056, type: 3}
-    - {fileID: 171204, guid: a1b5adce90377cf439731fb900f2a45a, type: 3}
-    - {fileID: 169036, guid: cb1b929ab7d73f94087a9b4cdca8ed59, type: 3}
-    - {fileID: 193508, guid: e7d16897c7e623049889ee327d7ec1c9, type: 3}
-    - {fileID: 140806, guid: e9ba2677fd8e8c74aa0b91971286ab13, type: 3}
-    - {fileID: 119662, guid: a5dadc47e554b324a87386cea088486c, type: 3}
-    - {fileID: 174124, guid: 153fa01c5b4861646930d507a2320118, type: 3}
-    - {fileID: 164708, guid: 965d3ca33dddc614695187e54026ba0e, type: 3}
-    - {fileID: 148744, guid: a867d4e67c7bbe8409bed204bab3953b, type: 3}
-    - {fileID: 110650, guid: f764cac7cb2c0aa45aea768e665e40d7, type: 3}
-    - {fileID: 151748, guid: 5435ed64d041f7846b217b4c39d1f417, type: 3}
-    - {fileID: 166564, guid: c54f52a5df45af949803688189314bd8, type: 3}
-    - {fileID: 146448, guid: dc1fc76610eebf640999c1900c654825, type: 3}
-    - {fileID: 108946, guid: 1ce7604532dbce04e812a36937c3b5d4, type: 3}
-    - {fileID: 117270, guid: 634130a0b5997d14da4e9e1b1ef75f6a, type: 3}
-    - {fileID: 123140, guid: 57970e1e7f602eb4eb914aedf228d196, type: 3}
-    - {fileID: 142606, guid: f9b32b5d38f32394496bb8a5cb504b31, type: 3}
-    - {fileID: 130740, guid: 2aa63e14c2c606747827a38f3619c5c6, type: 3}
-    - {fileID: 198234, guid: e19af22b368abd042a86d90dd69d45f5, type: 3}
-    - {fileID: 171800, guid: 22e71aa69abfb734994b47e1d651d410, type: 3}
-    - {fileID: 193652, guid: 23b26bb3ce7a6be4881c1c75c979fa8e, type: 3}
-    - {fileID: 171666, guid: 8bec46e175243f64187c6f997a4613ac, type: 3}
-    - {fileID: 136402, guid: a4fbee618f7e9d047adb5b681ecc0441, type: 3}
-    - {fileID: 159244, guid: de2bb72ae5869604ea6b16e336da3d35, type: 3}
-    - {fileID: 185554, guid: 377104e47bea14d419691f39b4dbfa58, type: 3}
-    infinite: 0
-    enemyCount: 50
-    timeBetweenSpawns: 1
-    moveSpeed: 5
-    hitsToKillPlayer: 5
-    enemyHealth: 5
-    bloodColor: {r: 0.3764706, g: 0.43529412, b: 0.3137255, a: 1}
-  - enemyModels:
-    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
-    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
-    - {fileID: 171506, guid: 2fc5c9ca302edf647b81862df624d3f9, type: 3}
-    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
-    - {fileID: 133696, guid: f3f50aa19e3e1a74587d2254af2fc0d4, type: 3}
-    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
-    - {fileID: 158876, guid: 0acb0fb6b483a2a43834369eb93299ed, type: 3}
-    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
-    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
-    - {fileID: 144502, guid: 90cad25c702ebdb48b42a67396f57304, type: 3}
-    - {fileID: 114856, guid: ee4ed8b706ff72c4f925f89a3d7d5717, type: 3}
-    - {fileID: 119814, guid: 991492433da449c42a7af48bf42e686a, type: 3}
-    - {fileID: 135148, guid: ebb30f916d75f8e43add69628ba7f4da, type: 3}
-    - {fileID: 145232, guid: f37441b520a39b44ba99ea52e5abf8dc, type: 3}
-    - {fileID: 147572, guid: d9bd481ba81ab5644a1cde6ab92e1056, type: 3}
-    - {fileID: 171204, guid: a1b5adce90377cf439731fb900f2a45a, type: 3}
-    - {fileID: 169036, guid: cb1b929ab7d73f94087a9b4cdca8ed59, type: 3}
-    - {fileID: 193508, guid: e7d16897c7e623049889ee327d7ec1c9, type: 3}
-    - {fileID: 140806, guid: e9ba2677fd8e8c74aa0b91971286ab13, type: 3}
-    - {fileID: 119662, guid: a5dadc47e554b324a87386cea088486c, type: 3}
-    - {fileID: 174124, guid: 153fa01c5b4861646930d507a2320118, type: 3}
-    - {fileID: 164708, guid: 965d3ca33dddc614695187e54026ba0e, type: 3}
-    - {fileID: 148744, guid: a867d4e67c7bbe8409bed204bab3953b, type: 3}
-    - {fileID: 110650, guid: f764cac7cb2c0aa45aea768e665e40d7, type: 3}
-    - {fileID: 151748, guid: 5435ed64d041f7846b217b4c39d1f417, type: 3}
-    - {fileID: 166564, guid: c54f52a5df45af949803688189314bd8, type: 3}
-    - {fileID: 146448, guid: dc1fc76610eebf640999c1900c654825, type: 3}
-    - {fileID: 108946, guid: 1ce7604532dbce04e812a36937c3b5d4, type: 3}
-    - {fileID: 117270, guid: 634130a0b5997d14da4e9e1b1ef75f6a, type: 3}
-    - {fileID: 123140, guid: 57970e1e7f602eb4eb914aedf228d196, type: 3}
-    - {fileID: 142606, guid: f9b32b5d38f32394496bb8a5cb504b31, type: 3}
-    - {fileID: 130740, guid: 2aa63e14c2c606747827a38f3619c5c6, type: 3}
-    - {fileID: 198234, guid: e19af22b368abd042a86d90dd69d45f5, type: 3}
-    - {fileID: 171800, guid: 22e71aa69abfb734994b47e1d651d410, type: 3}
-    - {fileID: 193652, guid: 23b26bb3ce7a6be4881c1c75c979fa8e, type: 3}
-    - {fileID: 171666, guid: 8bec46e175243f64187c6f997a4613ac, type: 3}
-    - {fileID: 136402, guid: a4fbee618f7e9d047adb5b681ecc0441, type: 3}
-    - {fileID: 159244, guid: de2bb72ae5869604ea6b16e336da3d35, type: 3}
-    - {fileID: 185554, guid: 377104e47bea14d419691f39b4dbfa58, type: 3}
-    infinite: 1
-    enemyCount: 75
-    timeBetweenSpawns: 0.7
-    moveSpeed: 5
-    hitsToKillPlayer: 5
-    enemyHealth: 5
+    moveSpeed: 10
+    hitsToKillPlayer: 8
+    enemyHealth: 10
     bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
   CurrentWaveNumber: 0
   _isDisabled: 0
@@ -66668,74 +66690,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051349948}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2051627073
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2051627074}
-  - component: {fileID: 2051627075}
-  m_Layer: 5
-  m_Name: shop_item (9)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2051627074
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2051627073}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 269086434}
-  - {fileID: 2088531653}
-  - {fileID: 1460890429}
-  - {fileID: 823879232}
-  - {fileID: 158121653}
-  - {fileID: 1595837274}
-  - {fileID: 1082449238}
-  - {fileID: 1283360289}
-  m_Father: {fileID: 332059730}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 329.1348, y: 119.3969}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2051627075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2051627073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 215d0c1955f7d84448557d9162363a40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <Price>k__BackingField: 0
-  <Gun>k__BackingField: {fileID: 4572837437375063969, guid: 50f168e93449441438335153696ffff6, type: 3}
-  <Id>k__BackingField: pistol
-  <IsLocked>k__BackingField: 0
-  _icon: {fileID: 2088531654}
-  _priceLabel: {fileID: 823879233}
-  _checkMark: {fileID: 1082449237}
-  _hideInUnlock:
-  - {fileID: 1283360288}
-  - {fileID: 1595837273}
-  - {fileID: 1460890428}
-  _hideInLock: []
 --- !u!1001 &2051770426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68170,81 +68124,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085972956}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2088531652
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2088531653}
-  - component: {fileID: 2088531655}
-  - component: {fileID: 2088531654}
-  m_Layer: 5
-  m_Name: weapon_icon
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2088531653
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088531652}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2051627074}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.7922, y: -0.00001049}
-  m_SizeDelta: {x: 222.0291, y: 93}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2088531654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088531652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &2088531655
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088531652}
-  m_CullTransparentMesh: 1
 --- !u!1001 &2089526187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69853,46 +69732,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 268132321}
     m_Modifications:
-    - target: {fileID: 176396096872604479, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_RaycastTarget
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 177054563142148480, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 1b9dfe9b152733e4e887ae5f0b51f731, type: 3}
-    - target: {fileID: 255706855073302781, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_Maskable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 255706855073302781, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_RaycastTarget
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 411624549509548263, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Id>k__BackingField
-      value: revolver
-      objectReference: {fileID: 0}
-    - target: {fileID: 411624549509548263, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Gun>k__BackingField
-      value: 
-      objectReference: {fileID: 6050694244880225149, guid: 954dbe86db9e5874c9e3a86419fc5f25, type: 3}
-    - target: {fileID: 411624549509548263, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Price>k__BackingField
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 502735616757501694, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Id>k__BackingField
-      value: machineGun
-      objectReference: {fileID: 0}
-    - target: {fileID: 502735616757501694, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Gun>k__BackingField
-      value: 
-      objectReference: {fileID: 2219432916710118441, guid: 252d6320ea3911842a43ad49f2c4a23c, type: 3}
-    - target: {fileID: 502735616757501694, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Price>k__BackingField
-      value: 250
-      objectReference: {fileID: 0}
     - target: {fileID: 622425869721679261, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -69908,10 +69747,6 @@ PrefabInstance:
     - target: {fileID: 622425869721679261, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 653664510949787431, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 859972291597595524, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
       propertyPath: m_AnchorMax.y
@@ -69937,34 +69772,6 @@ PrefabInstance:
       propertyPath: _gunController
       value: 
       objectReference: {fileID: 427486587}
-    - target: {fileID: 1387015601329894460, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 1b9dfe9b152733e4e887ae5f0b51f731, type: 3}
-    - target: {fileID: 1495636302815324881, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 1b9dfe9b152733e4e887ae5f0b51f731, type: 3}
-    - target: {fileID: 2592635780113869295, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Id>k__BackingField
-      value: shotgun2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2592635780113869295, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Gun>k__BackingField
-      value: 
-      objectReference: {fileID: 1875929413893303212, guid: a5a9bd3a5c104d34682ffb88f26ab1e9, type: 3}
-    - target: {fileID: 2592635780113869295, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Price>k__BackingField
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 2595444052386821890, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Id>k__BackingField
-      value: autogun
-      objectReference: {fileID: 0}
-    - target: {fileID: 2595444052386821890, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Price>k__BackingField
-      value: 2000
-      objectReference: {fileID: 0}
     - target: {fileID: 2959412247185869432, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -69980,46 +69787,6 @@ PrefabInstance:
     - target: {fileID: 2959412247185869432, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3382146001136080021, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3382146001136080021, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3382146001136080021, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3382146001136080021, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3552942914514300694, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3585259664115191232, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 1b9dfe9b152733e4e887ae5f0b51f731, type: 3}
-    - target: {fileID: 3642593592423418841, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 1b9dfe9b152733e4e887ae5f0b51f731, type: 3}
-    - target: {fileID: 3841134962164687550, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Id>k__BackingField
-      value: sniperRifle
-      objectReference: {fileID: 0}
-    - target: {fileID: 3841134962164687550, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Gun>k__BackingField
-      value: 
-      objectReference: {fileID: -5842389738437936071, guid: 7c71970519e1b2e44866b4723f438c7f, type: 3}
-    - target: {fileID: 3841134962164687550, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Price>k__BackingField
-      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 4060941445282275268, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
       propertyPath: m_AnchorMax.y
@@ -70037,29 +69804,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4939453757321451660, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Id>k__BackingField
-      value: rifle
+    - target: {fileID: 4957067912017678347, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4939453757321451660, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Gun>k__BackingField
-      value: 
-      objectReference: {fileID: 6591716484225077932, guid: 24b11143a8531a245832b04ee19d17be, type: 3}
-    - target: {fileID: 4939453757321451660, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Price>k__BackingField
-      value: 300
+    - target: {fileID: 4957067912017678347, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5132609754099423582, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 252.458
-      objectReference: {fileID: 0}
-    - target: {fileID: 5132609754099423582, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 75.746
-      objectReference: {fileID: 0}
-    - target: {fileID: 5132609754099423582, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
+    - target: {fileID: 4957067912017678347, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1.591
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957067912017678347, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5303367182124836342, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
       propertyPath: m_AnchorMax.y
@@ -70076,22 +69835,6 @@ PrefabInstance:
     - target: {fileID: 5303367182124836342, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740288234728135425, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 1012
-      objectReference: {fileID: 0}
-    - target: {fileID: 6238478863248742749, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Id>k__BackingField
-      value: pph
-      objectReference: {fileID: 0}
-    - target: {fileID: 6238478863248742749, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Gun>k__BackingField
-      value: 
-      objectReference: {fileID: 7629295442012792244, guid: e14b5aa8ccc1e06408a5c19dda8d364d, type: 3}
-    - target: {fileID: 6238478863248742749, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Price>k__BackingField
-      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 6373552639001041920, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
       propertyPath: m_Pivot.x
@@ -70173,50 +69916,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6379366358686264221, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 1b9dfe9b152733e4e887ae5f0b51f731, type: 3}
-    - target: {fileID: 6481854254659023442, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 1b9dfe9b152733e4e887ae5f0b51f731, type: 3}
-    - target: {fileID: 6501122914266137896, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_fontSize
-      value: 71.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6501122914266137896, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 71.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6501122914266137896, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_VerticalAlignment
-      value: 512
-      objectReference: {fileID: 0}
-    - target: {fileID: 6501122914266137896, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6595143586418238503, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6595143586418238503, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6595143586418238503, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 149
-      objectReference: {fileID: 0}
-    - target: {fileID: 6595143586418238503, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -654.1829
-      objectReference: {fileID: 0}
-    - target: {fileID: 7037141269879102051, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 1b9dfe9b152733e4e887ae5f0b51f731, type: 3}
     - target: {fileID: 7108463010164200921, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -70249,113 +69948,15 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7984699415599640940, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Id>k__BackingField
-      value: pumpActionShootgun
-      objectReference: {fileID: 0}
-    - target: {fileID: 7984699415599640940, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Gun>k__BackingField
-      value: 
-      objectReference: {fileID: 7101463101269761339, guid: 2617f4399eea22647b6d3e36dedb5501, type: 3}
-    - target: {fileID: 7984699415599640940, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Price>k__BackingField
-      value: 750
-      objectReference: {fileID: 0}
-    - target: {fileID: 8048911293174360227, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Id>k__BackingField
-      value: shotgub
-      objectReference: {fileID: 0}
-    - target: {fileID: 8048911293174360227, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: <Price>k__BackingField
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 8338136326977543090, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 1b9dfe9b152733e4e887ae5f0b51f731, type: 3}
     - target: {fileID: 8704383283437869252, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
       propertyPath: m_Name
       value: ShopPanel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 5740288234728135425, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 2051627074}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6313999901175446802, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 3756648434728423847}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
---- !u!1 &3756648434728423845 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6313999901175446802, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-  m_PrefabInstance: {fileID: 3756648434728423844}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3756648434728423847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3756648434728423845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 3756648434728423849}
-  uniqueFontTMP: {fileID: 0}
-  textLComponent: {fileID: 0}
-  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
-  text: 
-  ru: "\u041E\u0440\u0443\u0436\u0438\u0435"
-  en: Weapons
-  tr: 
-  az: 
-  be: 
-  he: 
-  hy: 
-  ka: 
-  et: 
-  fr: 
-  kk: 
-  ky: 
-  lt: 
-  lv: 
-  ro: 
-  tg: 
-  tk: 
-  uk: 
-  uz: 
-  es: 
-  pt: 
-  ar: 
-  id: 
-  ja: 
-  it: 
-  de: 
-  hi: 
-  changeOnlyFont: 0
-  fontNumber: 0
-  uniqueFont: {fileID: 0}
-  additionalText: {fileID: 0}
-  textHeight: 20
-  processTranslateLabel: 
-  componentTextField: 0
-  countLang: 0
---- !u!114 &3756648434728423849 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6501122914266137896, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
-  m_PrefabInstance: {fileID: 3756648434728423844}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3756648434728423845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4740119904882692638
 PrefabInstance:
   m_ObjectHideFlags: 0

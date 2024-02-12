@@ -41,7 +41,7 @@ public class GameUI : MonoBehaviour
     }
     private void OnNewWave(int waveNumber)
     {
-        string[] numbers = new string[5];
+/*        string[] numbers = new string[5];
         string enemyCountString;
         if (YandexGame.EnvironmentData.language == "ru")
         {
@@ -61,10 +61,10 @@ public class GameUI : MonoBehaviour
             numbers[3] = "Four";
             numbers[4] = "Five";
             enemyCountString = (_spawnerScript.waves[waveNumber - 1].infinite) ? "Infinite" : $"{_spawnerScript.waves[waveNumber - 1].enemyCount}";
-        }
+        }*/
 
 
-        _wavePresenter.Show(numbers[waveNumber - 1], enemyCountString);
+        _wavePresenter.Show((waveNumber - 1).ToString(), _spawnerScript.waves[waveNumber - 1].enemyCount.ToString());
     }
     private void OnGameOver()
     {

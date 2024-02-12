@@ -124,8 +124,11 @@ namespace ShelterSystem
                     _currentTarget = entity;
                     foreach (var item in _enemies)
                     {
-                        Debug.Log($"SET {item.gameObject.name} target {_currentTarget.gameObject.name}");
-                        item.SetTarget(_currentTarget);
+                        if (item != null)
+                        {
+                            Debug.Log($"SET {item.gameObject.name} target {_currentTarget.gameObject.name}");
+                            item.SetTarget(_currentTarget);
+                        }
                     }
                     return;
                 }

@@ -92,7 +92,9 @@ namespace ShelterSystem
             var currentStats = _statsPerLevel[Level - 1];
             if (_regeneration != null)
                 _regeneration.RegenerationPerSecond = currentStats.RegenerationPerSecond;
+            Debug.Log(startingHealth);
             startingHealth = currentStats.MaxHealth;
+            Debug.Log(startingHealth);
         }
 
         private void UpdateElements()
