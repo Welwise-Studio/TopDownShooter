@@ -40,6 +40,7 @@ public class SavesCombinedSDK : ScriptableObject
 
 
 #region EditorInspector
+#if UNITY_EDITOR
 [CustomEditor(typeof(SavesCombinedSDK))]
 public class VisualSavesCombindeSDK : Editor
 {
@@ -62,4 +63,5 @@ public class VisualSavesCombindeSDK : Editor
         }
     }
 }
+#endif
 #endregion

@@ -3,6 +3,7 @@ using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
+#if UNITY_EDITOR
 namespace Utils.ConditionalField
 {
     public static class ConditionalUtility
@@ -166,3 +167,4 @@ namespace Utils.ConditionalField
         }
     }
 }
+#endif

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17364198, g: 0.21708648, b: 0.29920244, a: 1}
+  m_IndirectSpecularColor: {r: 0.17364223, g: 0.21708678, b: 0.29920313, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11748,7 +11748,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 30.529999, y: -88.50901}
+  m_AnchoredPosition: {x: 30.529999, y: -145}
   m_SizeDelta: {x: -352.141, y: -609.491}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &694514313
@@ -33381,6 +33381,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1093638921298269709, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
+      propertyPath: _wallet
+      value: 
+      objectReference: {fileID: 381346387}
+    - target: {fileID: 1093638921298269709, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
+      propertyPath: _gunController
+      value: 
+      objectReference: {fileID: 427486587}
     - target: {fileID: 2959412247185869432, guid: 718baf5c64322f14e8290c59449af4b5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

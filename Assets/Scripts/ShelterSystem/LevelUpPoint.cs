@@ -65,6 +65,7 @@ namespace ShelterSystem
                 _couldDownProgress.fillAmount = 0;
                 _couldDownTimer = _couldDownTime;
                 _currentPrice = _levelUpPrices[_shelter.Level - 1];
+                _priceHolder.text = _currentPrice.ToString();
             }
         }
     }
