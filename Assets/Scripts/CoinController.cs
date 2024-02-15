@@ -10,7 +10,7 @@ public class CoinController : MonoBehaviour
     private void Awake()
     {
         _wallet = FindObjectOfType<Wallet>();
-        Destroy(gameObject,5);
+        Destroy(gameObject,15);
     }
 
     private void OnTriggerEnter (Collider other)

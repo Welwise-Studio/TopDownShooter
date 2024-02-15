@@ -24,7 +24,7 @@ public class DieModal : MonoBehaviour
             SceneManager.LoadScene("Menu"); });
         _restartButton.onClick.AddListener(()=> {
             Time.timeScale = 1;
-            SceneManager.LoadScene("Game");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         });
     }
     private void Update()

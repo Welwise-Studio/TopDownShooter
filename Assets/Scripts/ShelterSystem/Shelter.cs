@@ -40,6 +40,10 @@ namespace ShelterSystem
         private ShelterUpgradeElement[] _elements;
         [SerializeField]
         private DieModal _dieModal;
+        [SerializeField]
+        private Fence _fence;
+        [SerializeField]
+        private AudioClip _upgradeFx;
 
 
         protected override void Start()
@@ -65,7 +69,8 @@ namespace ShelterSystem
             Level = CombinedSDK.AllSavesCombinedSDK.ShelterLevel;
             UpdateElements();
             UpdateStats();
-            AddHealth(startingHealth);
+            AddHealth(1);
+            _fence.AddHealth(startingHealth);
             OnLevelUp?.Invoke(Level);
         }
 
@@ -75,10 +80,12 @@ namespace ShelterSystem
             if (Level == MaxLevel)
                 return;
 
+            AudioManager.Instance.PlaySound(_upgradeFx, transform.position);
+
             Level++;
             UpdateElements();
             UpdateStats();
-            AddHealth(startingHealth);
+            _fence.AddHealth(startingHealth);
             CombinedSDK.AllSavesCombinedSDK.ShelterLevel = Level;
             CombinedSDK.SaveProgressData();
             OnLevelUp?.Invoke(Level);

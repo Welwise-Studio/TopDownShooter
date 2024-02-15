@@ -56,8 +56,8 @@ MonoBehaviour:
   <health>k__BackingField: 0
   dead: 0
   <currentState>k__BackingField: 0
-  _deathEffect: {fileID: 7908463283482602038}
-  _takeDamageEffect: {fileID: 7908463283482602038}
+  _deathEffect: {fileID: 4624936986759223459, guid: c7de7f20141bb044e8f74d9b1ea4b4c8, type: 3}
+  _takeDamageEffect: {fileID: 8708391255908533546, guid: f1d62224a4d0ea04dbea2258fee82d31, type: 3}
   _targetEntity: {fileID: 0}
   _pathRefrashRate: 0.25
   _target: {fileID: 0}

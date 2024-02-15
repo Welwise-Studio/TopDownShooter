@@ -10,6 +10,8 @@ public class ShelterInspector : Editor
     private SerializedProperty regenerationProp;
     private SerializedProperty elementsProp;
     private SerializedProperty dieModalProp;
+    private SerializedProperty fenceProp;
+    private SerializedProperty upgradeFxProp;
 
     private bool showLevelStatsFull = true;
     private bool showLevelStats = false;
@@ -22,11 +24,13 @@ public class ShelterInspector : Editor
 
     private void OnEnable()
     {
+        fenceProp = serializedObject.FindProperty("_fence");
         maxLevelProp = serializedObject.FindProperty("_maxLevel");
         statsPerLevelProp = serializedObject.FindProperty("_statsPerLevel");
         regenerationProp = serializedObject.FindProperty("_regeneration");
         elementsProp = serializedObject.FindProperty("_elements");
         dieModalProp = serializedObject.FindProperty("_dieModal");
+        upgradeFxProp = serializedObject.FindProperty("_upgradeFx");
     }
 
     public override void OnInspectorGUI()
@@ -36,6 +40,8 @@ public class ShelterInspector : Editor
         Shelter shelter = (Shelter)target;
 
         EditorGUILayout.PropertyField(dieModalProp);
+        EditorGUILayout.PropertyField(upgradeFxProp);
+        EditorGUILayout.PropertyField(fenceProp);
         EditorGUILayout.Space(10);
 
         GUI.enabled = false;
