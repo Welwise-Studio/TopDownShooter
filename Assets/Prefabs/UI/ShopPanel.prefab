@@ -114,9 +114,9 @@ RectTransform:
   - {fileID: 1775732455471652579}
   m_Father: {fileID: 5740288234728135425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 149, y: -178.59534}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 329.1348, y: 119.3969}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8048911293174360227
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 215d0c1955f7d84448557d9162363a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Price>k__BackingField: 150
+  <Price>k__BackingField: 500
   <Gun>k__BackingField: {fileID: 1875929413893303212, guid: a5a9bd3a5c104d34682ffb88f26ab1e9, type: 3}
   <Id>k__BackingField: shotgub
   <IsLocked>k__BackingField: 0
@@ -182,9 +182,9 @@ RectTransform:
   - {fileID: 1862388803526281004}
   m_Father: {fileID: 5740288234728135425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 149, y: -654.1829}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 329.1348, y: 119.3969}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7984699415599640940
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 215d0c1955f7d84448557d9162363a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Price>k__BackingField: 1000
+  <Price>k__BackingField: 500
   <Gun>k__BackingField: {fileID: 7101463101269761339, guid: 2617f4399eea22647b6d3e36dedb5501, type: 3}
   <Id>k__BackingField: pumpActionShootgun
   <IsLocked>k__BackingField: 0
@@ -2280,9 +2280,9 @@ RectTransform:
   - {fileID: 3718748891912449740}
   m_Father: {fileID: 5740288234728135425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 149, y: -297.49225}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 329.1348, y: 119.3969}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4939453757321451660
@@ -2297,7 +2297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 215d0c1955f7d84448557d9162363a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Price>k__BackingField: 300
+  <Price>k__BackingField: 500
   <Gun>k__BackingField: {fileID: 6591716484225077932, guid: 24b11143a8531a245832b04ee19d17be, type: 3}
   <Id>k__BackingField: rifle
   <IsLocked>k__BackingField: 0
@@ -4033,9 +4033,9 @@ RectTransform:
   - {fileID: 5986145865019294018}
   m_Father: {fileID: 5740288234728135425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 149, y: -891.97675}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 329.1348, y: 119.3969}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2595444052386821890
@@ -4050,7 +4050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 215d0c1955f7d84448557d9162363a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Price>k__BackingField: 2000
+  <Price>k__BackingField: 500
   <Gun>k__BackingField: {fileID: 8550470277341573077, guid: 123d31b4b4975a341b1bfbbbdbaac1a2, type: 3}
   <Id>k__BackingField: autogun
   <IsLocked>k__BackingField: 0
@@ -5203,9 +5203,9 @@ RectTransform:
   - {fileID: 4781031193303078142}
   m_Father: {fileID: 5740288234728135425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 149, y: -773.07983}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 329.1348, y: 119.3969}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3841134962164687550
@@ -5220,7 +5220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 215d0c1955f7d84448557d9162363a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Price>k__BackingField: 1500
+  <Price>k__BackingField: 500
   <Gun>k__BackingField: {fileID: -5842389738437936071, guid: 7c71970519e1b2e44866b4723f438c7f, type: 3}
   <Id>k__BackingField: sniperRifle
   <IsLocked>k__BackingField: 0
@@ -5790,9 +5790,9 @@ RectTransform:
   - {fileID: 327313350163927293}
   m_Father: {fileID: 5740288234728135425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 149, y: -59.69845}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 329.1348, y: 119.3969}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1473510808427205024
@@ -6142,9 +6142,9 @@ RectTransform:
   - {fileID: 8209431064205605054}
   m_Father: {fileID: 5740288234728135425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 149, y: -535.286}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 329.1348, y: 119.3969}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &502735616757501694
@@ -6159,7 +6159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 215d0c1955f7d84448557d9162363a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Price>k__BackingField: 750
+  <Price>k__BackingField: 500
   <Gun>k__BackingField: {fileID: 2219432916710118441, guid: 252d6320ea3911842a43ad49f2c4a23c, type: 3}
   <Id>k__BackingField: machineGun
   <IsLocked>k__BackingField: 0
@@ -6285,9 +6285,9 @@ RectTransform:
   - {fileID: 8260080241529355943}
   m_Father: {fileID: 5740288234728135425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 149, y: -416.38913}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 329.1348, y: 119.3969}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &411624549509548263

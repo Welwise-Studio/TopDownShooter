@@ -13,3 +13,12 @@ MonoBehaviour:
   m_Name: CombinedSDKSaves
   m_EditorClassIdentifier: 
   money: 5
+<<<<<<< HEAD
+=======
+  newPlayerName: Hello!
+  openLevels: 00
+  Balance: 25
+  ShelterLevel: 0
+  LastWaveIndex: 0
+  LastGunIndex: 0
+>>>>>>> 9864309 (change game settings)

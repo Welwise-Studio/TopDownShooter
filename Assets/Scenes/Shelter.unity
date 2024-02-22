@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17364223, g: 0.21708678, b: 0.29920313, a: 1}
+  m_IndirectSpecularColor: {r: 0.17364198, g: 0.21708648, b: 0.29920244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17241,10 +17241,10 @@ MonoBehaviour:
     - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
     infinite: 0
     enemyCount: 15
-    timeBetweenSpawns: 0.8
-    moveSpeed: 10
+    timeBetweenSpawns: 0.7
+    moveSpeed: 12
     hitsToKillPlayer: 10
-    enemyHealth: 2
+    enemyHealth: 100
     bloodColor: {r: 0.47843137, g: 0.37254903, b: 0.3137255, a: 1}
   - enemyModels:
     - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
@@ -17254,12 +17254,54 @@ MonoBehaviour:
     - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
     - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
     infinite: 0
-    enemyCount: 20
-    timeBetweenSpawns: 0.6
-    moveSpeed: 10
+    enemyCount: 17
+    timeBetweenSpawns: 0.69
+    moveSpeed: 12
     hitsToKillPlayer: 10
-    enemyHealth: 2
-    bloodColor: {r: 0.69411767, g: 0.6784314, b: 0.4862745, a: 1}
+    enemyHealth: 100
+    bloodColor: {r: 0.47843137, g: 0.37254903, b: 0.3137255, a: 1}
+  - enemyModels:
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    infinite: 0
+    enemyCount: 19
+    timeBetweenSpawns: 0.68
+    moveSpeed: 12
+    hitsToKillPlayer: 10
+    enemyHealth: 100
+    bloodColor: {r: 0.47843137, g: 0.37254903, b: 0.3137255, a: 1}
+  - enemyModels:
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    infinite: 0
+    enemyCount: 21
+    timeBetweenSpawns: 0.67
+    moveSpeed: 12
+    hitsToKillPlayer: 10
+    enemyHealth: 100
+    bloodColor: {r: 0.47843137, g: 0.37254903, b: 0.3137255, a: 1}
+  - enemyModels:
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    infinite: 0
+    enemyCount: 23
+    timeBetweenSpawns: 0.66
+    moveSpeed: 12
+    hitsToKillPlayer: 10
+    enemyHealth: 100
+    bloodColor: {r: 0.47843137, g: 0.37254903, b: 0.3137255, a: 1}
   - enemyModels:
     - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
     - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
@@ -17269,11 +17311,11 @@ MonoBehaviour:
     - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
     infinite: 0
     enemyCount: 25
-    timeBetweenSpawns: 0.5
+    timeBetweenSpawns: 0.65
     moveSpeed: 12
     hitsToKillPlayer: 10
-    enemyHealth: 3
-    bloodColor: {r: 0.53333336, g: 0.7294118, b: 0.5568628, a: 1}
+    enemyHealth: 100
+    bloodColor: {r: 0.47843137, g: 0.37254903, b: 0.3137255, a: 1}
   - enemyModels:
     - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
     - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
@@ -17282,12 +17324,12 @@ MonoBehaviour:
     - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
     - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
     infinite: 0
-    enemyCount: 25
-    timeBetweenSpawns: 0.5
+    enemyCount: 27
+    timeBetweenSpawns: 0.64
     moveSpeed: 12
     hitsToKillPlayer: 10
-    enemyHealth: 3
-    bloodColor: {r: 0.32156864, g: 0.4745098, b: 0.35686275, a: 1}
+    enemyHealth: 100
+    bloodColor: {r: 0.47843137, g: 0.37254903, b: 0.3137255, a: 1}
   - enemyModels:
     - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
     - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
@@ -17296,12 +17338,40 @@ MonoBehaviour:
     - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
     - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
     infinite: 0
-    enemyCount: 30
-    timeBetweenSpawns: 0.3
-    moveSpeed: 10
+    enemyCount: 29
+    timeBetweenSpawns: 0.63
+    moveSpeed: 12
     hitsToKillPlayer: 10
-    enemyHealth: 4
-    bloodColor: {r: 0.3764706, g: 0.43529412, b: 0.3137255, a: 1}
+    enemyHealth: 100
+    bloodColor: {r: 0.47843137, g: 0.37254903, b: 0.3137255, a: 1}
+  - enemyModels:
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    infinite: 0
+    enemyCount: 31
+    timeBetweenSpawns: 0.62
+    moveSpeed: 12
+    hitsToKillPlayer: 10
+    enemyHealth: 100
+    bloodColor: {r: 0.47843137, g: 0.37254903, b: 0.3137255, a: 1}
+  - enemyModels:
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    infinite: 0
+    enemyCount: 33
+    timeBetweenSpawns: 0.61
+    moveSpeed: 12
+    hitsToKillPlayer: 10
+    enemyHealth: 100
+    bloodColor: {r: 0.47843137, g: 0.37254903, b: 0.3137255, a: 1}
   - enemyModels:
     - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
     - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
@@ -17311,11 +17381,11 @@ MonoBehaviour:
     - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
     infinite: 0
     enemyCount: 35
-    timeBetweenSpawns: 0.3
-    moveSpeed: 10
-    hitsToKillPlayer: 5
-    enemyHealth: 4
-    bloodColor: {r: 0.21960784, g: 0.29411766, b: 0.2509804, a: 1}
+    timeBetweenSpawns: 0.6
+    moveSpeed: 12
+    hitsToKillPlayer: 10
+    enemyHealth: 100
+    bloodColor: {r: 0.47843137, g: 0.37254903, b: 0.3137255, a: 1}
   - enemyModels:
     - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
     - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
@@ -17324,12 +17394,54 @@ MonoBehaviour:
     - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
     - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
     infinite: 0
-    enemyCount: 40
-    timeBetweenSpawns: 0.3
-    moveSpeed: 8
-    hitsToKillPlayer: 5
-    enemyHealth: 4
-    bloodColor: {r: 0.3764706, g: 0.43529412, b: 0.3137255, a: 1}
+    enemyCount: 37
+    timeBetweenSpawns: 0.59
+    moveSpeed: 12
+    hitsToKillPlayer: 10
+    enemyHealth: 100
+    bloodColor: {r: 0.47843137, g: 0.37254903, b: 0.3137255, a: 1}
+  - enemyModels:
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    infinite: 0
+    enemyCount: 39
+    timeBetweenSpawns: 0.58
+    moveSpeed: 12
+    hitsToKillPlayer: 10
+    enemyHealth: 100
+    bloodColor: {r: 0.47843137, g: 0.37254903, b: 0.3137255, a: 1}
+  - enemyModels:
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    infinite: 0
+    enemyCount: 41
+    timeBetweenSpawns: 0.57
+    moveSpeed: 12
+    hitsToKillPlayer: 10
+    enemyHealth: 100
+    bloodColor: {r: 0.47843137, g: 0.37254903, b: 0.3137255, a: 1}
+  - enemyModels:
+    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
+    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
+    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
+    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
+    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
+    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
+    infinite: 0
+    enemyCount: 43
+    timeBetweenSpawns: 0.56
+    moveSpeed: 12
+    hitsToKillPlayer: 10
+    enemyHealth: 100
+    bloodColor: {r: 0.47843137, g: 0.37254903, b: 0.3137255, a: 1}
   - enemyModels:
     - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
     - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
@@ -17339,11 +17451,11 @@ MonoBehaviour:
     - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
     infinite: 0
     enemyCount: 45
-    timeBetweenSpawns: 0.3
-    moveSpeed: 10
-    hitsToKillPlayer: 5
-    enemyHealth: 4
-    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
+    timeBetweenSpawns: 0.55
+    moveSpeed: 12
+    hitsToKillPlayer: 10
+    enemyHealth: 100
+    bloodColor: {r: 0.47843137, g: 0.37254903, b: 0.3137255, a: 1}
   - enemyModels:
     - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
     - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
@@ -17352,12 +17464,12 @@ MonoBehaviour:
     - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
     - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
     infinite: 0
-    enemyCount: 50
-    timeBetweenSpawns: 0.4
-    moveSpeed: 10
-    hitsToKillPlayer: 5
-    enemyHealth: 4
-    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
+    enemyCount: 47
+    timeBetweenSpawns: 0.54
+    moveSpeed: 12
+    hitsToKillPlayer: 10
+    enemyHealth: 100
+    bloodColor: {r: 0.47843137, g: 0.37254903, b: 0.3137255, a: 1}
   - enemyModels:
     - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
     - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
@@ -17366,12 +17478,12 @@ MonoBehaviour:
     - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
     - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
     infinite: 0
-    enemyCount: 50
-    timeBetweenSpawns: 0.4
-    moveSpeed: 10
-    hitsToKillPlayer: 5
-    enemyHealth: 4
-    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
+    enemyCount: 49
+    timeBetweenSpawns: 0.53
+    moveSpeed: 12
+    hitsToKillPlayer: 10
+    enemyHealth: 100
+    bloodColor: {r: 0.47843137, g: 0.37254903, b: 0.3137255, a: 1}
   - enemyModels:
     - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
     - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
@@ -17380,12 +17492,12 @@ MonoBehaviour:
     - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
     - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
     infinite: 0
-    enemyCount: 50
-    timeBetweenSpawns: 0.8
-    moveSpeed: 10
-    hitsToKillPlayer: 5
-    enemyHealth: 5
-    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
+    enemyCount: 51
+    timeBetweenSpawns: 0.52
+    moveSpeed: 12
+    hitsToKillPlayer: 10
+    enemyHealth: 100
+    bloodColor: {r: 0.47843137, g: 0.37254903, b: 0.3137255, a: 1}
   - enemyModels:
     - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
     - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
@@ -17394,26 +17506,12 @@ MonoBehaviour:
     - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
     - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
     infinite: 0
-    enemyCount: 50
-    timeBetweenSpawns: 0.8
-    moveSpeed: 10
-    hitsToKillPlayer: 5
-    enemyHealth: 5
-    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
-  - enemyModels:
-    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
-    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
-    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
-    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
-    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
-    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
-    infinite: 0
-    enemyCount: 50
-    timeBetweenSpawns: 0.7
-    moveSpeed: 10
-    hitsToKillPlayer: 5
-    enemyHealth: 5
-    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
+    enemyCount: 53
+    timeBetweenSpawns: 0.51
+    moveSpeed: 12
+    hitsToKillPlayer: 10
+    enemyHealth: 100
+    bloodColor: {r: 0.47843137, g: 0.37254903, b: 0.3137255, a: 1}
   - enemyModels:
     - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
     - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
@@ -17423,95 +17521,11 @@ MonoBehaviour:
     - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
     infinite: 0
     enemyCount: 55
-    timeBetweenSpawns: 0.7
-    moveSpeed: 9
-    hitsToKillPlayer: 5
-    enemyHealth: 5
-    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
-  - enemyModels:
-    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
-    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
-    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
-    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
-    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
-    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
-    infinite: 0
-    enemyCount: 20
-    timeBetweenSpawns: 1
-    moveSpeed: 4
-    hitsToKillPlayer: 5
-    enemyHealth: 20
-    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
-  - enemyModels:
-    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
-    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
-    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
-    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
-    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
-    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
-    infinite: 0
-    enemyCount: 20
-    timeBetweenSpawns: 1
-    moveSpeed: 4
-    hitsToKillPlayer: 5
-    enemyHealth: 20
-    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
-  - enemyModels:
-    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
-    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
-    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
-    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
-    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
-    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
-    infinite: 0
-    enemyCount: 20
-    timeBetweenSpawns: 1
-    moveSpeed: 6
-    hitsToKillPlayer: 5
-    enemyHealth: 20
-    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
-  - enemyModels:
-    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
-    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
-    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
-    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
-    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
-    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
-    infinite: 0
-    enemyCount: 25
-    timeBetweenSpawns: 1.2
-    moveSpeed: 6
-    hitsToKillPlayer: 5
-    enemyHealth: 20
-    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
-  - enemyModels:
-    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
-    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
-    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
-    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
-    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
-    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
-    infinite: 0
-    enemyCount: 25
-    timeBetweenSpawns: 1.2
-    moveSpeed: 6
-    hitsToKillPlayer: 5
-    enemyHealth: 20
-    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
-  - enemyModels:
-    - {fileID: 195430, guid: 221e8732a55dbba408f72fe0290ebc8c, type: 3}
-    - {fileID: 106246, guid: 29f85684ea083d842b25c112bad5e8a4, type: 3}
-    - {fileID: 126992, guid: 516338ba8ab816e48a51eff6e8e2f4bf, type: 3}
-    - {fileID: 126776, guid: 3402e08dfce460e41a1c882959093bb1, type: 3}
-    - {fileID: 155686, guid: b4ef6b0175e17234bb20175520ffb4eb, type: 3}
-    - {fileID: 190720, guid: 3de28f243de74af479aaf834c0570d58, type: 3}
-    infinite: 0
-    enemyCount: 30
-    timeBetweenSpawns: 0.3
+    timeBetweenSpawns: 0.5
     moveSpeed: 12
-    hitsToKillPlayer: 5
-    enemyHealth: 20
-    bloodColor: {r: 0.39607844, g: 0.61960787, b: 0.6431373, a: 1}
+    hitsToKillPlayer: 10
+    enemyHealth: 100
+    bloodColor: {r: 0.47843137, g: 0.37254903, b: 0.3137255, a: 1}
   _enemies: []
   IsDisabled: 0
   _timeToStart: 1

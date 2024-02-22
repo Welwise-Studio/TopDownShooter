@@ -463,11 +463,11 @@ MonoBehaviour:
   - {fileID: 7400777979161602342}
   _projectile: {fileID: -5138646287536290796, guid: 77f205d6d2fe9334b8c75b48da9ab758, type: 3}
   _firerate: 200
-  _muzzleVelocity: 25
-  _bulletDamage: 4
+  _muzzleVelocity: 40
+  _bulletDamage: 100
   _burstCount: 1
-  _projectilesPerMag: 6
-  _reloadTime: 0.8
+  _projectilesPerMag: 7
+  _reloadTime: 0.588
   _kickMinMax: {x: 0.05, y: 0.2}
   _recoilAngleMinMax: {x: 3, y: 5}
   _recoilMoveSettleTime: 0.1
