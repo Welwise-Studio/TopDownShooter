@@ -32,6 +32,8 @@ namespace ShelterSystem
         [SerializeField]
         private Wallet _wallet;
         [SerializeField]
+        private LivingEntity _target;
+        [SerializeField]
         private Shelter _shelter;
 
         private float _couldDownTimer;
@@ -69,13 +71,13 @@ namespace ShelterSystem
             }    
         }
 
-        private void UpdateHealthText(int lvl) => _healthText.text = (_shelter.startingHealth * (_healPercent / 100)).ToString();
+        private void UpdateHealthText(int lvl) => _healthText.text = (_target.startingHealth * (_healPercent / 100)).ToString();
 
         private void OnTriggerEnter(Collider other)
         {
             if (other.TryGetComponent<Player>(out var player) && !_inCouldDown && _wallet.TrySpend(_healPrice))
             {
-                _shelter.AddHealth(_shelter.startingHealth * (_healPercent/100));
+                _target.AddHealth(_target.startingHealth * (_healPercent/100));
                 _inCouldDown = true;
                 _couldDownProgress.fillAmount = 0;
                 _couldDownTimer = _couldDownTime;

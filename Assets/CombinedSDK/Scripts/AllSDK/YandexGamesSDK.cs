@@ -23,6 +23,8 @@ public class YandexGamesSDK : SDK
         if (YandexGame.SDKEnabled)
             ConsumePurchases();
         UpdatePurchases();
+
+        CombinedSDK.DeviceType = YandexGame.EnvironmentData.deviceType;
     }
 
     private void OnEnable()

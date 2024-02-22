@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UIElements;
-using YG;
+using GamePush;
 
 public class WavePresenter : MonoBehaviour
 {
@@ -26,13 +25,11 @@ public class WavePresenter : MonoBehaviour
     private void Awake()
     {
         _transform = GetComponent<RectTransform>();
-        YandexGame.GetDataEvent += DefineText;
     }
 
     private void Start()
     {
-        if (YandexGame.SDKEnabled)
-            DefineText();
+        DefineText();
     }
 
     public void Show(string mainText, string subText)
@@ -70,7 +67,7 @@ public class WavePresenter : MonoBehaviour
     private void DefineText()
     {
         _isDefine = true;
-        if (YandexGame.EnvironmentData.language == "ru")
+        if (GP_Language.Current() == Language.Russian)
         {
             _mainLabelText = "Волна ";
             _subLabelText = "Врагов ";

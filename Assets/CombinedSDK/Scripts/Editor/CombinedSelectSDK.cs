@@ -5,6 +5,7 @@ using UnityEngine;
 public static class CombinedSelectSDK
 {
     const string define_YG = "YANDEX_GAMES";
+    const string define_YGM = "YANDEX_GAMES_MEDIATION";
     const string define_CG = "CRAZY_GAMES";
     const string define_GD = "GAME_DISTRIBUTION";
     const string define_UA = "UNITY_ADS";
@@ -27,6 +28,10 @@ public static class CombinedSelectSDK
             case CombinedSDKSettings.CombinedSDKSettingsSelectSDK.YandexGames:
                 AddDefine(define_YG);
                 ForeachAllSDK(define_YG);
+                break;
+            case CombinedSDKSettings.CombinedSDKSettingsSelectSDK.YandexGamesMediation:
+                AddDefine(define_YGM);
+                ForeachAllSDK(define_YGM);
                 break;
             case CombinedSDKSettings.CombinedSDKSettingsSelectSDK.CrazyGames:
                 AddDefine(define_CG);
@@ -53,6 +58,8 @@ public static class CombinedSelectSDK
 
         if (define_YG != dontRemove && CheckDefine(define_YG))
             RemoveDefine(define_YG);
+        if (define_YGM != dontRemove && CheckDefine(define_YGM))
+            RemoveDefine(define_YGM);
         if (define_CG != dontRemove && CheckDefine(define_CG))
             RemoveDefine(define_CG);
         if (define_GD != dontRemove && CheckDefine(define_GD))

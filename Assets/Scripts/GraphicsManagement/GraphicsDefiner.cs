@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts;
+using GamePush;
 using UnityEngine;
 using YG;
 
@@ -8,18 +9,14 @@ namespace GraphicsManagement
     {
         [SerializeField] private MonoGraphicsService[] _graphicsServices;
 
-        private void Awake()
-        {
-            YandexGame.GetDataEvent += () => Define(YandexGame.EnvironmentData.deviceType);
-        }
-
         private void Start()
         {
-            if (YandexGame.SDKEnabled)
-                Define(YandexGame.EnvironmentData.deviceType);
-
-            if (YGPluginFix.DeviceType != null)
-                Define(YGPluginFix.DeviceType);
+            if (GP_Device.IsMobile())
+            {
+                Define("mobile");
+            }
+            else
+                Define("desktop");
         }
 
         private void Define(string type)

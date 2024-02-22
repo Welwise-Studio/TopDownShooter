@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -282,8 +282,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 65441013}
-  - component: {fileID: 65441015}
   - component: {fileID: 65441016}
+  - component: {fileID: 65441015}
   - component: {fileID: 65441014}
   m_Layer: 5
   m_Name: Text (TMP)
@@ -417,49 +417,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 65441012}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
+  m_Script: {fileID: 11500000, guid: c133907fa7d02214abddc80b0680c954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 65441014}
-  uniqueFontTMP: {fileID: 0}
-  textLComponent: {fileID: 0}
-  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
-  text: 
-  ru: "\u0418\u0433\u0440\u0430\u0442\u044C"
-  en: Play
-  tr: 
-  az: 
-  be: 
-  he: 
-  hy: 
-  ka: 
-  et: 
-  fr: 
-  kk: 
-  ky: 
-  lt: 
-  lv: 
-  ro: 
-  tg: 
-  tk: 
-  uk: 
-  uz: 
-  es: 
-  pt: 
-  ar: 
-  id: 
-  ja: 
-  it: 
-  de: 
-  hi: 
-  changeOnlyFont: 0
-  fontNumber: 0
-  uniqueFont: {fileID: 0}
-  additionalText: {fileID: 0}
-  textHeight: 20
-  processTranslateLabel: 
-  componentTextField: 0
-  countLang: 0
+  _texts:
+    _serializedList:
+    - Key: ru
+      Value: "\u0418\u0433\u0440\u0430\u0442\u044C"
+    - Key: en
+      Value: Play
+  _overidedFonts:
+    _serializedList:
+    - Key: ru
+      Value: {fileID: 11400000, guid: 0299b47934ddf3f458024325ed9719c3, type: 2}
+    - Key: en
+      Value: {fileID: 11400000, guid: 449a11ed9349b064baa6b630d4665a7b, type: 2}
 --- !u!1001 &66742401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5789,49 +5761,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 909454817}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
+  m_Script: {fileID: 11500000, guid: c133907fa7d02214abddc80b0680c954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 909454819}
-  uniqueFontTMP: {fileID: 0}
-  textLComponent: {fileID: 0}
-  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
-  text: 
-  ru: "\u041D\u0430\u0437\u0430\u0434"
-  en: Back
-  tr: 
-  az: 
-  be: 
-  he: 
-  hy: 
-  ka: 
-  et: 
-  fr: 
-  kk: 
-  ky: 
-  lt: 
-  lv: 
-  ro: 
-  tg: 
-  tk: 
-  uk: 
-  uz: 
-  es: 
-  pt: 
-  ar: 
-  id: 
-  ja: 
-  it: 
-  de: 
-  hi: 
-  changeOnlyFont: 0
-  fontNumber: 0
-  uniqueFont: {fileID: 0}
-  additionalText: {fileID: 0}
-  textHeight: 20
-  processTranslateLabel: 
-  componentTextField: 0
-  countLang: 0
+  _texts:
+    _serializedList:
+    - Key: ru
+      Value: "\u041D\u0430\u0437\u0430\u0434"
+    - Key: en
+      Value: Back
+  _overidedFonts:
+    _serializedList:
+    - Key: ru
+      Value: {fileID: 11400000, guid: 0299b47934ddf3f458024325ed9719c3, type: 2}
+    - Key: en
+      Value: {fileID: 11400000, guid: 449a11ed9349b064baa6b630d4665a7b, type: 2}
 --- !u!1 &914128643 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6294508013172393196, guid: 043176b6a68be2b43b073aaaa4782c7d, type: 3}
@@ -6306,49 +6250,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1032354442}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
+  m_Script: {fileID: 11500000, guid: c133907fa7d02214abddc80b0680c954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 1032354444}
-  uniqueFontTMP: {fileID: 0}
-  textLComponent: {fileID: 0}
-  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
-  text: 
-  ru: "\u041E\u0431\u0449\u0430\u044F"
-  en: Master
-  tr: 
-  az: 
-  be: 
-  he: 
-  hy: 
-  ka: 
-  et: 
-  fr: 
-  kk: 
-  ky: 
-  lt: 
-  lv: 
-  ro: 
-  tg: 
-  tk: 
-  uk: 
-  uz: 
-  es: 
-  pt: 
-  ar: 
-  id: 
-  ja: 
-  it: 
-  de: 
-  hi: 
-  changeOnlyFont: 0
-  fontNumber: 0
-  uniqueFont: {fileID: 0}
-  additionalText: {fileID: 0}
-  textHeight: 20
-  processTranslateLabel: 
-  componentTextField: 0
-  countLang: 0
+  _texts:
+    _serializedList:
+    - Key: ru
+      Value: "\u041E\u0431\u0449\u0430\u044F"
+    - Key: en
+      Value: Master
+  _overidedFonts:
+    _serializedList:
+    - Key: ru
+      Value: {fileID: 11400000, guid: 0299b47934ddf3f458024325ed9719c3, type: 2}
+    - Key: en
+      Value: {fileID: 11400000, guid: 449a11ed9349b064baa6b630d4665a7b, type: 2}
 --- !u!1001 &1050616699
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7327,49 +7243,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1134660969}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
+  m_Script: {fileID: 11500000, guid: c133907fa7d02214abddc80b0680c954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 1134660971}
-  uniqueFontTMP: {fileID: 0}
-  textLComponent: {fileID: 0}
-  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
-  text: 
-  ru: "\u041C\u0443\u0437\u044B\u043A\u0430"
-  en: Music-tets
-  tr: 
-  az: 
-  be: 
-  he: 
-  hy: 
-  ka: 
-  et: 
-  fr: 
-  kk: 
-  ky: 
-  lt: 
-  lv: 
-  ro: 
-  tg: 
-  tk: 
-  uk: 
-  uz: 
-  es: 
-  pt: 
-  ar: 
-  id: 
-  ja: 
-  it: 
-  de: 
-  hi: 
-  changeOnlyFont: 0
-  fontNumber: 0
-  uniqueFont: {fileID: 0}
-  additionalText: {fileID: 0}
-  textHeight: 20
-  processTranslateLabel: 
-  componentTextField: 0
-  countLang: 0
+  _texts:
+    _serializedList:
+    - Key: ru
+      Value: "\u041C\u0443\u0437\u044B\u043A\u0430"
+    - Key: en
+      Value: Music
+  _overidedFonts:
+    _serializedList:
+    - Key: ru
+      Value: {fileID: 11400000, guid: 0299b47934ddf3f458024325ed9719c3, type: 2}
+    - Key: en
+      Value: {fileID: 11400000, guid: 449a11ed9349b064baa6b630d4665a7b, type: 2}
 --- !u!1 &1161765884
 GameObject:
   m_ObjectHideFlags: 0
@@ -8756,49 +8644,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1367022471}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
+  m_Script: {fileID: 11500000, guid: c133907fa7d02214abddc80b0680c954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 1367022473}
-  uniqueFontTMP: {fileID: 0}
-  textLComponent: {fileID: 0}
-  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
-  text: 
-  ru: "\u042D\u0444\u0444\u0435\u043A\u0442\u044B"
-  en: SFX
-  tr: 
-  az: 
-  be: 
-  he: 
-  hy: 
-  ka: 
-  et: 
-  fr: 
-  kk: 
-  ky: 
-  lt: 
-  lv: 
-  ro: 
-  tg: 
-  tk: 
-  uk: 
-  uz: 
-  es: 
-  pt: 
-  ar: 
-  id: 
-  ja: 
-  it: 
-  de: 
-  hi: 
-  changeOnlyFont: 0
-  fontNumber: 0
-  uniqueFont: {fileID: 0}
-  additionalText: {fileID: 0}
-  textHeight: 20
-  processTranslateLabel: 
-  componentTextField: 0
-  countLang: 0
+  _texts:
+    _serializedList:
+    - Key: ru
+      Value: "\u042D\u0444\u0444\u0435\u043A\u0442\u044B"
+    - Key: en
+      Value: SFX
+  _overidedFonts:
+    _serializedList:
+    - Key: ru
+      Value: {fileID: 11400000, guid: 0299b47934ddf3f458024325ed9719c3, type: 2}
+    - Key: en
+      Value: {fileID: 11400000, guid: 449a11ed9349b064baa6b630d4665a7b, type: 2}
 --- !u!4 &1372879300 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 487586, guid: 634130a0b5997d14da4e9e1b1ef75f6a, type: 3}

@@ -16,6 +16,7 @@ public class CombinedSDKSettings : ScriptableObject
     {
         None,
         YandexGames,
+        YandexGamesMediation,
         CrazyGames,
         GameDistribution,
         UnityADS,

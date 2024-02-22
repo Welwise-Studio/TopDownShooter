@@ -1,6 +1,8 @@
+using Newtonsoft.Json;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using Utils;
 
 [DefaultExecutionOrder(-100)]
 [CreateAssetMenu(fileName = "CombinedSDKSaves", menuName = "DataCombinedSDK", order = 51)]
@@ -8,19 +10,19 @@ public class SavesCombinedSDK : ScriptableObject
 {
     // "Технические сохранения" для работы плагина (Не удалять)
     public int idSave;
-    public bool isFirstSession = true;
+    //public bool isFirstSession = true;
     public string language = "ru";
-    public bool promptDone;
+    //public bool promptDone;
 
-    // Тестовые сохранения для демо сцены
-    // Можно удалить этот код, но тогда удалите и демо (папка Example)
-    public int money = 1;                       // Можно задать полям значения по умолчанию
-    public string newPlayerName = "Hello!";
-    public bool[] openLevels = new bool[3];
+    public Dictionary<string, bool> openedWeapons 
+    { 
+        get => _openedWeapons.IsNullOrEmpty() ? new Dictionary<string, bool>() : JsonConvert.DeserializeObject<Dictionary<string, bool>>(_openedWeapons); 
+        set => _openedWeapons = JsonConvert.SerializeObject(value); 
+    }
 
     // Ваши сохранения
     public int Balance;
-    public Dictionary<string, bool> openedWeapons = new Dictionary<string, bool>();
+    public string _openedWeapons;
     public int ShelterLevel;
     public int LastWaveIndex;
     public int LastGunIndex;
@@ -29,12 +31,13 @@ public class SavesCombinedSDK : ScriptableObject
     // Вы так же можете задать значения по умолчанию
     public void DefaultValue()
     {
-        openLevels[1] = true;
+
         openedWeapons["pistol"] = true;
         Balance = 0;
         ShelterLevel = 1;
         LastWaveIndex = 0;
         LastGunIndex = 0;
+        _openedWeapons = JsonConvert.SerializeObject(openedWeapons);
     }
 }
 

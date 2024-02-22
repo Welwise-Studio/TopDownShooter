@@ -34,13 +34,22 @@
 
 #endif
 
-using UnityEngine;
-
 public static class CombinedSDK
 {
+    // Events:
     public static System.Action OnCombinedSDKInitilizedEvent;
     public static System.Action<string> OnCombinedSDKCloseRewardVideo;
     public static System.Action<string> OnCombinedSDKPurchasedItem;
+
+    // Data:
+    public static string DeviceType = "none";
+    /*
+     - `"none"`    (не реализовано)
+     - `"desktop"` (компьютер)
+     - `"mobile"`  (мобильное устройство)
+     - `"tablet"`  (планшет)
+     - `"tv"`      (телевизор)
+     */
 
     private static SDK SelectedSDK;
 
@@ -58,9 +67,8 @@ public static class CombinedSDK
             AllSavesCombinedSDK = executor.DataSavesCombinedSDK;
             IsInitilized = true;
 
-            SelectedSDK.LoadProgressData();
             OnCombinedSDKInitilizedEvent?.Invoke();
-            Debug.Log("InitSDK");
+            SelectedSDK.LoadProgressData();
         }
         else
         {

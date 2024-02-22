@@ -50,6 +50,9 @@ namespace ShelterSystem
         {
             base.Start();
 
+            startingHealth = 1;
+            AddHealth(1);
+
             if (CombinedSDK.IsInitilized)
                 GetLevelData();
         }
@@ -63,7 +66,10 @@ namespace ShelterSystem
         {   
             CombinedSDK.OnCombinedSDKInitilizedEvent -= GetLevelData;
         }
-
+        private void Update()
+        {
+            Debug.Log($"SHELTER HEALTH: {health}");
+        }
         private void GetLevelData()
         {
             Level = CombinedSDK.AllSavesCombinedSDK.ShelterLevel;
@@ -134,6 +140,7 @@ namespace ShelterSystem
 
         public override void Die()
         {
+            Debug.Log("SHELTER DIE");
             _dieModal.Show();
         }
     }

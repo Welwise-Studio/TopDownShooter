@@ -1,2 +1,2 @@
-Build path: D:/Files/Unity/TopDownShooter/Builds/Shelter
-Build number: 39
+Build path: D:/Files/Unity/TopDownShooter/Builds/GamePush2
+Build number: 41

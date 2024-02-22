@@ -1,3 +1,4 @@
+using GamePush;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -101,7 +102,7 @@ public class Gun : MonoBehaviour
                 newProjectile.SetDamage(_bulletDamage);
             }
 
-            if (YandexGame.EnvironmentData.isDesktop)
+            if (GP_Device.IsDesktop())
                 Instantiate(_shell, _shellEjection.position, _shell.rotation);
 
             _muzzleFlash.Activate();

@@ -44,8 +44,8 @@ PlayerSettings:
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 960
   defaultScreenHeight: 540
-  defaultScreenWidthWeb: 960
-  defaultScreenHeightWeb: 600
+  defaultScreenWidthWeb: 1920
+  defaultScreenHeightWeb: 1080
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 1
   m_SpriteBatchVertexThreshold: 300
@@ -458,6 +458,14 @@ PlayerSettings:
     BANNER_DYNAMIC_2: 
     BANNER_STATIC_1: 
     BANNER_STATIC_2: 
+    GAMEREADY_AUTOCALL_DELAY: 
+    OVERLAY_BACKGROUND_COLOR: 
+    PROGRESS_BAR_BACKGROUND_COLOR: 
+    PROGRESS_BAR_BORDER_COLOR: 
+    PROGRESS_BAR_FILL_COLOR: 
+    PROJECT_ID: 7156
+    SHOW_PRELOADER_AD: 
+    TOKEN: 0JYQbVtF1c2Dr6myjnLFX4yXIQWQIZCL
   mobileMTRendering:
     Android: 1
     iPhone: 1
@@ -733,7 +741,7 @@ PlayerSettings:
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
   webGLModulesDirectory: 
-  webGLTemplate: PROJECT:PluginYG
+  webGLTemplate: PROJECT:GamePush
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
   webGLCompressionFormat: 1
@@ -761,7 +769,7 @@ PlayerSettings:
     Stadia: UNITY_POST_PROCESSING_STACK_V2
     Standalone: YG_PLUGIN_YANDEX_GAME;UNITY_POST_PROCESSING_STACK_V2;YG_NEWTONSOFT_FOR_SAVES;YG_TEXT_MESH_PRO
     VisionOS: UNITY_POST_PROCESSING_STACK_V2
-    WebGL: UNITY_POST_PROCESSING_STACK_V2;YG_PLUGIN_YANDEX_GAME;YG_TEXT_MESH_PRO;YG_NEWTONSOFT_FOR_SAVES;YANDEX_GAMES
+    WebGL: UNITY_POST_PROCESSING_STACK_V2;YG_PLUGIN_YANDEX_GAME;YG_TEXT_MESH_PRO;YG_NEWTONSOFT_FOR_SAVES;GAME_PUSH
     Windows Store Apps: UNITY_POST_PROCESSING_STACK_V2
     XboxOne: UNITY_POST_PROCESSING_STACK_V2
     tvOS: UNITY_POST_PROCESSING_STACK_V2

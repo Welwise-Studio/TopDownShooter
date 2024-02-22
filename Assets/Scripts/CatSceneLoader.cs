@@ -9,6 +9,14 @@ public class CatSceneLoader : MonoBehaviour
 
     private PlayableDirector _playableDirector;
 
+    private float cMaster;
+
+    private void Start()
+    {
+        cMaster = AudioManager.Instance.masterVolumePercent;
+        AudioManager.Instance.SetVolume(0, AudioManager.AudioChannel.Master);
+    }
+
     private void OnEnable()
     {
         _playableDirector = GetComponent<PlayableDirector>();
@@ -20,5 +28,9 @@ public class CatSceneLoader : MonoBehaviour
         _playableDirector.stopped -= LoadScene;
     }
 
-    private void LoadScene(PlayableDirector p) => SceneManager.LoadScene(NextSceneName);
+    private void LoadScene(PlayableDirector p)
+    {
+        AudioManager.Instance.SetVolume(cMaster, AudioManager.AudioChannel.Master);
+        SceneManager.LoadScene(NextSceneName);
+    }
 }

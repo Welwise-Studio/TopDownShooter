@@ -12,14 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c402982a328d9041ae27f9736b89204, type: 3}
   m_Name: CombinedSDKSaves
   m_EditorClassIdentifier: 
-  idSave: 0
-  isFirstSession: 1
-  language: ru
-  promptDone: 0
   money: 5
-  newPlayerName: Hello!
-  openLevels: 000100
-  Balance: 725
-  ShelterLevel: 5
-  LastWaveIndex: 4
-  LastGunIndex: 2

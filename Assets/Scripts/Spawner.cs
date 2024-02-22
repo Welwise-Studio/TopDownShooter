@@ -116,7 +116,7 @@ public class Spawner : MonoBehaviour, ISpawner
         }
         else
         {
-            spawnPos = endPoint;
+            spawnPos = endPoint - (new Vector3(rand.x, 0, rand.y)*.5f);
         }
         var spawnedEnemy = Instantiate(_enemyPrefab, spawnPos, Quaternion.identity);
 

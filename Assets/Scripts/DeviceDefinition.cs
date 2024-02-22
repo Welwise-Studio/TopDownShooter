@@ -1,4 +1,5 @@
 using Assets.Scripts;
+using GamePush;
 using UnityEngine;
 using YG;
 
@@ -33,14 +34,6 @@ public class DeviceDefinition : MonoBehaviour
             togler.IsMobile = false;
         }
 
-        if (YandexGame.SDKEnabled)
-            DefineDevice(YandexGame.EnvironmentData.deviceType);
-
-        if (YGPluginFix.DeviceType != null)
-            DefineDevice(YGPluginFix.DeviceType);
+        DefineDevice(GP_Device.IsMobile() ? "mobile" : "desktop");
     }
-
-    private void OnEnable() => YandexGame.GetDataEvent += () => DefineDevice(YandexGame.EnvironmentData.deviceType);
-
-    private void OnDisable() => YandexGame.GetDataEvent -= () => DefineDevice(YandexGame.EnvironmentData.deviceType);
 }

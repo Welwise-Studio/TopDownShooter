@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: b502e112186e59a4e8d0160dbf778ecb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - DataSavesCombinedSDK: {fileID: 11400000, guid: e01e960de523c9942ae0ed2aa59b5253, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
